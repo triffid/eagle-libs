@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="GX6-V">
+<pad name="1" x="-2.61629375" y="2.61629375" drill="1.4"/>
+<pad name="2" x="-2.61629375" y="-2.61629375" drill="1.4"/>
+<pad name="3" x="0.95763125" y="-3.573925" drill="1.4"/>
+<pad name="4" x="3.573921875" y="-0.95763125" drill="1.4"/>
+<pad name="5" x="2.61629375" y="2.61629375" drill="1.4"/>
+<pad name="6" x="0" y="0" drill="1.4"/>
+<wire x1="1.5" y1="5.75" x2="-1.5" y2="5.75" width="0.127" layer="51" curve="-180"/>
+<text x="0" y="9" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.7" width="0.127" layer="49"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<dimension x1="6" y1="0" x2="-6" y2="0" x3="0" y3="-13" textsize="0.8" textratio="15" layer="49" dtype="diameter"/>
+<dimension x1="3.7" y1="0" x2="-3.7" y2="0" x3="0" y3="-11" textsize="0.8" textratio="15" layer="49" dtype="diameter"/>
+<dimension x1="0" y1="0" x2="-11.313709375" y2="0" x3="-8" y3="-8" textsize="0.8" textratio="15" layer="49" dtype="angle"/>
+<dimension x1="0" y1="0" x2="11" y2="11" x3="-11" y3="11" textsize="0.8" textratio="15" layer="49" dtype="angle"/>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="21"/>
+<text x="-4.25" y="2.75" size="0.8" layer="49" font="vector" ratio="15" align="center">1</text>
+<text x="-4.25" y="-2.5" size="0.8" layer="49" font="vector" ratio="15" align="center">2</text>
+<text x="-0.5" y="-3" size="0.8" layer="49" font="vector" ratio="15" align="center">3</text>
+<text x="2" y="-1" size="0.8" layer="49" font="vector" ratio="15" align="center">4</text>
+<text x="1.25" y="2.5" size="0.8" layer="49" font="vector" ratio="15" align="center">5</text>
+<text x="-1.5" y="-0.5" size="0.8" layer="49" font="vector" ratio="15" align="center">6</text>
+<circle x="0" y="0" radius="11" width="0.127" layer="21"/>
+</package>
+<package name="GX10-V">
+<circle x="0" y="0" radius="4" width="0.127" layer="49"/>
+<circle x="0" y="0" radius="1.2" width="0.127" layer="49"/>
+<wire x1="1" y1="5.75" x2="-1" y2="5.75" width="0.127" layer="51" curve="-180"/>
+<pad name="3" x="-2.828425" y="2.828425" drill="1.4"/>
+<pad name="7" x="-4" y="0" drill="1.4"/>
+<pad name="10" x="-2.828425" y="-2.828425" drill="1.4" rot="R45"/>
+<pad name="9" x="0" y="-4" drill="1.4" rot="R90"/>
+<pad name="8" x="2.828425" y="-2.828425" drill="1.4" rot="R135"/>
+<pad name="4" x="4" y="0" drill="1.4" rot="R180"/>
+<pad name="1" x="2.828425" y="2.828425" drill="1.4" first="yes"/>
+<pad name="2" x="0" y="3.15" drill="1.4"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<pad name="6" x="-1.159109375" y="-0.31058125" drill="1.4" rot="R15"/>
+<pad name="5" x="0.98298125" y="0.688290625" drill="1.4" rot="R50"/>
+<text x="2" y="4.25" size="0.8" layer="49" font="vector" ratio="15" align="center">1</text>
+<text x="-1" y="4.5" size="0.8" layer="49" font="vector" ratio="15" align="center">2</text>
+<text x="-4.25" y="3" size="0.8" layer="49" font="vector" ratio="15" align="center">3</text>
+<text x="5.75" y="0.25" size="0.8" layer="49" font="vector" ratio="15" align="center">4</text>
+<text x="2" y="-0.75" size="0.8" layer="49" font="vector" ratio="15" align="center">5</text>
+<text x="-2.25" y="0.75" size="0.8" layer="49" font="vector" ratio="15" align="center">6</text>
+<text x="-5.25" y="-0.75" size="0.8" layer="49" font="vector" ratio="15" align="center">7</text>
+<text x="2.75" y="-4.5" size="0.8" layer="49" font="vector" ratio="15" align="center">8</text>
+<text x="1" y="-2.75" size="0.8" layer="49" font="vector" ratio="15" align="center">9</text>
+<text x="-1" y="-2.25" size="0.8" layer="49" font="vector" ratio="15" align="center">10</text>
+<dimension x1="4" y1="0" x2="-4" y2="0" x3="0" y3="-12.5" textsize="0.8" textratio="15" layer="47" dtype="diameter"/>
+<dimension x1="6" y1="0" x2="-6" y2="0" x3="0" y3="-14.5" textsize="0.8" textratio="15" layer="47" dtype="diameter"/>
+<dimension x1="0" y1="1.2" x2="0" y2="-1.2" x3="12" y3="0" textsize="0.8" textratio="15" layer="47" dtype="diameter"/>
+<dimension x1="0" y1="0" x2="-9.1923875" y2="9.1923875" x3="-13" y3="0" textsize="0.8" textratio="15" layer="47" dtype="angle"/>
+<dimension x1="0" y1="0" x2="-12.943709375" y2="0.000003125" x3="-12.5" y3="-3.36" textsize="0.8" textratio="15" layer="47" dtype="angle"/>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="21"/>
+<dimension x1="9.5" y1="0" x2="-9.5" y2="0" x3="0" y3="-16.5" textsize="0.8" textratio="15" layer="47" dtype="diameter"/>
+<circle x="0" y="0" radius="11" width="0.127" layer="47"/>
+<wire x1="5.5" y1="9.5" x2="-5.5" y2="9.5" width="0.127" layer="47"/>
+<wire x1="-5.5" y1="9.5" x2="-11" y2="0" width="0.127" layer="47"/>
+<wire x1="-11" y1="0" x2="-5.5" y2="-9.5" width="0.127" layer="47"/>
+<wire x1="-5.5" y1="-9.5" x2="5.5" y2="-9.5" width="0.127" layer="47"/>
+<wire x1="5.5" y1="-9.5" x2="11" y2="0" width="0.127" layer="47"/>
+<wire x1="11" y1="0" x2="5.5" y2="9.5" width="0.127" layer="47"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN">
+<pin name="P" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<text x="-1.27" y="0" size="1.27" layer="95" align="center-right">&gt;NAME</text>
+<wire x1="-0.635" y1="0.635" x2="0" y2="0" width="0.254" layer="95"/>
+<wire x1="0" y1="0" x2="-0.635" y2="-0.635" width="0.254" layer="95"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GX16-6" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="GX16-6" package="GX6-V">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-2" pin="P" pad="2"/>
+<connect gate="-3" pin="P" pad="3"/>
+<connect gate="-4" pin="P" pad="4"/>
+<connect gate="-5" pin="P" pad="5"/>
+<connect gate="-6" pin="P" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GX16-10" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-8" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-9" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-10" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="GX16-10" package="GX10-V">
+<connects>
+<connect gate="-1" pin="P" pad="3"/>
+<connect gate="-10" pin="P" pad="5"/>
+<connect gate="-2" pin="P" pad="7"/>
+<connect gate="-3" pin="P" pad="10"/>
+<connect gate="-4" pin="P" pad="9"/>
+<connect gate="-5" pin="P" pad="8"/>
+<connect gate="-6" pin="P" pad="4"/>
+<connect gate="-7" pin="P" pad="1"/>
+<connect gate="-8" pin="P" pad="2"/>
+<connect gate="-9" pin="P" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
