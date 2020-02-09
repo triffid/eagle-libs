@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -71,7 +71,7 @@
 </layers>
 <library>
 <packages>
-<package name="2G-Y">
+<package name="G">
 <smd name="P$1" x="-3.8" y="-2.85" dx="0.8" dy="1.8" layer="1"/>
 <smd name="P$2" x="-0.6" y="-2.85" dx="0.8" dy="1.8" layer="1"/>
 <smd name="P$3" x="1.6" y="-2.85" dx="0.8" dy="1.8" layer="1"/>
@@ -111,8 +111,9 @@
 <wire x1="3.75" y1="-0.85" x2="3.75" y2="-1.85" width="0.05" layer="51"/>
 <wire x1="1.5" y1="-1.85" x2="1.5" y2="-1.35" width="0.05" layer="51"/>
 <wire x1="1.5" y1="-1.35" x2="1.25" y2="-0.6" width="0.05" layer="51"/>
+<text x="-3" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
 </package>
-<package name="2F-Y">
+<package name="F">
 <smd name="P$1" x="-3.8" y="-3.5" dx="0.8" dy="1.8" layer="1"/>
 <smd name="P$2" x="-0.6" y="-3.5" dx="0.8" dy="1.8" layer="1"/>
 <smd name="P$3" x="1.6" y="-3.5" dx="0.8" dy="1.8" layer="1"/>
@@ -152,6 +153,45 @@
 <wire x1="3.75" y1="-1.5" x2="3.75" y2="-2.5" width="0.05" layer="51"/>
 <wire x1="1.5" y1="-2.5" x2="1.5" y2="-2" width="0.05" layer="51"/>
 <wire x1="1.5" y1="-2" x2="1.25" y2="-1.25" width="0.05" layer="51"/>
+<text x="-3" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
+</package>
+<package name="P">
+<wire x1="-6.27" y1="3.25" x2="3.73" y2="3.25" width="0.127" layer="21"/>
+<wire x1="3.73" y1="3.25" x2="3.73" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="3.73" y1="-3.25" x2="-6.27" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-6.27" y1="-3.25" x2="-6.27" y2="3.25" width="0.127" layer="21"/>
+<text x="-7" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<wire x1="-5.02" y1="2" x2="-5.02" y2="1" width="0.05" layer="51"/>
+<wire x1="-5.02" y1="1" x2="-4.77" y2="0.75" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4.77" y1="0.75" x2="-5.02" y2="0.5" width="0.05" layer="51" curve="-90"/>
+<wire x1="-5.02" y1="0.5" x2="-4.77" y2="0.25" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4.77" y1="0.25" x2="-5.02" y2="0" width="0.05" layer="51" curve="-90"/>
+<wire x1="-5.02" y1="0" x2="-4.77" y2="-0.25" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4.77" y1="-0.25" x2="-5.02" y2="-0.5" width="0.05" layer="51" curve="-90"/>
+<wire x1="-5.02" y1="-0.5" x2="-4.77" y2="-0.75" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4.77" y1="-0.75" x2="-5.02" y2="-1" width="0.05" layer="51" curve="-90"/>
+<wire x1="-5.02" y1="-1" x2="-5.02" y2="-2" width="0.05" layer="51"/>
+<wire x1="-2.52" y1="2" x2="-2.52" y2="1" width="0.05" layer="51"/>
+<wire x1="-2.52" y1="1" x2="-1.02" y2="1" width="0.05" layer="51"/>
+<wire x1="2.48" y1="2" x2="2.48" y2="1" width="0.05" layer="51"/>
+<wire x1="2.48" y1="1" x2="0.73" y2="1" width="0.05" layer="51"/>
+<wire x1="-0.02" y1="2" x2="-0.02" y2="1.5" width="0.05" layer="51"/>
+<wire x1="-0.02" y1="1.5" x2="-0.27" y2="0.75" width="0.05" layer="51"/>
+<wire x1="-2.52" y1="-2" x2="-2.52" y2="-1" width="0.05" layer="51"/>
+<wire x1="-2.52" y1="-1" x2="-1.02" y2="-1" width="0.05" layer="51"/>
+<wire x1="0.73" y1="-1" x2="2.48" y2="-1" width="0.05" layer="51"/>
+<wire x1="2.48" y1="-1" x2="2.48" y2="-2" width="0.05" layer="51"/>
+<wire x1="-0.02" y1="-2" x2="-0.02" y2="-1.5" width="0.05" layer="51"/>
+<wire x1="-0.02" y1="-1.5" x2="-0.27" y2="-0.75" width="0.05" layer="51"/>
+<pad name="P$1" x="-5.08" y="-2.54" drill="0.85" shape="square"/>
+<pad name="P$2" x="-2.54" y="-2.54" drill="0.85"/>
+<pad name="P$3" x="0" y="-2.54" drill="0.85"/>
+<pad name="P$4" x="2.54" y="-2.54" drill="0.85"/>
+<pad name="P$5" x="2.54" y="2.54" drill="0.85"/>
+<pad name="P$6" x="0" y="2.54" drill="0.85"/>
+<pad name="P$7" x="-2.54" y="2.54" drill="0.85"/>
+<pad name="P$8" x="-5.08" y="2.54" drill="0.85"/>
+<text x="-4" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -192,15 +232,29 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="G6K-2F-Y" prefix="RL">
-<description>OMRON Subminiature low power relay - DPDT</description>
+<deviceset name="G6K-2?*" prefix="RL">
+<description>&lt;h1&gt;OMRON Subminiature low power relay - DPDT&lt;/h1&gt;
+
+Note: see G6K&lt;b&gt;U&lt;/b&gt; variant for latching relays
+
+&lt;h2&gt;Packages:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3&gt;F&lt;/h3&gt; SMD wings (to the side)&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;G&lt;/h3&gt; SMD J leads (under)&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;P&lt;/h3&gt; Through-hole&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3&gt;no suffix:&lt;/h3&gt;1500v coil-switch insulation&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;-Y suffix:&lt;/h3&gt;2500v coil-switch insulation&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="COIL" symbol="COIL_NL" x="-7.62" y="0" addlevel="always"/>
-<gate name="A" symbol="SPDT" x="5.08" y="7.62" addlevel="always"/>
-<gate name="B" symbol="SPDT" x="5.08" y="-7.62" addlevel="always"/>
+<gate name="A" symbol="SPDT" x="5.08" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="SPDT" x="5.08" y="-7.62" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="2F-Y">
+<device name="F-Y" package="F">
 <connects>
 <connect gate="A" pin="C" pad="P$3"/>
 <connect gate="A" pin="NC" pad="P$2"/>
@@ -212,7 +266,244 @@
 <connect gate="COIL" pin="C2" pad="P$8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="G-Y" package="G">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="F" package="F">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="G" package="G">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="P" package="P">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="P-Y" package="P">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="G6KU-2?*" prefix="RL">
+<description>&lt;h1&gt;OMRON Subminiature low power latching relay - DPDT&lt;/h1&gt;
+
+Note: see G6K- variant for non-latching relays
+
+&lt;h2&gt;Packages:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3&gt;F&lt;/h3&gt; SMD wings (to the side)&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;G&lt;/h3&gt; SMD J leads (under)&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;P&lt;/h3&gt; Through-hole&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3&gt;no suffix:&lt;/h3&gt;1500v coil-switch insulation&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;-Y suffix:&lt;/h3&gt;2500v coil-switch insulation&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="A" symbol="SPDT" x="5.08" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="SPDT" x="5.08" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="COIL" symbol="COIL_LATCH" x="-7.62" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="F-Y" package="F">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="G-Y" package="G">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="F" package="F">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="G" package="G">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="P" package="P">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
+</technologies>
+</device>
+<device name="P-Y" package="P">
+<connects>
+<connect gate="A" pin="C" pad="P$3"/>
+<connect gate="A" pin="NC" pad="P$2"/>
+<connect gate="A" pin="NO" pad="P$4"/>
+<connect gate="B" pin="C" pad="P$6"/>
+<connect gate="B" pin="NC" pad="P$7"/>
+<connect gate="B" pin="NO" pad="P$5"/>
+<connect gate="COIL" pin="C1" pad="P$1"/>
+<connect gate="COIL" pin="C2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="-DC12"/>
+<technology name="-DC24"/>
+<technology name="-DC3"/>
+<technology name="-DC4.5"/>
+<technology name="-DC5"/>
 </technologies>
 </device>
 </devices>
