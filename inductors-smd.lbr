@@ -379,7 +379,10 @@ Metric Code Size 2012</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="COILCRAFT"/>
+<attribute name="MPN" value="LPS4018-" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MSS1048" package="MSS1048">
