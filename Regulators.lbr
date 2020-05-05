@@ -400,6 +400,68 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LN6206P*?" prefix="IC">
+<description>&lt;h1&gt;LN6206 LDO Linear Regulator&lt;/h1&gt;
+&lt;br/&gt;
+Vin: 1.8 - 6.0v&lt;br/&gt;
+Pd(max):&lt;br/&gt;
+&lt;ul&gt;SOT23-3 250mW&lt;br/&gt;
+    SOT89-3 500mW&lt;br/&gt;
+    SOT23-3B 150mW&lt;/ul&gt;
+Dropout: 200mV @ 50mA (typ)
+&lt;h2&gt;Manufacturer Part Numbers (orderable)&lt;/h2&gt;
+LN6206P&lt;i&gt;abcde&lt;/i&gt;:- &lt;br/&gt;
+a = 1,2,3,4,5,6 volts&lt;br/&gt;
+b = 1-9 × 100mV&lt;br/&gt;
+c = 1=1%, 2=2%&lt;br/&gt;
+d = M=SOT23-3, P=SOT89-3, V=SOT23-3B&lt;br/&gt;
+e = R=embossed tape standard feed, L=reverse feed&lt;br/&gt;
+&lt;br/&gt;
+LN6206P&lt;i&gt;332MR&lt;/i&gt; = 3.3v, 2%, SOT23-3, standard feed reel.</description>
+<gates>
+<gate name="G$1" symbol="REG-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M" package="SOT23">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="331">
+<attribute name="MARK" value="6B2"/>
+<attribute name="MF" value="NATLINEAR"/>
+<attribute name="MPN" value="LN6206P331MR"/>
+</technology>
+<technology name="332">
+<attribute name="MARK" value="662"/>
+<attribute name="MF" value="NATLINEAR"/>
+<attribute name="MPN" value="LN6206P332MR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="V" package="SOT23">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="331">
+<attribute name="MARK" value="6B2" constant="no"/>
+<attribute name="MF" value="NATLINEAR"/>
+<attribute name="MPN" value="LN6206P331VR"/>
+</technology>
+<technology name="332">
+<attribute name="MARK" value="662" constant="no"/>
+<attribute name="MF" value="NATLINEAR"/>
+<attribute name="MPN" value="LN6206332VR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
