@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -128,41 +128,41 @@
 <wire x1="22.86" y1="50.8" x2="22.86" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-48.26" x2="-22.86" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="-48.26" x2="-22.86" y2="50.8" width="0.254" layer="94"/>
-<pin name="C1A" x="25.4" y="45.72" length="short" rot="R180"/>
-<pin name="GH1A" x="25.4" y="40.64" length="short" rot="R180"/>
-<pin name="S1A" x="25.4" y="38.1" length="short" rot="R180"/>
-<pin name="GL1A" x="25.4" y="33.02" length="short" rot="R180"/>
-<pin name="LSS1" x="25.4" y="30.48" length="short" rot="R180"/>
-<pin name="SENSE1" x="25.4" y="22.86" length="short" rot="R180"/>
-<pin name="GL1B" x="25.4" y="15.24" length="short" rot="R180"/>
-<pin name="S1B" x="25.4" y="10.16" length="short" rot="R180"/>
-<pin name="GH1B" x="25.4" y="7.62" length="short" rot="R180"/>
-<pin name="C1B" x="25.4" y="2.54" length="short" rot="R180"/>
-<pin name="C2A" x="25.4" y="-2.54" length="short" rot="R180"/>
-<pin name="GH2A" x="25.4" y="-7.62" length="short" rot="R180"/>
-<pin name="S2A" x="25.4" y="-10.16" length="short" rot="R180"/>
-<pin name="GL2A" x="25.4" y="-15.24" length="short" rot="R180"/>
-<pin name="LSS2" x="25.4" y="-17.78" length="short" rot="R180"/>
-<pin name="SENSE2" x="25.4" y="-25.4" length="short" rot="R180"/>
-<pin name="GL2B" x="25.4" y="-33.02" length="short" rot="R180"/>
-<pin name="S2B" x="25.4" y="-38.1" length="short" rot="R180"/>
-<pin name="GH2B" x="25.4" y="-40.64" length="short" rot="R180"/>
-<pin name="C2B" x="25.4" y="-45.72" length="short" rot="R180"/>
-<pin name="VBB" x="5.08" y="53.34" length="short" rot="R270"/>
-<pin name="VDD" x="-5.08" y="53.34" length="short" rot="R270"/>
+<pin name="C1A" x="25.4" y="45.72" length="short" direction="in" rot="R180"/>
+<pin name="GH1A" x="25.4" y="40.64" length="short" direction="out" rot="R180"/>
+<pin name="S1A" x="25.4" y="38.1" length="short" direction="in" rot="R180"/>
+<pin name="GL1A" x="25.4" y="33.02" length="short" direction="out" rot="R180"/>
+<pin name="LSS1" x="25.4" y="30.48" length="short" direction="in" rot="R180"/>
+<pin name="SENSE1" x="25.4" y="22.86" length="short" direction="in" rot="R180"/>
+<pin name="GL1B" x="25.4" y="15.24" length="short" direction="out" rot="R180"/>
+<pin name="S1B" x="25.4" y="10.16" length="short" direction="in" rot="R180"/>
+<pin name="GH1B" x="25.4" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="C1B" x="25.4" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="C2A" x="25.4" y="-2.54" length="short" direction="in" rot="R180"/>
+<pin name="GH2A" x="25.4" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="S2A" x="25.4" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="GL2A" x="25.4" y="-15.24" length="short" direction="out" rot="R180"/>
+<pin name="LSS2" x="25.4" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="SENSE2" x="25.4" y="-25.4" length="short" direction="in" rot="R180"/>
+<pin name="GL2B" x="25.4" y="-33.02" length="short" direction="out" rot="R180"/>
+<pin name="S2B" x="25.4" y="-38.1" length="short" direction="in" rot="R180"/>
+<pin name="GH2B" x="25.4" y="-40.64" length="short" direction="out" rot="R180"/>
+<pin name="C2B" x="25.4" y="-45.72" length="short" direction="in" rot="R180"/>
+<pin name="VBB" x="5.08" y="53.34" length="short" direction="in" rot="R270"/>
+<pin name="VDD" x="-5.08" y="53.34" length="short" direction="in" rot="R270"/>
 <pin name="VREG" x="-25.4" y="-43.18" length="short"/>
 <pin name="OSC" x="-25.4" y="-38.1" length="short"/>
-<pin name="REF" x="-25.4" y="-33.02" length="short"/>
+<pin name="REF" x="-25.4" y="-33.02" length="short" direction="in"/>
 <pin name="GND" x="-2.54" y="-50.8" length="short" rot="R90"/>
-<pin name="STEP" x="-25.4" y="38.1" length="short"/>
-<pin name="DIR" x="-25.4" y="35.56" length="short"/>
-<pin name="MS1" x="-25.4" y="30.48" length="short"/>
-<pin name="MS2" x="-25.4" y="27.94" length="short"/>
-<pin name="PFD1" x="-25.4" y="22.86" length="short"/>
-<pin name="PFD2" x="-25.4" y="20.32" length="short"/>
-<pin name="!ENABLE" x="-25.4" y="15.24" length="short"/>
-<pin name="!RESET" x="-25.4" y="10.16" length="short"/>
-<pin name="!SR" x="-25.4" y="5.08" length="short"/>
+<pin name="STEP" x="-25.4" y="38.1" length="short" direction="in"/>
+<pin name="DIR" x="-25.4" y="35.56" length="short" direction="in"/>
+<pin name="MS1" x="-25.4" y="30.48" length="short" direction="in"/>
+<pin name="MS2" x="-25.4" y="27.94" length="short" direction="in"/>
+<pin name="PFD1" x="-25.4" y="22.86" length="short" direction="in"/>
+<pin name="PFD2" x="-25.4" y="20.32" length="short" direction="in"/>
+<pin name="!ENABLE" x="-25.4" y="15.24" length="short" direction="in"/>
+<pin name="!RESET" x="-25.4" y="10.16" length="short" direction="in"/>
+<pin name="!SR" x="-25.4" y="5.08" length="short" direction="in"/>
 <text x="0" y="2.54" size="1.778" layer="95" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-2.54" size="1.778" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </symbol>
@@ -220,7 +220,10 @@
 <connect gate="G$1" pin="VREG" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="ALLEGRO"/>
+<attribute name="MPN" value="A4989SLDTR-T"/>
+</technology>
 </technologies>
 </device>
 </devices>
