@@ -71,7 +71,7 @@
 </layers>
 <library>
 <packages>
-<package name="MOLEX-105400101">
+<package name="MOLEX-1054500101">
 <wire x1="-4.47" y1="3.95" x2="4.47" y2="3.95" width="0.127" layer="21"/>
 <wire x1="4.47" y1="3.95" x2="4.47" y2="-3.95" width="0.127" layer="21"/>
 <wire x1="4.47" y1="-3.95" x2="-4.47" y2="-3.95" width="0.127" layer="21"/>
@@ -177,7 +177,7 @@
 <gate name="A" symbol="USB-C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="105400101" package="MOLEX-105400101">
+<device name="105400101" package="MOLEX-1054500101">
 <connects>
 <connect gate="A" pin="CC1" pad="A5"/>
 <connect gate="A" pin="CC2" pad="B5"/>
@@ -202,7 +202,7 @@
 <technologies>
 <technology name="">
 <attribute name="MF" value="MOLEX"/>
-<attribute name="MPN" value="105400101"/>
+<attribute name="MPN" value="1054500101"/>
 </technology>
 </technologies>
 </device>
