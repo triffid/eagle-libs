@@ -295,6 +295,27 @@
 <pad name="13" x="-13.75" y="0" drill="0.9"/>
 <pad name="14" x="-16.25" y="0" drill="0.9"/>
 </package>
+<package name="S2B-XH-A">
+<description>JST-XH (2.5mm) 2-pin through-hole vertical Wire-Board Connector</description>
+<pad name="1" x="1.25" y="0" drill="0.9" shape="square"/>
+<pad name="2" x="-1.25" y="0" drill="0.9"/>
+<wire x1="-3.7" y1="-2.25" x2="-3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.25" x2="-3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.25" x2="3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="3" y1="2.25" x2="3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.25" x2="3.7" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-2.25" x2="3.7" y2="9.25" width="0.127" layer="21"/>
+<wire x1="3.7" y1="9.25" x2="-3.7" y2="9.25" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="9.25" x2="-3.7" y2="-2.25" width="0.127" layer="21"/>
+<rectangle x1="-4" y1="-2.5" x2="4" y2="9.5" layer="39"/>
+<text x="0" y="-2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="3" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-2" y1="9.25" x2="-2" y2="6.25" width="0.127" layer="51"/>
+<wire x1="-2" y1="6.25" x2="-1.75" y2="6" width="0.127" layer="51" curve="90"/>
+<wire x1="-1.75" y1="6" x2="1.75" y2="6" width="0.127" layer="51"/>
+<wire x1="1.75" y1="6" x2="2" y2="6.25" width="0.127" layer="51" curve="90"/>
+<wire x1="2" y1="6.25" x2="2" y2="9.25" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
@@ -311,7 +332,7 @@
 <gate name="-2" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="B2B-XH-A">
+<device name="B" package="B2B-XH-A">
 <connects>
 <connect gate="-1" pin="P" pad="1"/>
 <connect gate="-2" pin="P" pad="2"/>
@@ -320,6 +341,18 @@
 <technology name="">
 <attribute name="MF" value="JST"/>
 <attribute name="MPN" value="B2B-XH-A"/>
+</technology>
+</technologies>
+</device>
+<device name="S" package="S2B-XH-A">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-2" pin="P" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFN" value="S2B-XH-A"/>
+<attribute name="MP" value="JST"/>
 </technology>
 </technologies>
 </device>
