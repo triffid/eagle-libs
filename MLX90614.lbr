@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="CC">
+<circle x="0" y="0" radius="4.56" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.539996875" drill="0.6"/>
+<pad name="2" x="-2.539996875" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.539996875" drill="0.6"/>
+<pad name="4" x="2.539996875" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="5.2" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="5.1" width="0.127" layer="21"/>
+</package>
+<package name="AA">
+<circle x="0" y="0" radius="4.56" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.54" drill="0.6"/>
+<pad name="2" x="-2.54" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.54" drill="0.6"/>
+<pad name="4" x="2.54" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.6" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.8" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="51"/>
+</package>
+<package name="CF">
+<circle x="0" y="0" radius="4.06" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.539996875" drill="0.6"/>
+<pad name="2" x="-2.539996875" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.539996875" drill="0.6"/>
+<pad name="4" x="2.539996875" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.6" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="4.56" width="0.127" layer="21"/>
+</package>
+<package name="CH">
+<circle x="0" y="0" radius="4.1" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.539996875" drill="0.6"/>
+<pad name="2" x="-2.539996875" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.539996875" drill="0.6"/>
+<pad name="4" x="2.539996875" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.6" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.75" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="4.575" width="0.127" layer="21"/>
+</package>
+<package name="CI">
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.539996875" drill="0.6"/>
+<pad name="2" x="-2.539996875" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.539996875" drill="0.6"/>
+<pad name="4" x="2.539996875" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.6" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="4.575" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="21"/>
+</package>
+<package name="CK">
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.539996875" drill="0.6"/>
+<pad name="2" x="-2.539996875" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.539996875" drill="0.6"/>
+<pad name="4" x="2.539996875" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.7" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="4.65" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.3" width="0.127" layer="21"/>
+</package>
+<package name="BA">
+<circle x="0" y="0" radius="4.56" width="0.127" layer="21"/>
+<wire x1="2.8991375" y1="3.464821875" x2="3.60624375" y2="4.171928125" width="0.127" layer="21"/>
+<wire x1="3.60624375" y1="4.171928125" x2="4.171928125" y2="3.60624375" width="0.127" layer="21"/>
+<wire x1="4.171928125" y1="3.60624375" x2="3.464821875" y2="2.8991375" width="0.127" layer="21"/>
+<pad name="1" x="0" y="2.539996875" drill="0.6"/>
+<pad name="2" x="-2.539996875" y="0" drill="0.6"/>
+<pad name="3" x="0" y="-2.539996875" drill="0.6"/>
+<pad name="4" x="2.539996875" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="4.6" width="0.127" layer="39"/>
+<rectangle x1="2.998921875" y1="3.123921875" x2="4.248921875" y2="4.123921875" layer="39" rot="R45"/>
+<text x="0" y="5.49999375" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R45" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.8" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MLX90614">
+<pin name="VCC" x="0" y="10.16" length="short" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-10.16" length="short" direction="pwr" rot="R90"/>
+<pin name="SDA" x="-10.16" y="2.54" length="short" direction="oc"/>
+<pin name="SCL" x="-10.16" y="0" length="short" direction="in"/>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="3.81" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="0.635" width="0.254" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="4.445" y2="1.905" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="4.445" y2="3.175" width="0.254" layer="94" curve="-90"/>
+<wire x1="4.445" y1="3.175" x2="4.7625" y2="3.81" width="0.254" layer="94" curve="-63.434949"/>
+<wire x1="4.7625" y1="3.81" x2="5.08" y2="4.7625" width="0.254" layer="94" curve="74.931512"/>
+<wire x1="5.08" y1="4.7625" x2="5.08" y2="2.54" width="0.254" layer="94" curve="-82.37185"/>
+<text x="2.54" y="10.16" size="1.778" layer="95" font="vector" ratio="15" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-10.16" size="1.778" layer="96" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MLX90614ESF-*?-000-TU" prefix="IC">
+<gates>
+<gate name="G$1" symbol="MLX90614" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CC" package="CC">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-ACC-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BCC-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DCC-000-TU"/>
+</technology>
+</technologies>
+</device>
+<device name="AA" package="AA">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-AAA-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BAA-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DAA-000-TU"/>
+</technology>
+</technologies>
+</device>
+<device name="BA" package="BA">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-ABA-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BBA-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DBA-000-TU"/>
+</technology>
+</technologies>
+</device>
+<device name="CF" package="CF">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-ACF-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BCF-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DCF-000-TU"/>
+</technology>
+</technologies>
+</device>
+<device name="CH" package="CH">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-ACH-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BCH-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DCH-000-TU"/>
+</technology>
+</technologies>
+</device>
+<device name="CI" package="CI">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-ACI-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BCI-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DCI-000-TU"/>
+</technology>
+</technologies>
+</device>
+<device name="CK" package="CK">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-ACK-000-TU"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-BCK-000-TU"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="MELEXIS"/>
+<attribute name="MPN" value="MLX90614ESF-DCK-000-TU"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MLX90614KSF-*?-000-TU" prefix="IC">
+<gates>
+<gate name="G$1" symbol="MLX90614" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CC" package="CC">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A">
+<attribute name="MF" value="" constant="no"/>
+</technology>
+<technology name="B">
+<attribute name="MF" value="" constant="no"/>
+</technology>
+<technology name="D">
+<attribute name="MF" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="AA" package="AA">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A"/>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+<device name="BA" package="BA">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A"/>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+<device name="CF" package="CF">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A"/>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+<device name="CH" package="CH">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A"/>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+<device name="CI" package="CI">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A"/>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+<device name="CK" package="CK">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="A"/>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
