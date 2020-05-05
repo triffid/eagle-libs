@@ -111,6 +111,24 @@
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-2" y1="-1.75" x2="2" y2="1.75" layer="39"/>
 </package>
+<package name="HC49US-SMD">
+<smd name="1" x="-4.75" y="0" dx="5.5" dy="2" layer="1"/>
+<smd name="2" x="4.75" y="0" dx="5.5" dy="2" layer="1"/>
+<wire x1="-5.75" y1="2.5" x2="5.75" y2="2.5" width="0.127" layer="21"/>
+<wire x1="5.75" y1="2.5" x2="5.75" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-2.5" x2="-5.75" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-2.5" x2="-5.75" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="2" x2="5" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="5" y1="0" x2="3" y2="-2" width="0.127" layer="51" curve="-90"/>
+<wire x1="3" y1="-2" x2="-3" y2="-2" width="0.127" layer="51"/>
+<wire x1="-3" y1="-2" x2="-5" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="-5" y1="0" x2="-3" y2="2" width="0.127" layer="51" curve="-90"/>
+<wire x1="-3" y1="2" x2="3" y2="2" width="0.127" layer="51"/>
+<rectangle x1="-5.75" y1="-2.5" x2="5.75" y2="2.5" layer="39"/>
+<text x="0" y="3" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<smd name="GND" x="0" y="0" dx="0.25" dy="0.25" layer="1" stop="no" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TCXO">
@@ -239,11 +257,21 @@
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SMD3225_NP">
+<device name="SMD3225" package="SMD3225_NP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HC49US-SMD" package="HC49US-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
