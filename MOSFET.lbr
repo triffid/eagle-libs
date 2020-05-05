@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -154,7 +154,7 @@ TS-003</description>
 <wire x1="1.4478" y1="0.381" x2="1.4478" y2="-0.381" width="0.1524" layer="21"/>
 <smd name="G" x="-0.9652" y="-1.016" dx="0.7874" dy="0.889" layer="1" rot="R180"/>
 <smd name="S" x="0.9652" y="-1.016" dx="0.7874" dy="0.889" layer="1" rot="R180"/>
-<smd name="D" x="0" y="1.016" dx="0.7874" dy="0.889" layer="1" rot="R180"/>
+<smd name="D" x="0" y="1.016" dx="0.7874" dy="0.889" layer="1" rot="R180" thermals="no"/>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
 <text x="0" y="-2" size="0.6" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
 <rectangle x1="-1.143" y1="-0.9398" x2="-0.762" y2="-0.4318" layer="51" rot="R180"/>
@@ -229,6 +229,45 @@ TS-003</description>
 <wire x1="-3.5" y1="2" x2="-5.75" y2="3" width="0.127" layer="51"/>
 <wire x1="-5.75" y1="3" x2="-5.75" y2="1" width="0.127" layer="51"/>
 <wire x1="-5.75" y1="1" x2="-3.5" y2="2" width="0.127" layer="51"/>
+</package>
+<package name="D2PAK-TO263AB">
+<smd name="2" x="0" y="1.5" dx="10.4" dy="7" layer="1" thermals="no" cream="no"/>
+<smd name="1" x="-2.54" y="-9.25" dx="1.1" dy="3.5" layer="1"/>
+<smd name="3" x="2.54" y="-9.25" dx="1.1" dy="3.5" layer="1" thermals="no"/>
+<rectangle x1="-2.5" y1="1.5" x2="-0.25" y2="4.25" layer="31"/>
+<rectangle x1="0.25" y1="1.5" x2="2.5" y2="4.25" layer="31"/>
+<rectangle x1="0.25" y1="-1.75" x2="2.5" y2="1" layer="31"/>
+<rectangle x1="-2.5" y1="-1.75" x2="-0.25" y2="1" layer="31"/>
+<rectangle x1="-5" y1="-1.75" x2="-3" y2="1" layer="31"/>
+<rectangle x1="-5" y1="1.5" x2="-3" y2="4.25" layer="31"/>
+<rectangle x1="3" y1="1.5" x2="5" y2="4.25" layer="31"/>
+<rectangle x1="3" y1="-1.75" x2="5" y2="1" layer="31"/>
+<wire x1="-5" y1="-5.5" x2="-3" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-5.5" x2="-2" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-5.5" x2="-0.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-5.5" x2="0.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-5.5" x2="2" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-5.5" x2="3" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-5.5" x2="5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-5.5" x2="5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="5" y1="3.5" x2="5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="5" y1="4.5" x2="4" y2="5" width="0.127" layer="21"/>
+<wire x1="4" y1="5" x2="-4" y2="5" width="0.127" layer="21"/>
+<wire x1="-4" y1="5" x2="-5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="4.5" x2="-5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="3.5" x2="-5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="3.5" x2="5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-5.5" x2="-0.5" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-6.5" x2="0.5" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-6.5" x2="0.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-5.5" x2="-3" y2="-10.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="-10.25" x2="-2" y2="-10.25" width="0.127" layer="21"/>
+<wire x1="-2" y1="-10.25" x2="-2" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-5.5" x2="2" y2="-10.25" width="0.127" layer="21"/>
+<wire x1="2" y1="-10.25" x2="3" y2="-10.25" width="0.127" layer="21"/>
+<wire x1="3" y1="-10.25" x2="3" y2="-5.5" width="0.127" layer="21"/>
+<text x="0" y="-7" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="1.25" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -434,6 +473,16 @@ TS-003</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-D2PAK" package="D2PAK-TO263AB">
+<connects>
+<connect gate="A" pin="D" pad="2"/>
+<connect gate="A" pin="G" pad="1"/>
+<connect gate="A" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PMOS" prefix="Q" uservalue="yes">
@@ -487,6 +536,16 @@ TS-003</description>
 <connect gate="A" pin="D" pad="5 6 7 8 PAD"/>
 <connect gate="A" pin="G" pad="4"/>
 <connect gate="A" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-D2PAK" package="D2PAK-TO263AB">
+<connects>
+<connect gate="A" pin="D" pad="2"/>
+<connect gate="A" pin="G" pad="1"/>
+<connect gate="A" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
