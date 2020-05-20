@@ -277,6 +277,24 @@ Metric Code Size 2012</description>
 <text x="0" y="12" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
 </package>
+<package name="ASPI-4030S">
+<smd name="1" x="-1.5" y="0" dx="1.1" dy="3.4" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1.1" dy="3.4" layer="1"/>
+<wire x1="-2" y1="1.75" x2="-1.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="1.75" x2="-1" y2="2" width="0.127" layer="21"/>
+<wire x1="-1" y1="2" x2="1" y2="2" width="0.127" layer="21"/>
+<wire x1="1" y1="2" x2="1.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.75" x2="2" y2="1.75" width="0.127" layer="21"/>
+<wire x1="2" y1="1.75" x2="2" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.75" x2="1.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.75" x2="1" y2="-2" width="0.127" layer="21"/>
+<wire x1="1" y1="-2" x2="-1" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2" x2="-1.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.75" x2="-2" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.75" x2="-2" y2="1.75" width="0.127" layer="21"/>
+<text x="0" y="2.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L-US">
@@ -301,7 +319,7 @@ Metric Code Size 2012</description>
 <gate name="G$1" symbol="L-US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="L4020">
+<device name="L4020" package="L4020">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -395,6 +413,15 @@ Metric Code Size 2012</description>
 </technologies>
 </device>
 <device name="7443558" package="WE2212">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L4030" package="ASPI-4030S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
