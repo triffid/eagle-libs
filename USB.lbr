@@ -23,42 +23,42 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -158,33 +158,49 @@ Based on the datasheets for the following products.&lt;br&gt;
 <smd name="B10" x="-1.75" y="2.47" dx="0.3" dy="0.7" layer="1"/>
 <smd name="B11" x="-2.25" y="2.47" dx="0.31" dy="0.7" layer="1"/>
 <smd name="B12" x="-3.1" y="2.47" dx="1" dy="0.7" layer="1"/>
-<rectangle x1="-3.5" y1="-3.77" x2="3.5" y2="1.88" layer="39"/>
+<rectangle x1="-5" y1="-4" x2="5" y2="4.5" layer="39"/>
 <text x="0" y="5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<wire x1="4.02" y1="-1.25" x2="4.32" y2="-0.95" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="-0.95" x2="4.62" y2="-1.25" width="0" layer="46" curve="-90"/>
-<wire x1="4.62" y1="-1.25" x2="4.62" y2="-2.75" width="0" layer="46"/>
-<wire x1="4.62" y1="-2.75" x2="4.32" y2="-3.05" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="-3.05" x2="4.02" y2="-2.75" width="0" layer="46" curve="-90"/>
-<wire x1="4.02" y1="-2.75" x2="4.02" y2="-1.25" width="0" layer="46"/>
-<wire x1="-4.62" y1="3.96" x2="-4.32" y2="4.26" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="4.26" x2="-4.02" y2="3.96" width="0" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="3.96" x2="-4.02" y2="2.76" width="0" layer="46"/>
+<wire x1="4.02" y1="-1.45" x2="4.32" y2="-1.15" width="0" layer="46" curve="-90"/>
+<wire x1="4.32" y1="-1.15" x2="4.62" y2="-1.45" width="0" layer="46" curve="-90"/>
+<wire x1="4.62" y1="-1.45" x2="4.62" y2="-2.55" width="0" layer="46"/>
+<wire x1="4.62" y1="-2.55" x2="4.32" y2="-2.85" width="0" layer="46" curve="-90"/>
+<wire x1="4.32" y1="-2.85" x2="4.02" y2="-2.55" width="0" layer="46" curve="-90"/>
+<wire x1="4.02" y1="-2.55" x2="4.02" y2="-1.45" width="0" layer="46"/>
+<wire x1="-4.62" y1="3.91" x2="-4.32" y2="4.21" width="0" layer="46" curve="-90"/>
+<wire x1="-4.32" y1="4.21" x2="-4.02" y2="3.91" width="0" layer="46" curve="-90"/>
+<wire x1="-4.02" y1="3.91" x2="-4.02" y2="2.76" width="0" layer="46"/>
 <wire x1="-4.02" y1="2.76" x2="-4.32" y2="2.46" width="0" layer="46" curve="-90"/>
 <wire x1="-4.32" y1="2.46" x2="-4.62" y2="2.76" width="0" layer="46" curve="-90"/>
-<wire x1="-4.62" y1="2.76" x2="-4.62" y2="3.96" width="0" layer="46"/>
-<wire x1="4.02" y1="3.96" x2="4.32" y2="4.26" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="4.26" x2="4.62" y2="3.96" width="0" layer="46" curve="-90"/>
-<wire x1="4.62" y1="3.96" x2="4.62" y2="2.76" width="0" layer="46"/>
-<wire x1="4.62" y1="2.76" x2="4.32" y2="2.46" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="2.46" x2="4.02" y2="2.76" width="0" layer="46" curve="-90"/>
-<wire x1="4.02" y1="2.76" x2="4.02" y2="3.96" width="0" layer="46"/>
-<wire x1="-4.62" y1="-1.25" x2="-4.32" y2="-0.95" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="-0.95" x2="-4.02" y2="-1.25" width="0" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="-1.25" x2="-4.02" y2="-2.75" width="0" layer="46"/>
-<wire x1="-4.02" y1="-2.75" x2="-4.32" y2="-3.05" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="-3.05" x2="-4.62" y2="-2.75" width="0" layer="46" curve="-90"/>
-<wire x1="-4.62" y1="-2.75" x2="-4.62" y2="-1.25" width="0" layer="46"/>
+<wire x1="-4.62" y1="2.76" x2="-4.62" y2="3.91" width="0" layer="46"/>
+<wire x1="4.02" y1="3.91" x2="4.32" y2="4.21" width="0" layer="46" curve="-90"/>
+<wire x1="4.32" y1="4.21" x2="4.62" y2="3.91" width="0" layer="46" curve="-90"/>
+<wire x1="4.62" y1="3.91" x2="4.62" y2="2.81" width="0" layer="46"/>
+<wire x1="4.62" y1="2.81" x2="4.32" y2="2.51" width="0" layer="46" curve="-90"/>
+<wire x1="4.32" y1="2.51" x2="4.02" y2="2.81" width="0" layer="46" curve="-90"/>
+<wire x1="4.02" y1="2.81" x2="4.02" y2="3.91" width="0" layer="46"/>
+<wire x1="-4.62" y1="-1.45" x2="-4.32" y2="-1.15" width="0" layer="46" curve="-90"/>
+<wire x1="-4.32" y1="-1.15" x2="-4.02" y2="-1.45" width="0" layer="46" curve="-90"/>
+<wire x1="-4.02" y1="-1.45" x2="-4.02" y2="-2.55" width="0" layer="46"/>
+<wire x1="-4.02" y1="-2.55" x2="-4.32" y2="-2.85" width="0" layer="46" curve="-90"/>
+<wire x1="-4.32" y1="-2.85" x2="-4.62" y2="-2.55" width="0" layer="46" curve="-90"/>
+<wire x1="-4.62" y1="-2.55" x2="-4.62" y2="-1.45" width="0" layer="46"/>
+<pad name="M2A" x="-4.32" y="3.91" drill="0.6" diameter="1.1"/>
+<pad name="M2B" x="-4.32" y="2.81" drill="0.6" diameter="1.1"/>
+<pad name="M2C" x="-4.32" y="3.64" drill="0.6" diameter="1.1"/>
+<pad name="M2D" x="-4.32" y="3.09" drill="0.6" diameter="1.1"/>
+<pad name="M3A" x="-4.32" y="-1.45" drill="0.6" diameter="1.1"/>
+<pad name="M3B" x="-4.32" y="-1.72" drill="0.6" diameter="1.1"/>
+<pad name="M3D" x="-4.32" y="-2.55" drill="0.6" diameter="1.1"/>
+<pad name="M3C" x="-4.32" y="-2.27" drill="0.6" diameter="1.1"/>
+<pad name="M1A" x="4.32" y="3.91" drill="0.6" diameter="1.1"/>
+<pad name="M1D" x="4.32" y="2.81" drill="0.6" diameter="1.1"/>
+<pad name="M1C" x="4.32" y="3.09" drill="0.6" diameter="1.1"/>
+<pad name="M1B" x="4.32" y="3.64" drill="0.6" diameter="1.1"/>
+<pad name="M4A" x="4.32" y="-1.45" drill="0.6" diameter="1.1"/>
+<pad name="M4D" x="4.32" y="-2.55" drill="0.6" diameter="1.1"/>
+<pad name="M4C" x="4.32" y="-2.27" drill="0.6" diameter="1.1"/>
+<pad name="M4B" x="4.32" y="-1.72" drill="0.6" diameter="1.1"/>
 </package>
 <package name="BERG-PN61729-S">
 <description>&lt;b&gt;USB connector&lt;/b&gt; with shield&lt;p&gt;</description>
@@ -398,7 +414,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="A" pin="RX2_P" pad="A11"/>
 <connect gate="A" pin="SBU1" pad="A8"/>
 <connect gate="A" pin="SBU2" pad="B8"/>
-<connect gate="A" pin="SHLD" pad="M1 M2 M3 M4"/>
+<connect gate="A" pin="SHLD" pad="M1 M1A M1B M1C M1D M2 M2A M2B M2C M2D M3 M3A M3B M3C M3D M4 M4A M4B M4C M4D"/>
 <connect gate="A" pin="TX1_N" pad="A3"/>
 <connect gate="A" pin="TX1_P" pad="A2"/>
 <connect gate="A" pin="TX2_N" pad="B3"/>
