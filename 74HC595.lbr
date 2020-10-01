@@ -177,7 +177,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="74HC595" prefix="IC">
+<deviceset name="74*595?" prefix="IC">
 <gates>
 <gate name="G$1" symbol="74HC595" x="0" y="0"/>
 </gates>
@@ -203,6 +203,14 @@
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="AHC"/>
+<technology name="AHCT"/>
+<technology name="ALVC"/>
+<technology name="HC"/>
+<technology name="HCT"/>
+<technology name="LV"/>
+<technology name="LVC"/>
+<technology name="LVT"/>
 </technologies>
 </device>
 <device name="PW" package="TSSOP-16">
@@ -226,6 +234,14 @@
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="AHC"/>
+<technology name="AHCT"/>
+<technology name="ALVC"/>
+<technology name="HC"/>
+<technology name="HCT"/>
+<technology name="LV"/>
+<technology name="LVC"/>
+<technology name="LVT"/>
 </technologies>
 </device>
 </devices>
