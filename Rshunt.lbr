@@ -9,20 +9,20 @@
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -36,25 +36,25 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -110,6 +110,25 @@
 <smd name="B1" x="2.2" y="0.8" dx="1.8" dy="1.1" layer="1" thermals="no"/>
 <smd name="B2" x="2.2" y="-0.8" dx="1.8" dy="1.1" layer="1" thermals="no"/>
 </package>
+<package name="R1210">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.762" y1="1.245" x2="0.762" y2="1.245" width="0.1524" layer="51"/>
+<wire x1="-0.737" y1="-1.245" x2="0.787" y2="-1.245" width="0.1524" layer="51"/>
+<wire x1="-2.573" y1="1.483" x2="2.573" y2="1.483" width="0.0508" layer="39"/>
+<wire x1="2.573" y1="1.483" x2="2.573" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="2.573" y1="-1.483" x2="-2.573" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="-2.573" y1="-1.483" x2="-2.573" y2="1.483" width="0.0508" layer="39"/>
+<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-1.5892" y1="-1.3208" x2="-0.7393" y2="1.3292" layer="51"/>
+<rectangle x1="0.751" y1="-1.3208" x2="1.6009" y2="1.3292" layer="51"/>
+<smd name="ASENSE" x="-1.55" y="0" dx="1.8" dy="0.2" layer="1"/>
+<smd name="A1" x="-1.55" y="0.8" dx="1.8" dy="1.05" layer="1" thermals="no"/>
+<smd name="A2" x="-1.55" y="-0.8" dx="1.8" dy="1.05" layer="1" thermals="no"/>
+<smd name="BSENSE" x="1.55" y="0" dx="1.8" dy="0.2" layer="1"/>
+<smd name="B1" x="1.55" y="0.8" dx="1.8" dy="1.05" layer="1" thermals="no"/>
+<smd name="B2" x="1.55" y="-0.8" dx="1.8" dy="1.05" layer="1" thermals="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-EU">
@@ -151,6 +170,17 @@
 </technologies>
 </device>
 <device name="2010" package="R2010">
+<connects>
+<connect gate="G$1" pin="1" pad="A1 A2"/>
+<connect gate="G$1" pin="1S" pad="ASENSE"/>
+<connect gate="G$1" pin="2" pad="B1 B2"/>
+<connect gate="G$1" pin="2S" pad="BSENSE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="R1210" package="R1210">
 <connects>
 <connect gate="G$1" pin="1" pad="A1 A2"/>
 <connect gate="G$1" pin="1S" pad="ASENSE"/>
