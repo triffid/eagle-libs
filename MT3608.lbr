@@ -127,7 +127,10 @@
 <connect gate="A" pin="VIN" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Monolithic Power"/>
+<attribute name="MPN" value="MT3608"/>
+</technology>
 </technologies>
 </device>
 </devices>
