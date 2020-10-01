@@ -847,7 +847,7 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <gate name="A" symbol="SRV05-4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-6">
+<device name="MR6T1G" package="SOT23-6">
 <connects>
 <connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="IO1" pad="1"/>
@@ -857,7 +857,45 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <connect gate="A" pin="VCC" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MARK" value="63"/>
+<attribute name="MF" value="ON Semiconductor"/>
+<attribute name="MPN" value="SRV05-4MR6T1G"/>
+</technology>
+</technologies>
+</device>
+<device name="HTG" package="SOT23-6">
+<connects>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="IO1" pad="1"/>
+<connect gate="A" pin="IO2" pad="3"/>
+<connect gate="A" pin="IO3" pad="4"/>
+<connect gate="A" pin="IO4" pad="6"/>
+<connect gate="A" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MARK" value="L*4"/>
+<attribute name="MF" value="LITTELFUSE"/>
+<attribute name="MPN" value="SRV05-4HTG"/>
+</technology>
+</technologies>
+</device>
+<device name="-N" package="SOT23-6">
+<connects>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="IO1" pad="1"/>
+<connect gate="A" pin="IO2" pad="3"/>
+<connect gate="A" pin="IO3" pad="4"/>
+<connect gate="A" pin="IO4" pad="6"/>
+<connect gate="A" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MARK" value="V5L"/>
+<attribute name="MF" value="BORN"/>
+<attribute name="MPN" value="SRV05-4-N"/>
+</technology>
 </technologies>
 </device>
 </devices>
