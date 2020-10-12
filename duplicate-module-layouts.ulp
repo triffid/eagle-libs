@@ -1,0 +1,203 @@
+#usage "Select module parts, wires, and polygons to be copied to other instances of the same module, then run this script"
+
+string strrep(string result, string toreplace, string replacement) {
+	int i = 0;
+	if (strlen(toreplace) <= 0)
+		return result;
+	while (strstr(result, toreplace, i) >= 0) {
+		int j = strstr(result, toreplace, i);
+		result = strsub(result, 0, j) + replacement + strsub(result, j + strlen(toreplace));
+		i = j + strlen(replacement);
+		if (i >= strlen(result))
+			return result;
+	}
+	return result;
+}
+
+output("test.txt") {
+	if (schematic) {
+		if (argc >= 2) {
+			real spacing = 100.0;
+			dlgDialog("Enter module spacing") {
+				dlgHBoxLayout {
+					dlgLabel("Module spacing distance (mm)");
+					dlgRealEdit(spacing, 1, 500);
+				}
+			};
+			string parts[] = { "Name;Instance" };
+			int nparts = 1;
+			string moduleoffsets[] = { "Module;Offset" };
+			int nmoduleoffsets = 1;
+			string locs[];
+			int origoffset;
+			string modulebase;
+			string modulename;
+			schematic(SCH){
+				SCH.sheets(S) {
+					S.moduleinsts(M) {
+						printf("Found Module Instance %s offset %d\n", M.name, M.offset);
+						sprintf(moduleoffsets[nmoduleoffsets++], "%s;%d", M.name, M.offset);
+					}
+				}
+				SCH.allparts(P) {
+					if (P.module) {
+						if (lookup(argv, P.name, 0)) {
+							printf("Part %s: module %s modulepart %s modulepath %s\n", P.name, P.module.name, P.modulepart.name, P.modulepath);
+							sprintf(parts[nparts++], "%s;%s", P.modulepart.name, P.name);
+							if (modulebase)
+								if (modulebase != P.module.name) {
+									dlgMessageBox("Please only select parts from one module at a time!");
+									exit(1);
+								}
+							modulebase = P.module.name;
+							modulename = P.modulepath;
+							origoffset = strtol(lookup(moduleoffsets, modulename, 1, ';'));
+// 							P.modulepart.instances(J) {
+// 								printf("Instance %s/%s module %s modulepath %s\n", J.name, J.part.name, J.part.module.name, J.part.modulepath);
+// 							}
+						}
+					}
+				}
+				if (nparts > 1) {
+					int i;
+					printf("Module parts (%s): ", modulebase);
+					for (i = 1; i < nparts; i++)
+						printf("%s, ", parts[i]);
+					printf("\n");
+					fileread(locs, filesetext(SCH.name, ".tmp"));
+					output(filesetext(SCH.name, ".scr"), "wtD");
+					SCH.allparts(P) {
+						if (P.module) {
+							if (P.module.name == modulebase) {
+								string str = lookup(parts, P.modulepart.name, 1, ';');
+								if (str) {
+									int offs = strtol(lookup(moduleoffsets, P.modulepath, 1, ';')) - origoffset;
+									printf("Part %s: module %s modulepart %s modulepath %s (%s) offset %d pos %g %g newpos %g %g\n", P.name, P.module.name, P.modulepart.name, P.modulepath, str, offs, strtod(lookup(locs, str, 1, ';')), strtod(lookup(locs, str, 2, ';')), strtod(lookup(locs, str, 1, ';')) + offs, strtod(lookup(locs, str, 2, ';')));
+									if (offs != 0) {
+										real x = offs * spacing / 100.0;
+										real y = 0;
+										if (x >= 900) {
+											y += (spacing * int(x / 900));
+											x -= (900 * int(x / 900));
+										}
+										string mirr = "=R";
+										if (lookup(locs, str, 4, ';') == "1")
+											mirr = "=MR";
+										output(filesetext(SCH.name, ".scr"), "atD")
+											printf("MARK (%gmm %gmm); MOVE %s (CR %smm %smm); ROTATE %s '%s';\n",
+												x, y,
+												P.name, lookup(locs, str, 1, ';'), lookup(locs, str, 2, ';'),
+												mirr + lookup(locs, str, 4, ';'), P.name
+											);
+									}
+								}
+							}
+						}
+					}
+					output(filesetext(SCH.name, ".scr"), "atD")
+						printf("MARK;\n");
+
+					string repscr[];
+					int nrepscr = fileread(repscr, filesetext(SCH.name, ".repscr"));
+					SCH.sheets(S) {
+						S.moduleinsts(M) {
+							if (M.module.name == modulebase) {
+								int offs = M.offset - origoffset;
+								if (offs != 0) {
+									printf("Found Module Instance %s (module %s) offset %d\n", M.name, M.module.name, offs);
+									real x = offs * spacing / 100.0;
+									real y = 0;
+									if (x >= 900) {
+										y += (spacing * int(x / 900));
+										x -= (900 * int(x / 900));
+									}
+									for (i = 0; i < nrepscr; i++) {
+// 										string sr = strrep(repscr[i], modulename, M.name);
+										string sr = repscr[i];
+										if (strstr(sr, modulename)) {
+											printf("%s -> %s: %s\n", modulename, M.name, sr);
+											sr = strrep(sr, modulename + ":", M.name + ":");
+										}
+										output(filesetext(SCH.name, ".scr"), "atD")
+										printf("MARK (%gmm %gmm); %s\n", x, y, sr);
+									}
+								}
+							}
+						}
+					}
+				}
+				exit("edit .brd; script " + filesetext(SCH.name, ".scr") + ";");
+			}
+		}
+		else {
+			schematic(SCH){
+				SCH.allparts(P) {
+					if (P.module) {
+						if (ingroup(P))
+							printf("Part %s: module %s modulepart %s modulepath %s\n", P.name, P.module.name, P.modulepart.name, P.modulepath);
+					}
+				}
+			}
+		}
+	}
+	else if (board) {
+		string VIA_SHAPES[] = { "Square", "Round", "Octagon" };
+		board(B) {
+			string en;
+// 			printf("# Area: (%f %f), (%f %f)\n", u2mm(B.area.x1), u2mm(B.area.y1), u2mm(B.area.x2), u2mm(B.area.y2));
+			output(filesetext(B.name, ".tmp"), "wtD")
+				printf("Name;X;Y;Mirror;Angle\n");
+			B.elements(E) {
+				if (ingroup(E)) {
+					en += " " + E.name;
+					printf("%s;%g;%g;%d;%g\n", E.name, u2mm(E.x), u2mm(E.y), E.mirror, E.angle);
+					output(filesetext(B.name, ".tmp"), "atD")
+						printf("%s;%g;%g;%d;%g\n", E.name, u2mm(E.x), u2mm(E.y), E.mirror, E.angle);
+				}
+			}
+			output(filesetext(B.name, ".repscr"), "wtD") {
+				B.signals(S) {
+	// 				printf("Signal %s\n", S.name);
+					S.wires(W) {
+						if (ingroup(W))
+							if (W.layer <= 16)
+								if (W.width > 0)
+									if (W.arc) {
+										printf("Layer %d; Wire '%s' %gmm (R %g %g) @%+g  (R %g %g);\n", W.layer, S.name, u2mm(W.width), u2mm(W.arc.x1), u2mm(W.arc.y1), u2mm(W.arc.radius), u2mm(W.arc.x2), u2mm(W.arc.y2));
+									}
+									else {
+										printf("Layer %d; Wire '%s' %gmm (R %g %g) (R %g %g);\n", W.layer, S.name, u2mm(W.width), u2mm(W.x1), u2mm(W.y1), u2mm(W.x2), u2mm(W.y2));
+									}
+					}
+					S.vias(V) {
+						if (ingroup(V))
+							printf("Via '%s' %gmm %s (R %g %g);\n", S.name, u2mm(V.drill), VIA_SHAPES[V.shape[LAYER_VIAS]], u2mm(V.x), u2mm(V.y));
+					}
+					S.polygons(P) {
+						if (ingroup(P)) {
+							if (P.layer <= 16) {
+								if (P.width > 0) {
+									int first = 0;
+									printf("Layer %d; Polygon '%s' %gmm ", P.layer, S.name, u2mm(P.width));
+									P.wires(W) {
+										if (first == 0) {
+											printf("(R %g %g) ", u2mm(W.x1), u2mm(W.y1));
+											first = 1;
+										}
+										printf("(R %g %g)", u2mm(W.x2), u2mm(W.y2));
+									}
+									printf(";\n");
+								}
+							}
+						}
+					}
+				}
+			}
+			if (en) {
+				exit("edit .sch; run test.ulp" + en);
+			}
+		}
+
+// 		dlgMessageBox("Please select a module part", "&OK");
+	}
+}
