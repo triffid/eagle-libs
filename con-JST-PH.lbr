@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -331,6 +331,7 @@
 <wire x1="1.25" y1="7" x2="1.25" y2="3" width="0.025" layer="21" style="dashdot"/>
 <text x="0" y="-8" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <wire x1="-3.95" y1="-4.5" x2="3.95" y2="-4.5" width="0.127" layer="25" style="dashdot"/>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="S6B-PH-SM4-TB">
 <description>JST-PH (2mm) 6-pin surface-mount right-angle Wire-Board connector</description>

@@ -62,7 +62,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,61 +71,74 @@
 </layers>
 <library>
 <packages>
-<package name="1241152-4">
-<smd name="1" x="-3.81" y="1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="2" x="-1.27" y="-1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="3" x="1.27" y="1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="4" x="3.81" y="-1.75" dx="1.5" dy="2.3" layer="1"/>
-<wire x1="-5.21" y1="1.27" x2="5.21" y2="1.27" width="0.127" layer="21"/>
-<wire x1="5.21" y1="1.27" x2="5.21" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.21" y1="-1.27" x2="-5.21" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-5.21" y1="-1.27" x2="-5.21" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-4.28625" y1="0.47625" x2="-3.33375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-3.33375" y1="0.47625" x2="-3.33375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-3.33375" y1="-0.47625" x2="-4.28625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-4.28625" y1="-0.47625" x2="-4.28625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-1.74625" y1="0.47625" x2="-0.79375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-0.79375" y1="0.47625" x2="-0.79375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-0.79375" y1="-0.47625" x2="-1.74625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-1.74625" y1="-0.47625" x2="-1.74625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="0.79375" y1="0.47625" x2="1.74625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="1.74625" y1="0.47625" x2="1.74625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="1.74625" y1="-0.47625" x2="0.79375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="0.79375" y1="-0.47625" x2="0.79375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="3.33375" y1="0.47625" x2="4.28625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="4.28625" y1="0.47625" x2="4.28625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="4.28625" y1="-0.47625" x2="3.33375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="3.33375" y1="-0.47625" x2="3.33375" y2="0.47625" width="0.127" layer="21"/>
-<circle x="-5.25" y="2" radius="0.25" width="0.127" layer="21"/>
-<text x="-6" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
-<text x="6" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<package name="51281-0694">
+<smd name="1" x="-1.25" y="2.3" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="2" x="-0.75" y="2.3" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="3" x="-0.25" y="2.3" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="4" x="0.25" y="2.3" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="5" x="0.75" y="2.3" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="6" x="1.25" y="2.3" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="M1" x="-2.15" y="0" dx="0.6" dy="2.6" layer="1"/>
+<smd name="M2" x="2.15" y="0" dx="0.6" dy="2.6" layer="1" rot="R180"/>
+<wire x1="-2.5" y1="2.2" x2="-2.5" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.55" x2="2.5" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.55" x2="2.5" y2="2.2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.2" x2="1.75" y2="2.2" width="0.127" layer="21"/>
+<wire x1="1.75" y1="2.2" x2="1.75" y2="2" width="0.127" layer="21"/>
+<wire x1="1.75" y1="2" x2="-1.75" y2="2" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="2" x2="-1.75" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="2.2" x2="-2.5" y2="2.2" width="0.127" layer="21"/>
+<text x="0" y="4" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.75" y1="-2.25" x2="2.75" y2="2.75" layer="39"/>
+<rectangle x1="-1.75" y1="-7" x2="1.75" y2="-2.25" layer="39"/>
+<wire x1="-1.25" y1="2.75" x2="-1.5" y2="3.25" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="3.25" x2="-1" y2="3.25" width="0.127" layer="51"/>
+<wire x1="-1" y1="3.25" x2="-1.25" y2="2.75" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
 <symbol name="PIN">
-<pin name="P" x="-2.54" y="0" visible="pad" length="short" swaplevel="1"/>
-<text x="0" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<circle x="2.54" y="0" radius="1.27" width="0.254" layer="94"/>
+<pin name="P" x="0" y="0" visible="off" length="short" direction="pas"/>
+<text x="5.08" y="0" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+</symbol>
+<symbol name="MECHANICAL">
+<pin name="M" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="-1.5875" y1="-0.9525" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.5875" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0.9525" x2="1.5875" y2="2.2225" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.5875" y1="-0.9525" x2="-1.5875" y2="0.3175" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1241152-4" prefix="J">
-<description>TE 1241152 4-way SMD Female Header</description>
+<deviceset name="51281-0694" prefix="J">
 <gates>
-<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-1" symbol="PIN" x="0" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-M1" symbol="MECHANICAL" x="0" y="-10.16" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="1241152-4">
+<device name="" package="51281-0694">
 <connects>
 <connect gate="-1" pin="P" pad="1"/>
 <connect gate="-2" pin="P" pad="2"/>
 <connect gate="-3" pin="P" pad="3"/>
 <connect gate="-4" pin="P" pad="4"/>
+<connect gate="-5" pin="P" pad="5"/>
+<connect gate="-6" pin="P" pad="6"/>
+<connect gate="-M1" pin="M" pad="M1 M2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="MOLEX"/>
+<attribute name="MPN" value="51281-0694"/>
+</technology>
 </technologies>
 </device>
 </devices>

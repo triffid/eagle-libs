@@ -151,6 +151,7 @@
 </symbols>
 <devicesets>
 <deviceset name="TL431" prefix="IC">
+<description>&lt;h1&gt;Precision Shunt Regulator&lt;/h1&gt;</description>
 <gates>
 <gate name="G" symbol="ADJUSTABLE-SHUNT-REGULATOR" x="0" y="0"/>
 </gates>
@@ -162,15 +163,42 @@
 <connect gate="G" pin="REF" pad="3"/>
 </connects>
 <technologies>
-<technology name="AC"/>
-<technology name="AI"/>
-<technology name="AQ"/>
-<technology name="BC"/>
-<technology name="BI"/>
-<technology name="BQ"/>
-<technology name="C"/>
-<technology name="I"/>
-<technology name="Q"/>
+<technology name="AC">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431ACDCK"/>
+</technology>
+<technology name="AI">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431AIDCK"/>
+</technology>
+<technology name="AQ">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431AQDCK"/>
+</technology>
+<technology name="BC">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431BCDCK"/>
+</technology>
+<technology name="BI">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431BIDCK"/>
+</technology>
+<technology name="BQ">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431BQDCK"/>
+</technology>
+<technology name="C">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431CDCK"/>
+</technology>
+<technology name="I">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431IDCK"/>
+</technology>
+<technology name="Q">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431QDCK"/>
+</technology>
 </technologies>
 </device>
 <device name="DBZ" package="SOT-23">
@@ -180,15 +208,42 @@
 <connect gate="G" pin="REF" pad="2"/>
 </connects>
 <technologies>
-<technology name="AC"/>
-<technology name="AI"/>
-<technology name="AQ"/>
-<technology name="BC"/>
-<technology name="BI"/>
-<technology name="BQ"/>
-<technology name="C"/>
-<technology name="I"/>
-<technology name="Q"/>
+<technology name="AC">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431ACDBZ"/>
+</technology>
+<technology name="AI">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431AIDBZ"/>
+</technology>
+<technology name="AQ">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431AQDBZ"/>
+</technology>
+<technology name="BC">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431BCDBZ"/>
+</technology>
+<technology name="BI">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431BIDBZ"/>
+</technology>
+<technology name="BQ">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431BQDBZ"/>
+</technology>
+<technology name="C">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431CDBZ"/>
+</technology>
+<technology name="I">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431IDBZ"/>
+</technology>
+<technology name="Q">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TL431QDBZ"/>
+</technology>
 </technologies>
 </device>
 </devices>

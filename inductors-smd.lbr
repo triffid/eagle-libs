@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -159,6 +159,10 @@ Metric Code Size 1005</description>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.5" y1="-0.25" x2="-0.225" y2="0.25" layer="51"/>
 <rectangle x1="0.225" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+<wire x1="-1.08" y1="0.455" x2="1.08" y2="0.455" width="0.09" layer="39"/>
+<wire x1="1.08" y1="0.455" x2="1.08" y2="-0.455" width="0.09" layer="39"/>
+<wire x1="1.08" y1="-0.455" x2="-1.08" y2="-0.455" width="0.09" layer="39"/>
+<wire x1="-1.08" y1="-0.455" x2="-1.08" y2="0.455" width="0.09" layer="39"/>
 </package>
 <package name="0603-1608">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0603 reflow solder&lt;/b&gt;&lt;p&gt;
@@ -295,34 +299,73 @@ Metric Code Size 2012</description>
 <text x="0" y="2.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
+<package name="XAL60">
+<smd name="1" x="-2.02" y="0" dx="1.43" dy="5.5" layer="1"/>
+<smd name="2" x="2.02" y="0" dx="1.43" dy="5.5" layer="1"/>
+<wire x1="-3.18" y1="-3.28" x2="3.18" y2="-3.28" width="0.127" layer="21"/>
+<wire x1="3.18" y1="-3.28" x2="3.18" y2="3.28" width="0.127" layer="21"/>
+<wire x1="3.18" y1="3.28" x2="-3.18" y2="3.28" width="0.127" layer="21"/>
+<wire x1="-3.18" y1="3.28" x2="-3.18" y2="-3.28" width="0.127" layer="21"/>
+<rectangle x1="-1" y1="-1.5" x2="1" y2="1.5" layer="35"/>
+<text x="0" y="4" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="PA4344-17X17">
+<wire x1="-8.5" y1="8.5" x2="8.5" y2="8.5" width="0.127" layer="21"/>
+<wire x1="8.5" y1="8.5" x2="8.5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="8.5" y1="-8.5" x2="-8.5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="-8.5" x2="-8.5" y2="8.5" width="0.127" layer="21"/>
+<smd name="1" x="0" y="7.675" dx="12.5" dy="3.15" layer="1"/>
+<smd name="2" x="0" y="-7.675" dx="12.5" dy="3.15" layer="1" rot="R180"/>
+<rectangle x1="-9" y1="-9" x2="9" y2="9" layer="39"/>
+<rectangle x1="-3" y1="-1" x2="3" y2="1" layer="35"/>
+<rectangle x1="3" y1="-3" x2="5" y2="3" layer="35"/>
+<rectangle x1="-5" y1="-3" x2="-3" y2="3" layer="35"/>
+<text x="-10" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L-US">
-<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
-<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="-2.54" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="90"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="FB">
+<text x="-5.08" y="3.81" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="96" align="center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="0" y1="1.905" x2="2.54" y2="1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-2.54" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.905" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
 <description>&lt;h1&gt;Power Inductor&lt;/h1&gt;</description>
 <gates>
-<gate name="G$1" symbol="L-US" x="0" y="0"/>
+<gate name="A" symbol="L-US" x="0" y="0"/>
 </gates>
 <devices>
 <device name="L4020" package="L4020">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="A" pin="1" pad="P$1"/>
+<connect gate="A" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -330,8 +373,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="HCM0503" package="L5151">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -339,8 +382,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="SLF12575" package="SLF12575T">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -348,8 +391,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="MSS1210" package="MSS1210">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -357,8 +400,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="L0402" package="0402-1005">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -366,8 +409,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="L0603" package="0603-1608">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -375,8 +418,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="L0805" package="0805-2012">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -384,8 +427,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="L2020" package="2020-5050">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -393,8 +436,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="LPS4018" package="LPS4018">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -405,8 +448,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="MSS1048" package="MSS1048">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -414,8 +457,8 @@ Metric Code Size 2012</description>
 </device>
 <device name="7443558" package="WE2212">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -423,8 +466,123 @@ Metric Code Size 2012</description>
 </device>
 <device name="L4030" package="ASPI-4030S">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="XAL60" package="XAL60">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="CoilCraft"/>
+<attribute name="MPN" value="XAL60xx-xxxME" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PA4344" package="PA4344-17X17">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="102">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.102ANLT"/>
+</technology>
+<technology name="103">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.103ANLT"/>
+</technology>
+<technology name="152">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.152ANLT"/>
+</technology>
+<technology name="153">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.153ANLT"/>
+</technology>
+<technology name="182">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.182ANLT"/>
+</technology>
+<technology name="222">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.222ANLT"/>
+</technology>
+<technology name="223">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.223ANLT"/>
+</technology>
+<technology name="332">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.332ANLT"/>
+</technology>
+<technology name="333">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.333ANLT"/>
+</technology>
+<technology name="471">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.471ANLT"/>
+</technology>
+<technology name="472">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.472ANLT"/>
+</technology>
+<technology name="473">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.473ANLT"/>
+</technology>
+<technology name="561">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.561ANLT"/>
+</technology>
+<technology name="682">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.682ANLT"/>
+</technology>
+<technology name="823">
+<attribute name="MF" value="Pulse Electronics"/>
+<attribute name="MPN" value="PA4344.823ANLT"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FERRITE_BEAD" prefix="FB" uservalue="yes">
+<description>&lt;h1&gt;Ferrite Bead&lt;/h1&gt;</description>
+<gates>
+<gate name="A" symbol="FB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402" package="0402-1005">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603" package="0402-1005">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805" package="0805-2012">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

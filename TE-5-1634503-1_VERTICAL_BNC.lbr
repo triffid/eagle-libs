@@ -62,7 +62,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,61 +71,57 @@
 </layers>
 <library>
 <packages>
-<package name="1241152-4">
-<smd name="1" x="-3.81" y="1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="2" x="-1.27" y="-1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="3" x="1.27" y="1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="4" x="3.81" y="-1.75" dx="1.5" dy="2.3" layer="1"/>
-<wire x1="-5.21" y1="1.27" x2="5.21" y2="1.27" width="0.127" layer="21"/>
-<wire x1="5.21" y1="1.27" x2="5.21" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.21" y1="-1.27" x2="-5.21" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-5.21" y1="-1.27" x2="-5.21" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-4.28625" y1="0.47625" x2="-3.33375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-3.33375" y1="0.47625" x2="-3.33375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-3.33375" y1="-0.47625" x2="-4.28625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-4.28625" y1="-0.47625" x2="-4.28625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-1.74625" y1="0.47625" x2="-0.79375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-0.79375" y1="0.47625" x2="-0.79375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-0.79375" y1="-0.47625" x2="-1.74625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-1.74625" y1="-0.47625" x2="-1.74625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="0.79375" y1="0.47625" x2="1.74625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="1.74625" y1="0.47625" x2="1.74625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="1.74625" y1="-0.47625" x2="0.79375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="0.79375" y1="-0.47625" x2="0.79375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="3.33375" y1="0.47625" x2="4.28625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="4.28625" y1="0.47625" x2="4.28625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="4.28625" y1="-0.47625" x2="3.33375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="3.33375" y1="-0.47625" x2="3.33375" y2="0.47625" width="0.127" layer="21"/>
-<circle x="-5.25" y="2" radius="0.25" width="0.127" layer="21"/>
-<text x="-6" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
-<text x="6" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<package name="5-1634503">
+<pad name="SIG" x="0" y="0" drill="1.1"/>
+<pad name="GND1" x="-3.13" y="3.13" drill="1.65"/>
+<pad name="GND2" x="-3.13" y="-3.13" drill="1.65" rot="R90"/>
+<pad name="GND3" x="3.13" y="-3.13" drill="1.65" rot="R180"/>
+<pad name="GND4" x="3.13" y="3.13" drill="1.65" rot="R270"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="4.8" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="5.25" x2="0.75" y2="5.25" width="0.127" layer="51"/>
+<wire x1="0.75" y1="5.25" x2="0.75" y2="4.75" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="5.25" x2="-0.75" y2="4.75" width="0.127" layer="51"/>
+<wire x1="0.75" y1="-5.25" x2="-0.75" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-5.25" x2="-0.75" y2="-4.75" width="0.127" layer="51"/>
+<wire x1="0.75" y1="-5.25" x2="0.75" y2="-4.75" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="3" width="6" layer="39"/>
+<text x="0" y="6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="PIN">
-<pin name="P" x="-2.54" y="0" visible="pad" length="short" swaplevel="1"/>
-<text x="0" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<symbol name="BU-BNC">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.254" x2="-0.762" y2="0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.254" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.254" x2="-2.54" y2="-0.254" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<text x="-2.54" y="3.81" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<pin name="SIG" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="GND" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1241152-4" prefix="J">
-<description>TE 1241152 4-way SMD Female Header</description>
+<deviceset name="TE-5-1634503-?" prefix="J">
 <gates>
-<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="A" symbol="BU-BNC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1241152-4">
+<device name="" package="5-1634503">
 <connects>
-<connect gate="-1" pin="P" pad="1"/>
-<connect gate="-2" pin="P" pad="2"/>
-<connect gate="-3" pin="P" pad="3"/>
-<connect gate="-4" pin="P" pad="4"/>
+<connect gate="A" pin="GND" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="A" pin="SIG" pad="SIG"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="1">
+<attribute name="MF" value="TE"/>
+<attribute name="MPN" value="5-1634503-1"/>
+</technology>
 </technologies>
 </device>
 </devices>

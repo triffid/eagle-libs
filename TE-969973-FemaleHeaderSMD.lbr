@@ -487,25 +487,26 @@
 </packages>
 <symbols>
 <symbol name="PIN">
-<pin name="P$1" x="2.54" y="0" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" swaplevel="1" rot="R180"/>
+<text x="0" y="0" size="1.27" layer="95" rot="R180" align="center-left">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="TE-969973-2" prefix="J">
 <description>TE 969973 4-way 2x2 SMD Female Header</description>
 <gates>
-<gate name="G$1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="PIN" x="-7.62" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="PIN" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="-7.62" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="969973-2">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$2" pin="P$1" pad="2"/>
-<connect gate="G$3" pin="P$1" pad="3"/>
-<connect gate="G$4" pin="P$1" pad="4"/>
+<connect gate="-1" pin="P$1" pad="1"/>
+<connect gate="-2" pin="P$1" pad="2"/>
+<connect gate="-3" pin="P$1" pad="3"/>
+<connect gate="-4" pin="P$1" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -572,30 +573,30 @@
 <deviceset name="TE-969973-5">
 <description>TE 969973 10-way 2x5 SMD Female Header</description>
 <gates>
-<gate name="G$1" symbol="PIN" x="2.54" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="PIN" x="2.54" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="PIN" x="2.54" y="15.24" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="PIN" x="2.54" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="PIN" x="2.54" y="10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="PIN" x="-7.62" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="G$7" symbol="PIN" x="-7.62" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$8" symbol="PIN" x="-7.62" y="15.24" addlevel="always" swaplevel="1"/>
-<gate name="G$9" symbol="PIN" x="-7.62" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$10" symbol="PIN" x="-7.62" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-1" symbol="PIN" x="2.54" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="2.54" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="2.54" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="2.54" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="2.54" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="-7.62" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="PIN" x="-7.62" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="-8" symbol="PIN" x="-7.62" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="-9" symbol="PIN" x="-7.62" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-10" symbol="PIN" x="-7.62" y="10.16" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="969973-5">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$10" pin="P$1" pad="10"/>
-<connect gate="G$2" pin="P$1" pad="2"/>
-<connect gate="G$3" pin="P$1" pad="3"/>
-<connect gate="G$4" pin="P$1" pad="4"/>
-<connect gate="G$5" pin="P$1" pad="5"/>
-<connect gate="G$6" pin="P$1" pad="6"/>
-<connect gate="G$7" pin="P$1" pad="7"/>
-<connect gate="G$8" pin="P$1" pad="8"/>
-<connect gate="G$9" pin="P$1" pad="9"/>
+<connect gate="-1" pin="P$1" pad="1"/>
+<connect gate="-10" pin="P$1" pad="10"/>
+<connect gate="-2" pin="P$1" pad="2"/>
+<connect gate="-3" pin="P$1" pad="3"/>
+<connect gate="-4" pin="P$1" pad="4"/>
+<connect gate="-5" pin="P$1" pad="5"/>
+<connect gate="-6" pin="P$1" pad="6"/>
+<connect gate="-7" pin="P$1" pad="7"/>
+<connect gate="-8" pin="P$1" pad="8"/>
+<connect gate="-9" pin="P$1" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -606,42 +607,42 @@
 <deviceset name="TE-969973-8" prefix="J">
 <description>TE 969973 16-way 2x8 SMD Female Header</description>
 <gates>
-<gate name="G$1" symbol="PIN" x="2.54" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="PIN" x="2.54" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="PIN" x="2.54" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="PIN" x="2.54" y="0" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="PIN" x="2.54" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="PIN" x="2.54" y="-5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$7" symbol="PIN" x="2.54" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$8" symbol="PIN" x="2.54" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$9" symbol="PIN" x="-7.62" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$10" symbol="PIN" x="-7.62" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$11" symbol="PIN" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$12" symbol="PIN" x="-7.62" y="0" addlevel="always" swaplevel="1"/>
-<gate name="G$13" symbol="PIN" x="-7.62" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$14" symbol="PIN" x="-7.62" y="-5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$15" symbol="PIN" x="-7.62" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$16" symbol="PIN" x="-7.62" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-1" symbol="PIN" x="2.54" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="2.54" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="2.54" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="2.54" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="2.54" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="2.54" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="PIN" x="2.54" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-8" symbol="PIN" x="2.54" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-9" symbol="PIN" x="-7.62" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-10" symbol="PIN" x="-7.62" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-11" symbol="PIN" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-12" symbol="PIN" x="-7.62" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-13" symbol="PIN" x="-7.62" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-14" symbol="PIN" x="-7.62" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-15" symbol="PIN" x="-7.62" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-16" symbol="PIN" x="-7.62" y="-10.16" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="969973-8">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$10" pin="P$1" pad="10"/>
-<connect gate="G$11" pin="P$1" pad="11"/>
-<connect gate="G$12" pin="P$1" pad="12"/>
-<connect gate="G$13" pin="P$1" pad="13"/>
-<connect gate="G$14" pin="P$1" pad="14"/>
-<connect gate="G$15" pin="P$1" pad="15"/>
-<connect gate="G$16" pin="P$1" pad="16"/>
-<connect gate="G$2" pin="P$1" pad="2"/>
-<connect gate="G$3" pin="P$1" pad="3"/>
-<connect gate="G$4" pin="P$1" pad="4"/>
-<connect gate="G$5" pin="P$1" pad="5"/>
-<connect gate="G$6" pin="P$1" pad="6"/>
-<connect gate="G$7" pin="P$1" pad="7"/>
-<connect gate="G$8" pin="P$1" pad="8"/>
-<connect gate="G$9" pin="P$1" pad="9"/>
+<connect gate="-1" pin="P$1" pad="1"/>
+<connect gate="-10" pin="P$1" pad="10"/>
+<connect gate="-11" pin="P$1" pad="11"/>
+<connect gate="-12" pin="P$1" pad="12"/>
+<connect gate="-13" pin="P$1" pad="13"/>
+<connect gate="-14" pin="P$1" pad="14"/>
+<connect gate="-15" pin="P$1" pad="15"/>
+<connect gate="-16" pin="P$1" pad="16"/>
+<connect gate="-2" pin="P$1" pad="2"/>
+<connect gate="-3" pin="P$1" pad="3"/>
+<connect gate="-4" pin="P$1" pad="4"/>
+<connect gate="-5" pin="P$1" pad="5"/>
+<connect gate="-6" pin="P$1" pad="6"/>
+<connect gate="-7" pin="P$1" pad="7"/>
+<connect gate="-8" pin="P$1" pad="8"/>
+<connect gate="-9" pin="P$1" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

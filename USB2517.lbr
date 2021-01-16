@@ -228,31 +228,31 @@
 <circle x="1.5" y="-0.5" radius="0.1875" width="0.375" layer="31"/>
 <circle x="0.5" y="-0.5" radius="0.1875" width="0.375" layer="31"/>
 <circle x="0.5" y="-1.5" radius="0.1875" width="0.375" layer="31"/>
-<pad name="TVIA0" x="0" y="0" drill="0.3" stop="no"/>
-<pad name="TVIA1" x="0" y="1" drill="0.3" stop="no"/>
-<pad name="TVIA2" x="-1" y="0" drill="0.3" stop="no"/>
-<pad name="TVIA3" x="-1" y="1" drill="0.3" stop="no"/>
-<pad name="TVIA4" x="-2" y="0" drill="0.3" stop="no"/>
-<pad name="TVIA5" x="-2" y="1" drill="0.3" stop="no"/>
-<pad name="TVIA6" x="0" y="2" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA7" x="-1" y="2" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA8" x="-2" y="2" drill="0.3" stop="no"/>
-<pad name="TVIA9" x="2" y="2" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA10" x="2" y="1" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA11" x="2" y="0" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA12" x="1" y="2" drill="0.3" rot="R180" stop="no"/>
-<pad name="TVIA13" x="1" y="1" drill="0.3" rot="R180" stop="no"/>
-<pad name="TVIA14" x="1" y="0" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA15" x="0" y="-1" drill="0.3" rot="R180" stop="no"/>
-<pad name="TVIA16" x="1" y="-1" drill="0.3" rot="R180" stop="no"/>
-<pad name="TVIA17" x="2" y="-1" drill="0.3" rot="R180" stop="no"/>
-<pad name="TVIA18" x="0" y="-2" drill="0.3" rot="R270" stop="no"/>
-<pad name="TVIA19" x="1" y="-2" drill="0.3" rot="R270" stop="no"/>
-<pad name="TVIA20" x="2" y="-2" drill="0.3" rot="R180" stop="no"/>
-<pad name="TVIA21" x="-1" y="-2" drill="0.3" stop="no"/>
-<pad name="TVIA22" x="-2" y="-2" drill="0.3" stop="no"/>
-<pad name="TVIA23" x="-1" y="-1" drill="0.3" rot="R90" stop="no"/>
-<pad name="TVIA24" x="-2" y="-1" drill="0.3" stop="no"/>
+<pad name="TVIA0" x="0" y="0" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA1" x="0" y="1" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA2" x="-1" y="0" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA3" x="-1" y="1" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA4" x="-2" y="0" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA5" x="-2" y="1" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA6" x="0" y="2" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA7" x="-1" y="2" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA8" x="-2" y="2" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA9" x="2" y="2" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA10" x="2" y="1" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA11" x="2" y="0" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA12" x="1" y="2" drill="0.3" rot="R180" stop="no" thermals="no"/>
+<pad name="TVIA13" x="1" y="1" drill="0.3" rot="R180" stop="no" thermals="no"/>
+<pad name="TVIA14" x="1" y="0" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA15" x="0" y="-1" drill="0.3" rot="R180" stop="no" thermals="no"/>
+<pad name="TVIA16" x="1" y="-1" drill="0.3" rot="R180" stop="no" thermals="no"/>
+<pad name="TVIA17" x="2" y="-1" drill="0.3" rot="R180" stop="no" thermals="no"/>
+<pad name="TVIA18" x="0" y="-2" drill="0.3" rot="R270" stop="no" thermals="no"/>
+<pad name="TVIA19" x="1" y="-2" drill="0.3" rot="R270" stop="no" thermals="no"/>
+<pad name="TVIA20" x="2" y="-2" drill="0.3" rot="R180" stop="no" thermals="no"/>
+<pad name="TVIA21" x="-1" y="-2" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA22" x="-2" y="-2" drill="0.3" stop="no" thermals="no"/>
+<pad name="TVIA23" x="-1" y="-1" drill="0.3" rot="R90" stop="no" thermals="no"/>
+<pad name="TVIA24" x="-2" y="-1" drill="0.3" stop="no" thermals="no"/>
 <text x="0" y="5.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="3" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <circle x="-4.75" y="4.75" radius="0.25" width="0.25" layer="51"/>
@@ -292,8 +292,8 @@
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<pin name="USBD_P" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="USBD_N" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="USBD_P" x="12.7" y="2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="USBD_N" x="12.7" y="0" length="short" swaplevel="1" rot="R180"/>
 <pin name="LED_A" x="-12.7" y="2.54" length="short"/>
 <pin name="LED_B" x="-12.7" y="0" length="short"/>
 <pin name="PWR_EN" x="12.7" y="-5.08" length="short" direction="out" rot="R180"/>

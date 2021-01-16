@@ -71,61 +71,67 @@
 </layers>
 <library>
 <packages>
-<package name="1241152-4">
-<smd name="1" x="-3.81" y="1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="2" x="-1.27" y="-1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="3" x="1.27" y="1.75" dx="1.5" dy="2.3" layer="1"/>
-<smd name="4" x="3.81" y="-1.75" dx="1.5" dy="2.3" layer="1"/>
-<wire x1="-5.21" y1="1.27" x2="5.21" y2="1.27" width="0.127" layer="21"/>
-<wire x1="5.21" y1="1.27" x2="5.21" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.21" y1="-1.27" x2="-5.21" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-5.21" y1="-1.27" x2="-5.21" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-4.28625" y1="0.47625" x2="-3.33375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-3.33375" y1="0.47625" x2="-3.33375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-3.33375" y1="-0.47625" x2="-4.28625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-4.28625" y1="-0.47625" x2="-4.28625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-1.74625" y1="0.47625" x2="-0.79375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="-0.79375" y1="0.47625" x2="-0.79375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-0.79375" y1="-0.47625" x2="-1.74625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-1.74625" y1="-0.47625" x2="-1.74625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="0.79375" y1="0.47625" x2="1.74625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="1.74625" y1="0.47625" x2="1.74625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="1.74625" y1="-0.47625" x2="0.79375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="0.79375" y1="-0.47625" x2="0.79375" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="3.33375" y1="0.47625" x2="4.28625" y2="0.47625" width="0.127" layer="21"/>
-<wire x1="4.28625" y1="0.47625" x2="4.28625" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="4.28625" y1="-0.47625" x2="3.33375" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="3.33375" y1="-0.47625" x2="3.33375" y2="0.47625" width="0.127" layer="21"/>
-<circle x="-5.25" y="2" radius="0.25" width="0.127" layer="21"/>
-<text x="-6" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
-<text x="6" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<package name="SOT353">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="-1" y1="-0.55" x2="1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="1" y1="-0.55" x2="1" y2="0.55" width="0.2032" layer="21"/>
+<wire x1="1" y1="0.55" x2="-1" y2="0.55" width="0.2032" layer="51"/>
+<wire x1="-1" y1="0.55" x2="-1" y2="-0.55" width="0.2032" layer="21"/>
+<smd name="2" x="0" y="-0.8" dx="0.4" dy="0.9" layer="1"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.4" dy="0.9" layer="1"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.4" dy="0.9" layer="1"/>
+<smd name="4" x="0.65" y="0.8" dx="0.4" dy="0.9" layer="1"/>
+<smd name="5" x="-0.65" y="0.8" dx="0.4" dy="0.9" layer="1"/>
+<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.65" layer="51"/>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.65" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.65" layer="51"/>
+<rectangle x1="0.5" y1="0.65" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="0.65" x2="-0.5" y2="1.1" layer="51"/>
+<wire x1="-0.75" y1="-1.5" x2="-1.25" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-2.5" x2="-0.25" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-0.25" y1="-2.5" x2="-0.75" y2="-1.5" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="PIN">
-<pin name="P" x="-2.54" y="0" visible="pad" length="short" swaplevel="1"/>
-<text x="0" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<symbol name="74AXP1T34G">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<pin name="VCCI" x="-2.54" y="5.08" visible="pad" length="point" direction="in" rot="R270"/>
+<pin name="VCCO" x="2.54" y="5.08" visible="pad" length="short" direction="in" rot="R270"/>
+<pin name="IN" x="-7.62" y="0" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<text x="5.08" y="3.81" size="1.778" layer="95" font="vector" ratio="15" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-3.81" size="1.778" layer="96" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1241152-4" prefix="J">
-<description>TE 1241152 4-way SMD Female Header</description>
+<deviceset name="74AXP1T34" prefix="IC">
 <gates>
-<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="1" symbol="74AXP1T34G" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1241152-4">
+<device name="W" package="SOT353">
 <connects>
-<connect gate="-1" pin="P" pad="1"/>
-<connect gate="-2" pin="P" pad="2"/>
-<connect gate="-3" pin="P" pad="3"/>
-<connect gate="-4" pin="P" pad="4"/>
+<connect gate="1" pin="GND" pad="3"/>
+<connect gate="1" pin="IN" pad="2"/>
+<connect gate="1" pin="OUT" pad="4"/>
+<connect gate="1" pin="VCCI" pad="1"/>
+<connect gate="1" pin="VCCO" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="G">
+<attribute name="MARK" value="rQ"/>
+<attribute name="MF" value="Nexperia"/>
+<attribute name="MPN" value="74AXP1T34GW"/>
+</technology>
 </technologies>
 </device>
 </devices>

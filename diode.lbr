@@ -386,8 +386,8 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="1.27" x2="-0.635" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="-5.08" y="2.54" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
 <symbol name="DIODE-LED">
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
@@ -520,6 +520,24 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <wire x1="12.7" y1="3.81" x2="12.7" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-3.81" x2="-12.7" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-3.81" x2="-12.7" y2="3.81" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DIODE-BI_TVS">
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="K" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1384,6 +1402,420 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <technology name="90">
 <attribute name="MARK" value="DX"/>
 <attribute name="MF" value="MCC"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P4?*A" prefix="D">
+<gates>
+<gate name="A" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMA" package="DO-214AC">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="K" pad="C"/>
+</connects>
+<technologies>
+<technology name="10">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA10A"/>
+</technology>
+<technology name="100">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA100A"/>
+</technology>
+<technology name="11">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA11A"/>
+</technology>
+<technology name="110">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA110A"/>
+</technology>
+<technology name="12">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA12A"/>
+</technology>
+<technology name="120">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA120A"/>
+</technology>
+<technology name="13">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA13A"/>
+</technology>
+<technology name="130">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA130A"/>
+</technology>
+<technology name="15">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA15A"/>
+</technology>
+<technology name="150">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA150A"/>
+</technology>
+<technology name="16">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA16A"/>
+</technology>
+<technology name="160">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA160A"/>
+</technology>
+<technology name="170">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA170A"/>
+</technology>
+<technology name="18">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA18A"/>
+</technology>
+<technology name="180">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA180A"/>
+</technology>
+<technology name="20">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA20A"/>
+</technology>
+<technology name="200">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA200A"/>
+</technology>
+<technology name="22">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA22A"/>
+</technology>
+<technology name="220">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA220A"/>
+</technology>
+<technology name="24">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA24A"/>
+</technology>
+<technology name="250">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA250A"/>
+</technology>
+<technology name="27">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA27A"/>
+</technology>
+<technology name="30">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA30A"/>
+</technology>
+<technology name="300">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA300A"/>
+</technology>
+<technology name="33">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA33A"/>
+</technology>
+<technology name="350">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA350A"/>
+</technology>
+<technology name="36">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA36A"/>
+</technology>
+<technology name="39">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA39A"/>
+</technology>
+<technology name="400">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA400A"/>
+</technology>
+<technology name="43">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA43A"/>
+</technology>
+<technology name="440">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA440A"/>
+</technology>
+<technology name="47">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA47A"/>
+</technology>
+<technology name="480">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA480A"/>
+</technology>
+<technology name="51">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA51A"/>
+</technology>
+<technology name="510">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA510A"/>
+</technology>
+<technology name="530">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA530A"/>
+</technology>
+<technology name="540">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA540A"/>
+</technology>
+<technology name="550">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA550A"/>
+</technology>
+<technology name="56">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA56A"/>
+</technology>
+<technology name="6.8">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA6.8A"/>
+</technology>
+<technology name="62">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA62A"/>
+</technology>
+<technology name="68">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA68A"/>
+</technology>
+<technology name="7.5">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA7.5A"/>
+</technology>
+<technology name="75">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA75A"/>
+</technology>
+<technology name="8.2">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA8.2A"/>
+</technology>
+<technology name="82">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA82A"/>
+</technology>
+<technology name="9.1">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA9.1A"/>
+</technology>
+<technology name="91">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA91A"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P4?*CA" prefix="D">
+<gates>
+<gate name="A" symbol="DIODE-BI_TVS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMA" package="DO-214AC">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="K" pad="C"/>
+</connects>
+<technologies>
+<technology name="10">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA10CA"/>
+</technology>
+<technology name="100">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA100CA"/>
+</technology>
+<technology name="11">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA11CA"/>
+</technology>
+<technology name="110">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA110CA"/>
+</technology>
+<technology name="12">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA12CA"/>
+</technology>
+<technology name="120">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA120CA"/>
+</technology>
+<technology name="13">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA13CA"/>
+</technology>
+<technology name="130">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA130CA"/>
+</technology>
+<technology name="15">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA15CA"/>
+</technology>
+<technology name="150">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA150CA"/>
+</technology>
+<technology name="16">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA16CA"/>
+</technology>
+<technology name="160">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA160CA"/>
+</technology>
+<technology name="170">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA170CA"/>
+</technology>
+<technology name="18">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA18CA"/>
+</technology>
+<technology name="180">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA180CA"/>
+</technology>
+<technology name="20">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA20CA"/>
+</technology>
+<technology name="200">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA200CA"/>
+</technology>
+<technology name="22">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA22CA"/>
+</technology>
+<technology name="220">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA220CA"/>
+</technology>
+<technology name="24">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA24CA"/>
+</technology>
+<technology name="250">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA250CA"/>
+</technology>
+<technology name="27">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA27CA"/>
+</technology>
+<technology name="30">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA30CA"/>
+</technology>
+<technology name="300">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA300CA"/>
+</technology>
+<technology name="33">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA33CA"/>
+</technology>
+<technology name="350">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA350CA"/>
+</technology>
+<technology name="36">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA36CA"/>
+</technology>
+<technology name="39">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA39CA"/>
+</technology>
+<technology name="400">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA400CA"/>
+</technology>
+<technology name="43">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA43CA"/>
+</technology>
+<technology name="440">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA440CA"/>
+</technology>
+<technology name="47">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA47CA"/>
+</technology>
+<technology name="480">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA480CA"/>
+</technology>
+<technology name="51">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA51CA"/>
+</technology>
+<technology name="510">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA510CA"/>
+</technology>
+<technology name="530">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA530CA"/>
+</technology>
+<technology name="540">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA540CA"/>
+</technology>
+<technology name="550">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA550CA"/>
+</technology>
+<technology name="56">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA56CA"/>
+</technology>
+<technology name="6.8">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA6.8CA"/>
+</technology>
+<technology name="62">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA62CA"/>
+</technology>
+<technology name="68">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA68CA"/>
+</technology>
+<technology name="7.5">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA7.5CA"/>
+</technology>
+<technology name="75">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA75CA"/>
+</technology>
+<technology name="8.2">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA8.2CA"/>
+</technology>
+<technology name="82">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA82CA"/>
+</technology>
+<technology name="9.1">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA9.1CA"/>
+</technology>
+<technology name="91">
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MPN" value="P4SMA91CA"/>
 </technology>
 </technologies>
 </device>
