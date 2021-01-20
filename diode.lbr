@@ -820,8 +820,14 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <connect gate="G$1" pin="K" pad="K"/>
 </connects>
 <technologies>
-<technology name="-20"/>
-<technology name="-30"/>
+<technology name="-20">
+<attribute name="MF" value="ROHM"/>
+<attribute name="MPN" value="RB081LAM-20"/>
+</technology>
+<technology name="-30">
+<attribute name="MF" value="ROHM"/>
+<attribute name="MPN" value="RB081LAM-30"/>
+</technology>
 </technologies>
 </device>
 </devices>

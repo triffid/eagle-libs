@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -162,9 +162,9 @@
 <text x="2.54" y="30.48" size="1.778" layer="95" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="2.54" y="-33.02" size="1.778" layer="96" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
 <pin name="VDDIO" x="-5.08" y="30.48" length="short" direction="in" rot="R270"/>
-<text x="6.35" y="-10.16" size="0.6" layer="98" font="vector" ratio="15" align="center-right">NL:REFCLK_IN
+<text x="6.35" y="-10.16" size="0.6" layer="98" ratio="15" align="center-right">NL:REFCLK_IN
 RNL:25MHz_IN</text>
-<text x="-3.81" y="-15.24" size="0.6" layer="98" font="vector" ratio="15" rot="MR180" align="center-left">NL:MII_RXC_OUT
+<text x="-3.81" y="-15.24" size="0.6" layer="98" ratio="15" rot="MR180" align="center-left">NL:MII_RXC_OUT
 RNL:REFCLK_OUT</text>
 <pin name="TXD2/NC" x="-22.86" y="-7.62" length="short" direction="in"/>
 <pin name="TXD3/NC" x="-22.86" y="-10.16" length="short" direction="in"/>
