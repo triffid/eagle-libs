@@ -383,6 +383,58 @@ Metric Code Size 2012</description>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1" layer="21"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1" layer="21"/>
 </package>
+<package name="SER29XX">
+<smd name="GND" x="0" y="7.22" dx="6.35" dy="5.28" layer="1"/>
+<smd name="1" x="-5.075" y="-14.855" dx="5.33" dy="5.59" layer="1"/>
+<smd name="2" x="5.075" y="-14.855" dx="5.33" dy="5.59" layer="1"/>
+<wire x1="-14" y1="10" x2="-8" y2="10" width="0.127" layer="21"/>
+<wire x1="-8" y1="10" x2="-8" y2="8.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="8.5" x2="-3.75" y2="7.25" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="7.25" x2="-3" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="5.5" x2="-2.5" y2="5.75" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="5.75" x2="2.5" y2="5.75" width="0.127" layer="21" curve="-53.130102"/>
+<wire x1="2.5" y1="5.75" x2="3" y2="5.5" width="0.127" layer="21"/>
+<wire x1="3" y1="5.5" x2="3.75" y2="7.25" width="0.127" layer="21"/>
+<wire x1="3.75" y1="7.25" x2="8" y2="8.5" width="0.127" layer="21"/>
+<wire x1="8" y1="8.5" x2="8" y2="10" width="0.127" layer="21"/>
+<wire x1="8" y1="10" x2="14" y2="10" width="0.127" layer="21"/>
+<wire x1="14" y1="10" x2="14" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="14" y1="-9.8" x2="8" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="8" y1="-9.8" x2="8" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="8" y1="-8.5" x2="3.75" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-7.25" x2="3.25" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-5.5" x2="-3.25" y2="-5.5" width="0.127" layer="21" curve="-53.130102"/>
+<wire x1="-3.25" y1="-5.5" x2="-3.75" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-7.25" x2="-8" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8.5" x2="-8" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-9.8" x2="-14" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="-14" y1="-9.8" x2="-14" y2="10" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="8.2" x2="6.5" y2="8.2" width="0.127" layer="51" curve="-78.191166"/>
+<wire x1="6.5" y1="-8.2" x2="-6.5" y2="-8.2" width="0.127" layer="51" curve="-78.191166"/>
+<wire x1="-7" y1="-8.25" x2="-7" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-7" y1="-11.25" x2="-3.25" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-11.25" x2="-3.25" y2="-10" width="0.127" layer="51"/>
+<wire x1="-7" y1="-11.25" x2="-7" y2="-14.25" width="0.127" layer="51"/>
+<wire x1="-7" y1="-14.25" x2="-3.25" y2="-14.25" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-14.25" x2="-3.25" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-7" y1="-14.25" x2="-7" y2="-16.5" width="0.127" layer="51"/>
+<wire x1="-7" y1="-16.5" x2="-3.25" y2="-16.5" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-16.5" x2="-3.25" y2="-14.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-10" x2="3.25" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-11.25" x2="7" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="7" y1="-11.25" x2="7" y2="-8.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-11.25" x2="3.25" y2="-14.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-14.25" x2="7" y2="-14.25" width="0.127" layer="51"/>
+<wire x1="7" y1="-14.25" x2="7" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-14.25" x2="3.25" y2="-16.5" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-16.5" x2="7" y2="-16.5" width="0.127" layer="51"/>
+<wire x1="7" y1="-16.5" x2="7" y2="-14.25" width="0.127" layer="51"/>
+<text x="0" y="12" size="2" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="2" layer="27" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-14.25" y1="-10" x2="14.25" y2="10.25" layer="39"/>
+<rectangle x1="-8" y1="-18" x2="-2" y2="-10" layer="39"/>
+<rectangle x1="2" y1="-18" x2="8" y2="-10" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L-US">
@@ -604,6 +656,15 @@ Metric Code Size 2012</description>
 </technologies>
 </device>
 <device name="L0805" package="EIA0805-M2012-IPC7351_B">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SER29XX" package="SER29XX">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
