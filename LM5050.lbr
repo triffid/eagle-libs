@@ -216,9 +216,21 @@
 <connect gate="G$1" pin="VS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="Q0"/>
-<technology name="Q1"/>
+<technology name="">
+<attribute name="MARK" value="SZHB"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LM5050MK-1/NOPB"/>
+</technology>
+<technology name="Q0">
+<attribute name="MARK" value="SL5B"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LM5050Q0MK-1/NOPB"/>
+</technology>
+<technology name="Q1">
+<attribute name="MARK" value="SP3B"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LM5050Q1MK-1/NOPB"/>
+</technology>
 </technologies>
 </device>
 <device name="MKX-1" package="SOT23-6">
@@ -231,9 +243,21 @@
 <connect gate="G$1" pin="VS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="Q0"/>
-<technology name="Q1"/>
+<technology name="">
+<attribute name="MARK" value="SZHB"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LM5050MKX-1/NOPB"/>
+</technology>
+<technology name="Q0">
+<attribute name="MARK" value="SL5B"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LM5050Q0MKX-1/NOPB"/>
+</technology>
+<technology name="Q1">
+<attribute name="MARK" value="SP3B"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LM5050Q1MKX-1/NOPB"/>
+</technology>
 </technologies>
 </device>
 </devices>
