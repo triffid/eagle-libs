@@ -182,7 +182,7 @@ TS-003</description>
 <rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" layer="41"/>
+<rectangle x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" layer="39"/>
 </package>
 <package name="PSON56">
 <smd name="PAD" x="0" y="0" dx="4.51" dy="4.295" layer="1" rot="R90" thermals="no" cream="no"/>
@@ -303,6 +303,24 @@ TS-003</description>
 <wire x1="-1.5" y1="-5" x2="-2" y2="-3.5" width="0.127" layer="51"/>
 <text x="0" y="4" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="SOT363">
+<smd name="1" x="-0.8" y="0.65" dx="0.7" dy="0.3" layer="1"/>
+<smd name="2" x="-0.8" y="0" dx="0.7" dy="0.3" layer="1"/>
+<smd name="3" x="-0.8" y="-0.65" dx="0.7" dy="0.3" layer="1"/>
+<smd name="4" x="0.8" y="-0.65" dx="0.7" dy="0.3" layer="1"/>
+<smd name="5" x="0.8" y="0" dx="0.7" dy="0.3" layer="1"/>
+<smd name="6" x="0.8" y="0.65" dx="0.7" dy="0.3" layer="1"/>
+<wire x1="-0.625" y1="1" x2="0.625" y2="1" width="0.127" layer="21"/>
+<wire x1="0.625" y1="1" x2="0.625" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.625" y1="-1" x2="-0.625" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-1" x2="-0.625" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.375" y1="0.625" x2="-2.375" y2="1.125" width="0.127" layer="51"/>
+<wire x1="-2.375" y1="1.125" x2="-2.375" y2="0.125" width="0.127" layer="51"/>
+<wire x1="-2.375" y1="0.125" x2="-1.375" y2="0.625" width="0.127" layer="51"/>
+<circle x="-0.25" y="0.625" radius="0.125" width="0.127" layer="51"/>
+<text x="2" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -623,6 +641,36 @@ TS-003</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="N-DUAL" prefix="Q">
+<gates>
+<gate name="A" symbol="N_MOSFET" x="-7.62" y="0" swaplevel="1"/>
+<gate name="B" symbol="N_MOSFET" x="7.62" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="SOT363" package="SOT363">
+<connects>
+<connect gate="A" pin="D" pad="6"/>
+<connect gate="A" pin="G" pad="2"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="3"/>
+<connect gate="B" pin="G" pad="5"/>
+<connect gate="B" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MARK" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="BSD235N">
+<attribute name="MARK" value="X6s"/>
+<attribute name="MF" value="Infineon"/>
+<attribute name="MPN" value="BSD235N"/>
+</technology>
 </technologies>
 </device>
 </devices>

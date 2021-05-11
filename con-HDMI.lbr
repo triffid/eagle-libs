@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -168,7 +168,8 @@
 <wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <text x="2.54" y="20.32" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
-<text x="2.54" y="-20.32" size="1.778" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
+<text x="7.62" y="-20.32" size="1.778" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
+<pin name="SHLD" x="5.08" y="-20.32" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -189,11 +190,12 @@
 <connect gate="A" pin="D1-" pad="6"/>
 <connect gate="A" pin="D2+" pad="1"/>
 <connect gate="A" pin="D2-" pad="3"/>
-<connect gate="A" pin="GND" pad="2 5 8 11 17 M1 M2 M3 M4"/>
+<connect gate="A" pin="GND" pad="2 5 8 11 17"/>
 <connect gate="A" pin="HEAC+" pad="14"/>
 <connect gate="A" pin="HPD/HEAC-" pad="19"/>
 <connect gate="A" pin="SCL" pad="15"/>
 <connect gate="A" pin="SDA" pad="16"/>
+<connect gate="A" pin="SHLD" pad="M1 M2 M3 M4"/>
 </connects>
 <technologies>
 <technology name="-001">

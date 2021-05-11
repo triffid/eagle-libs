@@ -461,6 +461,14 @@ Based on the datasheets for the following products.&lt;br&gt;
 <rectangle x1="-3" y1="-12" x2="3" y2="8.25" layer="39"/>
 <text x="0" y="9" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-5" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<pad name="M31" x="-2.72" y="6.83" drill="0.6"/>
+<pad name="M41" x="2.72" y="6.83" drill="0.6"/>
+<pad name="M32" x="-2.72" y="6.13" drill="0.6"/>
+<pad name="M42" x="2.72" y="6.13" drill="0.6"/>
+<pad name="M11" x="-2.72" y="0.35" drill="0.6"/>
+<pad name="M12" x="-2.72" y="-0.35" drill="0.6"/>
+<pad name="M21" x="2.72" y="0.35" drill="0.6"/>
+<pad name="M22" x="2.72" y="-0.35" drill="0.6"/>
 </package>
 </packages>
 <symbols>
@@ -614,7 +622,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <connect gate="A" pin="D_N" pad="2"/>
 <connect gate="A" pin="D_P" pad="3"/>
 <connect gate="A" pin="GND" pad="4"/>
-<connect gate="A" pin="SHIELD" pad="M1 M2 M3 M4"/>
+<connect gate="A" pin="SHIELD" pad="M1 M2 M3 M4 M11 M12 M21 M22 M31 M32 M41 M42"/>
 <connect gate="A" pin="VBUS" pad="1"/>
 </connects>
 <technologies>

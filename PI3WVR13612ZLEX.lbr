@@ -171,19 +171,19 @@
 </packages>
 <symbols>
 <symbol name="PI3WVR13612ZLEX-IN">
-<pin name="D0+" x="-10.16" y="15.24" length="short"/>
-<pin name="D0-" x="-10.16" y="12.7" length="short"/>
-<pin name="D1+" x="-10.16" y="10.16" length="short"/>
-<pin name="D1-" x="-10.16" y="7.62" length="short"/>
-<pin name="D2+" x="-10.16" y="5.08" length="short"/>
-<pin name="D2-" x="-10.16" y="2.54" length="short"/>
-<pin name="D3+" x="-10.16" y="0" length="short"/>
-<pin name="D3-" x="-10.16" y="-2.54" length="short"/>
-<pin name="AUX+" x="-10.16" y="-7.62" length="short"/>
-<pin name="AUX-" x="-10.16" y="-10.16" length="short"/>
-<pin name="SCL" x="-10.16" y="-12.7" length="short"/>
-<pin name="SDA" x="-10.16" y="-15.24" length="short"/>
-<pin name="HPD" x="-10.16" y="-17.78" length="short"/>
+<pin name="D0+" x="-10.16" y="15.24" length="short" swaplevel="1"/>
+<pin name="D0-" x="-10.16" y="12.7" length="short" swaplevel="1"/>
+<pin name="D1+" x="-10.16" y="10.16" length="short" swaplevel="1"/>
+<pin name="D1-" x="-10.16" y="7.62" length="short" swaplevel="1"/>
+<pin name="D2+" x="-10.16" y="5.08" length="short" swaplevel="1"/>
+<pin name="D2-" x="-10.16" y="2.54" length="short" swaplevel="1"/>
+<pin name="D3+" x="-10.16" y="0" length="short" swaplevel="1"/>
+<pin name="D3-" x="-10.16" y="-2.54" length="short" swaplevel="1"/>
+<pin name="AUX+" x="-10.16" y="-7.62" length="short" swaplevel="1"/>
+<pin name="AUX-" x="-10.16" y="-10.16" length="short" swaplevel="1"/>
+<pin name="SCL" x="-10.16" y="-12.7" length="short" swaplevel="1"/>
+<pin name="SDA" x="-10.16" y="-15.24" length="short" swaplevel="1"/>
+<pin name="HPD" x="-10.16" y="-17.78" length="short" swaplevel="1"/>
 <wire x1="-7.62" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
 <wire x1="5.08" y1="17.78" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
@@ -192,19 +192,19 @@
 <text x="2.54" y="0" size="1.778" layer="96" ratio="15" rot="R90" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="PI3WVR13612ZLEX-OUT">
-<pin name="D0+" x="7.62" y="15.24" length="short" rot="R180"/>
-<pin name="D0-" x="7.62" y="12.7" length="short" rot="R180"/>
-<pin name="D1+" x="7.62" y="10.16" length="short" rot="R180"/>
-<pin name="D1-" x="7.62" y="7.62" length="short" rot="R180"/>
-<pin name="D2+" x="7.62" y="5.08" length="short" rot="R180"/>
-<pin name="D2-" x="7.62" y="2.54" length="short" rot="R180"/>
-<pin name="D3+" x="7.62" y="0" length="short" rot="R180"/>
-<pin name="D3-" x="7.62" y="-2.54" length="short" rot="R180"/>
-<pin name="AUX+" x="7.62" y="-7.62" length="short" rot="R180"/>
-<pin name="AUX-" x="7.62" y="-10.16" length="short" rot="R180"/>
-<pin name="SCL" x="7.62" y="-12.7" length="short" rot="R180"/>
-<pin name="SDA" x="7.62" y="-15.24" length="short" rot="R180"/>
-<pin name="HPD" x="7.62" y="-17.78" length="short" rot="R180"/>
+<pin name="D0+" x="7.62" y="15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="D0-" x="7.62" y="12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="D1+" x="7.62" y="10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="D1-" x="7.62" y="7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="D2+" x="7.62" y="5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="D2-" x="7.62" y="2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="D3+" x="7.62" y="0" length="short" swaplevel="1" rot="R180"/>
+<pin name="D3-" x="7.62" y="-2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="AUX+" x="7.62" y="-7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="AUX-" x="7.62" y="-10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="SCL" x="7.62" y="-12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="SDA" x="7.62" y="-15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="HPD" x="7.62" y="-17.78" length="short" swaplevel="1" rot="R180"/>
 <wire x1="5.08" y1="17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="17.78" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -71,100 +71,90 @@
 </layers>
 <library>
 <packages>
-<package name="WSON-12">
-<smd name="PAD" x="0" y="0" dx="1" dy="2.65" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="1" x="-0.95" y="1.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="2" x="-0.95" y="0.75" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="3" x="-0.95" y="0.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="4" x="-0.95" y="-0.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="5" x="-0.95" y="-0.75" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="6" x="-0.95" y="-1.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="7" x="0.95" y="-1.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="8" x="0.95" y="-0.75" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="9" x="0.95" y="-0.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="10" x="0.95" y="0.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="11" x="0.95" y="0.75" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<smd name="12" x="0.95" y="1.25" dx="0.5" dy="0.25" layer="1" stop="no"/>
-<rectangle x1="-1.25" y1="1.1" x2="-0.65" y2="1.4" layer="29"/>
-<rectangle x1="-1.25" y1="0.6" x2="-0.65" y2="0.9" layer="29"/>
-<rectangle x1="-1.25" y1="0.1" x2="-0.65" y2="0.4" layer="29"/>
-<rectangle x1="-1.25" y1="-0.4" x2="-0.65" y2="-0.1" layer="29"/>
-<rectangle x1="-1.25" y1="-0.9" x2="-0.65" y2="-0.6" layer="29"/>
-<rectangle x1="-1.25" y1="-1.4" x2="-0.65" y2="-1.1" layer="29"/>
-<rectangle x1="0.65" y1="-1.4" x2="1.25" y2="-1.1" layer="29"/>
-<rectangle x1="0.65" y1="-0.9" x2="1.25" y2="-0.6" layer="29"/>
-<rectangle x1="0.65" y1="-0.4" x2="1.25" y2="-0.1" layer="29"/>
-<rectangle x1="0.65" y1="0.1" x2="1.25" y2="0.4" layer="29"/>
-<rectangle x1="0.65" y1="0.6" x2="1.25" y2="0.9" layer="29"/>
-<rectangle x1="0.65" y1="1.1" x2="1.25" y2="1.4" layer="29"/>
-<rectangle x1="-0.55" y1="-1.375" x2="0.55" y2="1.375" layer="29"/>
-<rectangle x1="-0.5" y1="0.15" x2="0.5" y2="1.325" layer="31"/>
-<rectangle x1="-0.5" y1="-1.325" x2="0.5" y2="-0.15" layer="31"/>
-<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.1524" layer="21"/>
-<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.1524" layer="21"/>
-<circle x="-1" y="1.75" radius="0.070709375" width="0.1524" layer="21"/>
-<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2" size="0.6" layer="27" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
-<wire x1="-1.375" y1="1.25" x2="-2.625" y2="1.875" width="0.127" layer="51"/>
-<wire x1="-2.625" y1="1.875" x2="-2.625" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-2.625" y1="0.75" x2="-1.375" y2="1.25" width="0.127" layer="51"/>
+<package name="P-SOIC8">
+<smd name="1" x="-2.6" y="1.905" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="2" x="-2.6" y="0.635" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="3" x="-2.6" y="-0.635" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="4" x="-2.6" y="-1.905" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="5" x="2.6" y="-1.905" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="6" x="2.6" y="-0.635" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="7" x="2.6" y="0.635" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<smd name="8" x="2.6" y="1.905" dx="0.6" dy="1.55" layer="1" rot="R270"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="2" y1="-2.5" x2="2" y2="2.5" width="0.2" layer="21"/>
+<circle x="-2.5" y="3" radius="0.353553125" width="0.2" layer="51"/>
+<wire x1="-4" y1="2" x2="-6" y2="3" width="0.2" layer="51"/>
+<wire x1="-6" y1="3" x2="-6" y2="1" width="0.2" layer="51"/>
+<wire x1="-6" y1="1" x2="-4" y2="2" width="0.2" layer="51"/>
+<text x="0" y="3" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="-2" y1="2.5" x2="-0.5" y2="2.5" width="0.2" layer="21"/>
+<wire x1="0.5" y1="2.5" x2="-0.5" y2="2.5" width="0.2" layer="21" curve="-180"/>
+<wire x1="0.5" y1="2.5" x2="2" y2="2.5" width="0.2" layer="21"/>
+<rectangle x1="-3.8" y1="-2.75" x2="3.8" y2="2.75" layer="39"/>
+<smd name="PAD" x="0" y="0" dx="2.95" dy="4.9" layer="1" stop="no" thermals="no" cream="no"/>
+<rectangle x1="-1.355" y1="-1.7" x2="1.355" y2="1.7" layer="29"/>
+<rectangle x1="-1.25" y1="0.25" x2="-0.25" y2="1.5" layer="31"/>
+<rectangle x1="0.25" y1="0.25" x2="1.25" y2="1.5" layer="31"/>
+<rectangle x1="0.25" y1="-1.5" x2="1.25" y2="-0.25" layer="31"/>
+<rectangle x1="-1.25" y1="-1.5" x2="-0.25" y2="-0.25" layer="31"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.2" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="LM27762">
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<pin name="OUT+" x="10.16" y="17.78" length="short" direction="out" rot="R270"/>
-<pin name="OUT-" x="10.16" y="-17.78" length="short" direction="out" rot="R90"/>
-<pin name="FB+" x="15.24" y="5.08" length="short" direction="in" rot="R180"/>
-<pin name="FB-" x="15.24" y="-5.08" length="short" direction="in" rot="R180"/>
-<pin name="GND" x="2.54" y="-17.78" length="short" direction="pwr" rot="R90"/>
-<pin name="VIN" x="0" y="17.78" length="short" direction="pwr" rot="R270"/>
-<pin name="PGOOD" x="-15.24" y="-5.08" length="short" direction="oc"/>
-<pin name="C1-" x="-15.24" y="5.08" length="short"/>
-<pin name="C1+" x="-15.24" y="12.7" length="short"/>
-<pin name="EN+" x="-15.24" y="-10.16" length="short" direction="in"/>
-<pin name="EN-" x="-15.24" y="-12.7" length="short" direction="in"/>
-<pin name="CP" x="-5.08" y="-17.78" length="short" rot="R90"/>
-<text x="0" y="2.54" size="1.778" layer="95" font="vector" ratio="15" align="top-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.778" layer="96" font="vector" ratio="15" align="bottom-center">&gt;VALUE</text>
+<symbol name="LM3404">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="VIN" x="0" y="15.24" length="short" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="RON" x="-12.7" y="5.08" length="short"/>
+<pin name="DIM" x="-12.7" y="-2.54" length="short"/>
+<pin name="BOOT" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="SW" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="CS" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="VCC" x="-5.08" y="-15.24" length="short" rot="R90"/>
+<text x="2.54" y="15.24" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-15.24" size="1.778" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM27762?*" prefix="IC">
+<deviceset name="LM3404" prefix="IC">
+<description>&lt;h1&gt;1A CC LED Driver&lt;/h1&gt;
+
+&lt;h3&gt;Vcs = 200mV&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LM3404: Vin = 6-42v (max 45v)&lt;/li&gt;
+&lt;li&gt;LM3404HV: Vin = 6-75v (max 76v)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
-<gate name="A" symbol="LM27762" x="0" y="0"/>
+<gate name="A" symbol="LM3404" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DSS" package="WSON-12">
+<device name="DDA" package="P-SOIC8">
 <connects>
-<connect gate="A" pin="C1+" pad="10"/>
-<connect gate="A" pin="C1-" pad="9"/>
-<connect gate="A" pin="CP" pad="5"/>
-<connect gate="A" pin="EN+" pad="12"/>
-<connect gate="A" pin="EN-" pad="8"/>
-<connect gate="A" pin="FB+" pad="2"/>
-<connect gate="A" pin="FB-" pad="7"/>
+<connect gate="A" pin="BOOT" pad="2"/>
+<connect gate="A" pin="CS" pad="5"/>
+<connect gate="A" pin="DIM" pad="3"/>
 <connect gate="A" pin="GND" pad="4 PAD"/>
-<connect gate="A" pin="OUT+" pad="11"/>
-<connect gate="A" pin="OUT-" pad="6"/>
-<connect gate="A" pin="PGOOD" pad="1"/>
-<connect gate="A" pin="VIN" pad="3"/>
+<connect gate="A" pin="RON" pad="6"/>
+<connect gate="A" pin="SW" pad="1"/>
+<connect gate="A" pin="VCC" pad="7"/>
+<connect gate="A" pin="VIN" pad="8"/>
 </connects>
 <technologies>
-<technology name="R">
-<attribute name="MARK" value="L27762"/>
+<technology name="">
+<attribute name="MARK" value="LM3404 MR"/>
 <attribute name="MF" value="Texas Instruments"/>
-<attribute name="MPN" value="LM27762DSSR"/>
+<attribute name="MPN" value="LM3404MR/NOPB"/>
 </technology>
-<technology name="T">
-<attribute name="MARK" value="L27762"/>
+<technology name="HV">
+<attribute name="MARK" value="LM3404 HVMR"/>
 <attribute name="MF" value="Texas Instruments"/>
-<attribute name="MPN" value="LM27762DSST"/>
+<attribute name="MPN" value="LM3404HVMR/NOPB"/>
 </technology>
 </technologies>
 </device>
