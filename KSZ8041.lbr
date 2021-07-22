@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -124,6 +124,59 @@
 <text x="0" y="3.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
+<package name="QFN32-5X5-0.5-LONGFEET">
+<smd name="1" x="-2.75" y="1.75" dx="1.3" dy="0.23" layer="1"/>
+<smd name="2" x="-2.75" y="1.25" dx="1.3" dy="0.23" layer="1"/>
+<smd name="3" x="-2.75" y="0.75" dx="1.3" dy="0.23" layer="1"/>
+<smd name="4" x="-2.75" y="0.25" dx="1.3" dy="0.23" layer="1"/>
+<smd name="5" x="-2.75" y="-0.25" dx="1.3" dy="0.23" layer="1"/>
+<smd name="6" x="-2.75" y="-0.75" dx="1.3" dy="0.23" layer="1"/>
+<smd name="7" x="-2.75" y="-1.25" dx="1.3" dy="0.23" layer="1"/>
+<smd name="8" x="-2.75" y="-1.75" dx="1.3" dy="0.23" layer="1"/>
+<smd name="9" x="-1.75" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="10" x="-1.25" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="11" x="-0.75" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="12" x="-0.25" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="13" x="0.25" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="14" x="0.75" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="15" x="1.25" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="16" x="1.75" y="-2.75" dx="1.3" dy="0.23" layer="1" rot="R90"/>
+<smd name="17" x="2.75" y="-1.75" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="18" x="2.75" y="-1.25" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="19" x="2.75" y="-0.75" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="20" x="2.75" y="-0.25" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="21" x="2.75" y="0.25" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="22" x="2.75" y="0.75" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="23" x="2.75" y="1.25" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="24" x="2.75" y="1.75" dx="1.3" dy="0.23" layer="1" rot="R180"/>
+<smd name="25" x="1.75" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="26" x="1.25" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="27" x="0.75" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="28" x="0.25" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="29" x="-0.25" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="30" x="-0.75" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="31" x="-1.25" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="32" x="-1.75" y="2.75" dx="1.3" dy="0.23" layer="1" rot="R270"/>
+<smd name="PAD" x="0" y="0" dx="3.4" dy="3.4" layer="1" thermals="no" cream="no"/>
+<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="0.4" layer="31"/>
+<rectangle x1="-1.4" y1="-0.4" x2="-0.6" y2="0.4" layer="31"/>
+<rectangle x1="0.6" y1="-0.4" x2="1.4" y2="0.4" layer="31"/>
+<rectangle x1="0.6" y1="0.6" x2="1.4" y2="1.4" layer="31"/>
+<rectangle x1="-0.4" y1="0.6" x2="0.4" y2="1.4" layer="31"/>
+<rectangle x1="-1.4" y1="0.6" x2="-0.6" y2="1.4" layer="31"/>
+<rectangle x1="-1.4" y1="-1.4" x2="-0.6" y2="-0.6" layer="31"/>
+<rectangle x1="-0.4" y1="-1.4" x2="0.4" y2="-0.6" layer="31"/>
+<rectangle x1="0.6" y1="-1.4" x2="1.4" y2="-0.6" layer="31"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="1.75" x2="-4" y2="2.25" width="0.127" layer="51"/>
+<wire x1="-4" y1="2.25" x2="-4" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-4" y1="1.25" x2="-2.75" y2="1.75" width="0.127" layer="51"/>
+<text x="0" y="3.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="KSZ8041">
@@ -198,6 +251,52 @@ RNL:REFCLK_OUT</text>
 </gates>
 <devices>
 <device name="N" package="QFN32-5X5-0.5">
+<connects>
+<connect gate="PHY" pin="!RESET" pad="32"/>
+<connect gate="PHY" pin="COL/CFG0" pad="28"/>
+<connect gate="PHY" pin="CRS/CFG1" pad="29"/>
+<connect gate="PHY" pin="CRS_DV/CFG2" pad="18"/>
+<connect gate="PHY" pin="GND" pad="1 PAD"/>
+<connect gate="PHY" pin="INT" pad="21"/>
+<connect gate="PHY" pin="LED0/NWAYEN" pad="30"/>
+<connect gate="PHY" pin="LED1/SPEED" pad="31"/>
+<connect gate="PHY" pin="MDC" pad="12"/>
+<connect gate="PHY" pin="MDIO" pad="11"/>
+<connect gate="PHY" pin="REFCLK/XI" pad="9"/>
+<connect gate="PHY" pin="REXT" pad="10"/>
+<connect gate="PHY" pin="RX+" pad="5"/>
+<connect gate="PHY" pin="RX-" pad="4"/>
+<connect gate="PHY" pin="RXC/REF_CLK" pad="19"/>
+<connect gate="PHY" pin="RXD0/DUP" pad="16"/>
+<connect gate="PHY" pin="RXD1/ADDR2" pad="15"/>
+<connect gate="PHY" pin="RXD2/ADDR1" pad="14"/>
+<connect gate="PHY" pin="RXD3/ADDR0" pad="13"/>
+<connect gate="PHY" pin="RX_ER/ISO" pad="20"/>
+<connect gate="PHY" pin="TX+" pad="7"/>
+<connect gate="PHY" pin="TX-" pad="6"/>
+<connect gate="PHY" pin="TXC/NC" pad="22"/>
+<connect gate="PHY" pin="TXD0" pad="24"/>
+<connect gate="PHY" pin="TXD1" pad="25"/>
+<connect gate="PHY" pin="TXD2/NC" pad="26"/>
+<connect gate="PHY" pin="TXD3/NC" pad="27"/>
+<connect gate="PHY" pin="TX_EN" pad="23"/>
+<connect gate="PHY" pin="VDDA" pad="3"/>
+<connect gate="PHY" pin="VDDIO" pad="17"/>
+<connect gate="PHY" pin="VDDPLL" pad="2"/>
+<connect gate="PHY" pin="XO" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Microchip"/>
+<attribute name="MPN" value="KSZ8041NL"/>
+</technology>
+<technology name="R">
+<attribute name="MF" value="Microchip"/>
+<attribute name="MPN" value="KSZ8041RNL"/>
+</technology>
+</technologies>
+</device>
+<device name="Ν" package="QFN32-5X5-0.5-LONGFEET">
 <connects>
 <connect gate="PHY" pin="!RESET" pad="32"/>
 <connect gate="PHY" pin="COL/CFG0" pad="28"/>

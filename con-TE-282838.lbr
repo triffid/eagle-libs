@@ -96,6 +96,40 @@
 <rectangle x1="-6.25" y1="-10" x2="-3.75" y2="-4.25" layer="39"/>
 <rectangle x1="3.75" y1="-10" x2="6.25" y2="-4.25" layer="39"/>
 </package>
+<package name="282818-2">
+<pad name="1" x="-5.08" y="4" drill="1.4"/>
+<pad name="2" x="5.08" y="4" drill="1.4"/>
+<wire x1="-8.78" y1="6" x2="8.28" y2="6" width="0.127" layer="21"/>
+<wire x1="8.28" y1="6" x2="8.28" y2="-6" width="0.127" layer="21"/>
+<wire x1="8.28" y1="-6" x2="-8.78" y2="-6" width="0.127" layer="21"/>
+<wire x1="-8.78" y1="-6" x2="-8.78" y2="6" width="0.127" layer="21"/>
+<rectangle x1="-9" y1="-6.25" x2="8.5" y2="6.25" layer="39"/>
+<rectangle x1="-7.5" y1="-12" x2="7.5" y2="-6.25" layer="39"/>
+<wire x1="-6.35" y1="5.85" x2="-6.35" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="5.85" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="5.85" x2="-1.27" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="51"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="5.85" width="0.127" layer="51"/>
+<wire x1="3.81" y1="5.85" x2="3.81" y2="2.54" width="0.127" layer="51"/>
+<wire x1="3.81" y1="2.54" x2="6.35" y2="2.54" width="0.127" layer="51"/>
+<wire x1="6.35" y1="2.54" x2="6.35" y2="5.85" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="-1.27" y1="-5.08" x2="1.27" y2="-5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="3.81" y1="-5.08" x2="6.35" y2="-5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="-6.35" y1="-5.08" x2="-7.62" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-5.08" x2="6.35" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-5.08" x2="1.27" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="51"/>
+<circle x="-5.08" y="-3.175" radius="0.6" width="0.127" layer="51"/>
+<circle x="0" y="-3.175" radius="0.6" width="0.127" layer="51"/>
+<circle x="5.08" y="-3.175" radius="0.6" width="0.127" layer="51"/>
+<text x="0" y="7" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SKB">
@@ -112,7 +146,7 @@
 <gate name="-2" symbol="SKB" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="282838-2">
+<device name="282838-2" package="282838-2">
 <connects>
 <connect gate="-1" pin="1" pad="1"/>
 <connect gate="-2" pin="1" pad="2"/>
@@ -121,6 +155,18 @@
 <technology name="">
 <attribute name="MF" value="TE Connectivity"/>
 <attribute name="MPN" value="282838-2"/>
+</technology>
+</technologies>
+</device>
+<device name="282818-2" package="282818-2">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="TE Connectivity"/>
+<attribute name="MPN" value="282818-2"/>
 </technology>
 </technologies>
 </device>

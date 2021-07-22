@@ -435,6 +435,17 @@ Metric Code Size 2012</description>
 <rectangle x1="-8" y1="-18" x2="-2" y2="-10" layer="39"/>
 <rectangle x1="2" y1="-18" x2="8" y2="-10" layer="39"/>
 </package>
+<package name="XAL1010">
+<smd name="1" x="-3.325" y="0" dx="2.38" dy="9" layer="1"/>
+<smd name="2" x="3.325" y="0" dx="2.38" dy="9" layer="1"/>
+<wire x1="-5" y1="5.75" x2="5" y2="5.75" width="0.127" layer="21"/>
+<wire x1="5" y1="5.75" x2="5" y2="-5.75" width="0.127" layer="21"/>
+<wire x1="5" y1="-5.75" x2="-5" y2="-5.75" width="0.127" layer="21"/>
+<wire x1="-5" y1="-5.75" x2="-5" y2="5.75" width="0.127" layer="21"/>
+<text x="0" y="7" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<rectangle x1="-1" y1="-2" x2="1" y2="2" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L-US">
@@ -671,6 +682,18 @@ Metric Code Size 2012</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="XAL1010" package="XAL1010">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="CoilCraft"/>
+<attribute name="MPN" value="XAL1010-xxxME" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

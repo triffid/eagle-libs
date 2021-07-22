@@ -104,10 +104,26 @@
 <wire x1="-3.5" y1="4.25" x2="-3.5" y2="-0.5" width="0.127" layer="21"/>
 <text x="0" y="6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="SM02B-SRSS-TB">
+<description>JST-SH (1.25mm) 5-pin surface-mount right-angle Wire-Board Connector</description>
+<smd name="M1" x="1.8" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="M2" x="-1.8" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="1" x="-0.5" y="4.675" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="0.5" y="4.675" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-2" y1="-0.5" x2="2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.5" x2="2" y2="4.25" width="0.127" layer="21"/>
+<wire x1="2" y1="4.25" x2="-2" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-2" y1="4.25" x2="-2" y2="-0.5" width="0.127" layer="21"/>
+<text x="0" y="6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-2.25" y1="-1" x2="2.25" y2="4.5" layer="39"/>
+<rectangle x1="-2.5" y1="-6" x2="2.5" y2="-1" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
 <pin name="P" x="2.54" y="0" visible="pad" length="short" rot="R180"/>
+<text x="0" y="-0.635" size="1.016" layer="95" rot="R180" align="center-left">&gt;NAME</text>
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -163,6 +179,28 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SM02B-SRSS-TB" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="M" symbol="PIN" x="0" y="-10.16" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SM02B-SRSS-TB">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-2" pin="P" pad="2"/>
+<connect gate="M" pin="P" pad="M1 M2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="SM02B-SRSS-TB"/>
+</technology>
 </technologies>
 </device>
 </devices>

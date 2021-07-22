@@ -71,7 +71,7 @@
 </layers>
 <library>
 <packages>
-<package name="E73-2GM404S">
+<package name="E73-2G4M04S">
 <wire x1="-14.35" y1="8.75" x2="14.35" y2="8.75" width="0.127" layer="21"/>
 <wire x1="14.35" y1="8.75" x2="14.35" y2="-8.75" width="0.127" layer="21"/>
 <wire x1="14.35" y1="-8.75" x2="-14.35" y2="-8.75" width="0.127" layer="21"/>
@@ -145,46 +145,46 @@
 <wire x1="17.78" y1="-27.94" x2="-17.78" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-27.94" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
 <pin name="GND" x="2.54" y="-30.48" visible="pin" length="short" direction="pwr" rot="R90"/>
-<pin name="VDD" x="0" y="30.48" visible="pin" length="short" direction="pwr" rot="R270"/>
-<pin name="DEC2" x="-7.62" y="-30.48" visible="pin" length="short" rot="R90"/>
-<pin name="DEC3" x="-2.54" y="-30.48" visible="pin" length="short" rot="R90"/>
-<pin name="DEC4" x="7.62" y="-30.48" visible="pin" length="short" rot="R90"/>
-<pin name="DEC1" x="-12.7" y="-30.48" visible="pin" length="short" rot="R90"/>
-<pin name="DCC" x="12.7" y="-30.48" visible="pin" length="short" rot="R90"/>
-<pin name="SWDCLK" x="20.32" y="22.86" visible="pin" length="short" direction="in" rot="R180"/>
-<pin name="SWDIO" x="20.32" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="AIN0/P0.02" x="20.32" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="AIN1/P0.03" x="20.32" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="AIN2/P0.04" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="AIN3/P0.05" x="20.32" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="P0.06" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="P0.07" x="20.32" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="P0.08" x="20.32" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="NFC1/P0.09" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="NFC2/P0.10" x="20.32" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="P0.11" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="P0.12" x="20.32" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="P0.13" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="P0.14" x="20.32" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="P0.15" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="P0.16" x="-20.32" y="22.86" visible="pin" length="short"/>
-<pin name="P0.17" x="-20.32" y="20.32" visible="pin" length="short"/>
-<pin name="P0.18" x="-20.32" y="17.78" visible="pin" length="short"/>
-<pin name="P0.19" x="-20.32" y="15.24" visible="pin" length="short"/>
-<pin name="P0.20" x="-20.32" y="12.7" visible="pin" length="short"/>
-<pin name="P0.21/!RESET" x="-20.32" y="10.16" visible="pin" length="short"/>
-<pin name="P0.22" x="-20.32" y="7.62" visible="pin" length="short"/>
-<pin name="P0.23" x="-20.32" y="5.08" visible="pin" length="short"/>
-<pin name="P0.24" x="-20.32" y="0" visible="pin" length="short"/>
-<pin name="P0.25" x="-20.32" y="-2.54" visible="pin" length="short"/>
-<pin name="P0.26" x="-20.32" y="-5.08" visible="pin" length="short"/>
-<pin name="P0.27" x="-20.32" y="-7.62" visible="pin" length="short"/>
-<pin name="P0.28/AIN4" x="-20.32" y="-10.16" visible="pin" length="short"/>
-<pin name="P0.29/AIN5" x="-20.32" y="-12.7" visible="pin" length="short"/>
-<pin name="P0.30/AIN6" x="-20.32" y="-15.24" visible="pin" length="short"/>
-<pin name="P0.31/AIN7" x="-20.32" y="-17.78" visible="pin" length="short"/>
-<text x="-10.16" y="30.48" size="1.778" layer="95" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.778" layer="96" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<pin name="VDD" x="0" y="30.48" length="short" direction="pwr" rot="R270"/>
+<pin name="DEC2" x="-7.62" y="-30.48" length="short" rot="R90"/>
+<pin name="DEC3" x="-2.54" y="-30.48" length="short" rot="R90"/>
+<pin name="DEC4" x="7.62" y="-30.48" length="short" rot="R90"/>
+<pin name="DEC1" x="-12.7" y="-30.48" length="short" rot="R90"/>
+<pin name="DCC" x="12.7" y="-30.48" length="short" rot="R90"/>
+<pin name="SWDCLK" x="20.32" y="22.86" length="short" direction="in" rot="R180"/>
+<pin name="SWDIO" x="20.32" y="20.32" length="short" rot="R180"/>
+<pin name="AIN0/P0.02" x="20.32" y="17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="AIN1/P0.03" x="20.32" y="15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="AIN2/P0.04" x="20.32" y="12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="AIN3/P0.05" x="20.32" y="10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.06" x="20.32" y="7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.07" x="20.32" y="5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.08" x="20.32" y="0" length="short" swaplevel="1" rot="R180"/>
+<pin name="NFC1/P0.09" x="20.32" y="-2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="NFC2/P0.10" x="20.32" y="-5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.11" x="20.32" y="-7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.12" x="20.32" y="-10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.13" x="20.32" y="-12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.14" x="20.32" y="-15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.15" x="20.32" y="-17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="P0.16" x="-20.32" y="22.86" length="short" swaplevel="1"/>
+<pin name="P0.17" x="-20.32" y="20.32" length="short" swaplevel="1"/>
+<pin name="P0.18" x="-20.32" y="17.78" length="short" swaplevel="1"/>
+<pin name="P0.19" x="-20.32" y="15.24" length="short" swaplevel="1"/>
+<pin name="P0.20" x="-20.32" y="12.7" length="short" swaplevel="1"/>
+<pin name="P0.21/!RESET" x="-20.32" y="10.16" length="short"/>
+<pin name="P0.22" x="-20.32" y="7.62" length="short" swaplevel="1"/>
+<pin name="P0.23" x="-20.32" y="5.08" length="short" swaplevel="1"/>
+<pin name="P0.24" x="-20.32" y="0" length="short" swaplevel="1"/>
+<pin name="P0.25" x="-20.32" y="-2.54" length="short" swaplevel="1"/>
+<pin name="P0.26" x="-20.32" y="-5.08" length="short" swaplevel="1"/>
+<pin name="P0.27" x="-20.32" y="-7.62" length="short" swaplevel="1"/>
+<pin name="P0.28/AIN4" x="-20.32" y="-10.16" length="short" swaplevel="1"/>
+<pin name="P0.29/AIN5" x="-20.32" y="-12.7" length="short" swaplevel="1"/>
+<pin name="P0.30/AIN6" x="-20.32" y="-15.24" length="short" swaplevel="1"/>
+<pin name="P0.31/AIN7" x="-20.32" y="-17.78" length="short" swaplevel="1"/>
+<text x="2.54" y="30.48" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
+<text x="0" y="0" size="1.778" layer="96" ratio="15" rot="R90" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -203,16 +203,16 @@
     RAM: 64kb&lt;br/&gt;
     CORE: ARM Cortex-M4F&lt;br/&gt;&lt;/li&gt;
 
-&lt;li&gt;1C: &lt;a href="http://www.ebyte.com/product-view-news.aspx?id=444"&gt;NRF52840&lt;/a&gt;&lt;br/&gt;
-    FLASH: 1024kb&lt;br/&gt;
-    RAM: 256kb&lt;br/&gt;
-    CORE: ARM Cortex-M4&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;1D: &lt;a href="http://www.ebyte.com/product-view-news.aspx?id=303"&gt;NRF51822&lt;/a&gt;&lt;br/&gt;
+    FLASH: 256kb&lt;br/&gt;
+    RAM: 16kb&lt;br/&gt;
+    CORE: ARM Cortex-M0&lt;br/&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="E73-2G4M04S" x="0" y="0"/>
 </gates>
 <devices>
-<device name="1B" package="E73-2GM404S">
+<device name="1B" package="E73-2G4M04S">
 <connects>
 <connect gate="G$1" pin="AIN0/P0.02" pad="17"/>
 <connect gate="G$1" pin="AIN1/P0.03" pad="18"/>
@@ -255,10 +255,15 @@
 <connect gate="G$1" pin="VDD" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Chengdu Ebyte / 亿佰特
+"/>
+<attribute name="MPN" value="E73-2G4M04S1B
+"/>
+</technology>
 </technologies>
 </device>
-<device name="1A" package="E73-2GM404S">
+<device name="1A" package="E73-2G4M04S">
 <connects>
 <connect gate="G$1" pin="AIN0/P0.02" pad="17"/>
 <connect gate="G$1" pin="AIN1/P0.03" pad="18"/>
@@ -301,7 +306,11 @@
 <connect gate="G$1" pin="VDD" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Chengdu Ebyte / 亿佰特
+"/>
+<attribute name="MPN" value="E73-2G4M04S1A"/>
+</technology>
 </technologies>
 </device>
 </devices>

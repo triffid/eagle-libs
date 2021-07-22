@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -95,6 +95,41 @@
 <wire x1="-3.25" y1="2" x2="-1.5" y2="1.25" width="0.127" layer="51"/>
 <rectangle x1="-1.25" y1="-1.75" x2="1.25" y2="1.75" layer="39"/>
 </package>
+<package name="DSBGA-4-0.35">
+<smd name="A1" x="-0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B1" x="-0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" rot="R90" stop="no" cream="no"/>
+<smd name="B2" x="0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" rot="R180" stop="no" cream="no"/>
+<smd name="A2" x="0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" rot="R270" stop="no" cream="no"/>
+<wire x1="-0.3225" y1="0.3225" x2="0.3225" y2="0.3225" width="0.127" layer="21"/>
+<wire x1="0.3225" y1="0.3225" x2="0.3225" y2="-0.3225" width="0.127" layer="21"/>
+<wire x1="0.3225" y1="-0.3225" x2="-0.3225" y2="-0.3225" width="0.127" layer="21"/>
+<wire x1="-0.3225" y1="-0.3225" x2="-0.3225" y2="0.3225" width="0.127" layer="21"/>
+<circle x="-0.175" y="0.175" radius="0.15" width="0.127" layer="51"/>
+<circle x="-0.175" y="0.175" radius="0.065" width="0.13" layer="29"/>
+<circle x="0.175" y="0.175" radius="0.065" width="0.13" layer="29"/>
+<circle x="0.175" y="-0.175" radius="0.065" width="0.13" layer="29"/>
+<circle x="-0.175" y="-0.175" radius="0.065" width="0.13" layer="29"/>
+<wire x1="-0.2" y1="0.2" x2="-0.15" y2="0.2" width="0.13" layer="31"/>
+<wire x1="-0.15" y1="0.2" x2="-0.15" y2="0.15" width="0.13" layer="31"/>
+<wire x1="-0.15" y1="0.15" x2="-0.2" y2="0.15" width="0.13" layer="31"/>
+<wire x1="-0.2" y1="0.15" x2="-0.2" y2="0.2" width="0.13" layer="31"/>
+<wire x1="0.2" y1="0.2" x2="0.2" y2="0.15" width="0.13" layer="31"/>
+<wire x1="0.2" y1="0.15" x2="0.15" y2="0.15" width="0.13" layer="31"/>
+<wire x1="0.15" y1="0.15" x2="0.15" y2="0.2" width="0.13" layer="31"/>
+<wire x1="0.15" y1="0.2" x2="0.2" y2="0.2" width="0.13" layer="31"/>
+<wire x1="-0.2" y1="-0.2" x2="-0.2" y2="-0.15" width="0.13" layer="31"/>
+<wire x1="-0.2" y1="-0.15" x2="-0.15" y2="-0.15" width="0.13" layer="31"/>
+<wire x1="-0.15" y1="-0.15" x2="-0.15" y2="-0.2" width="0.13" layer="31"/>
+<wire x1="-0.15" y1="-0.2" x2="-0.2" y2="-0.2" width="0.13" layer="31"/>
+<wire x1="0.15" y1="-0.15" x2="0.2" y2="-0.15" width="0.13" layer="31"/>
+<wire x1="0.2" y1="-0.15" x2="0.2" y2="-0.2" width="0.13" layer="31"/>
+<wire x1="0.2" y1="-0.2" x2="0.15" y2="-0.2" width="0.13" layer="31"/>
+<wire x1="0.15" y1="-0.2" x2="0.15" y2="-0.15" width="0.13" layer="31"/>
+<text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-0.4" y1="0.05" x2="-0.4" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="0.4" x2="-0.05" y2="0.4" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TPS736-FIXED">
@@ -124,7 +159,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LP5907" prefix="IC">
+<deviceset name="LP5907?*" prefix="IC">
 <description>&lt;h1&gt;Low Power LDO Linear Regulator&lt;/h1&gt;</description>
 <gates>
 <gate name="A" symbol="LP5907" x="0" y="0"/>
@@ -139,6 +174,41 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="UVE" package="DSBGA-4-0.35">
+<connects>
+<connect gate="A" pin="EN" pad="B1"/>
+<connect gate="A" pin="GND" pad="B2"/>
+<connect gate="A" pin="IN" pad="A1"/>
+<connect gate="A" pin="OUT" pad="A2"/>
+</connects>
+<technologies>
+<technology name="-1.2">
+<attribute name="MARK" value="R"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907UVE-1.2/NOPB"/>
+</technology>
+<technology name="-1.8">
+<attribute name="MARK" value="S"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907UVE-1.8/NOPB"/>
+</technology>
+<technology name="-2.8">
+<attribute name="MARK" value="U"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907UVE-2.8/NOPB"/>
+</technology>
+<technology name="-3.0">
+<attribute name="MARK" value="B"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907UVE-3.0/NOPB"/>
+</technology>
+<technology name="-3.3">
+<attribute name="MARK" value="D"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907UVE-3.3/NOPB"/>
+</technology>
 </technologies>
 </device>
 </devices>
