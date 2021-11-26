@@ -150,10 +150,10 @@
 <wire x1="22.86" y1="-35.56" x2="-22.86" y2="-35.56" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="-35.56" x2="-22.86" y2="38.1" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="-38.1" length="short" direction="pwr" rot="R90"/>
-<pin name="DVDD" x="-5.08" y="-38.1" length="short" direction="pwr" rot="R90"/>
-<pin name="AVDD" x="5.08" y="-38.1" length="short" direction="pwr" rot="R90"/>
-<pin name="VCP_LSD" x="-10.16" y="-38.1" length="short" direction="pwr" rot="R90"/>
-<pin name="VCPH" x="10.16" y="40.64" length="short" direction="pwr" rot="R270"/>
+<pin name="DVDD" x="-5.08" y="-38.1" length="short" rot="R90"/>
+<pin name="AVDD" x="5.08" y="-38.1" length="short" rot="R90"/>
+<pin name="VCP_LSD" x="-10.16" y="-38.1" length="short" rot="R90"/>
+<pin name="VCPH" x="10.16" y="40.64" length="short" rot="R270"/>
 <pin name="PVDD" x="5.08" y="40.64" length="short" direction="pwr" rot="R270"/>
 <pin name="VDRAIN" x="25.4" y="30.48" length="short" direction="pwr" rot="R180"/>
 <pin name="GH_A" x="25.4" y="25.4" length="short" direction="out" swaplevel="4" rot="R180"/>

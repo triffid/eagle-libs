@@ -188,6 +188,29 @@
 <text x="0" y="5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
+<package name="MC0,5/2-G-2,5_1881448">
+<pad name="1" x="1.25" y="3.85" drill="1.2"/>
+<pad name="2" x="-1.25" y="3.85" drill="1.2"/>
+<wire x1="-3.45" y1="5.05" x2="3.45" y2="5.05" width="0.127" layer="21"/>
+<wire x1="3.45" y1="5.05" x2="3.45" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="3.45" y1="-5.05" x2="-3.45" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-3.45" y1="-5.05" x2="-3.45" y2="5.05" width="0.127" layer="21"/>
+<rectangle x1="-3.5" y1="-24.25" x2="3.5" y2="5.35" layer="39"/>
+<text x="0" y="5.85" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="1.85" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="MC0,5/3-G-2,5_1881451">
+<pad name="1" x="2.5" y="3.85" drill="1.2"/>
+<pad name="2" x="0" y="3.85" drill="1.2"/>
+<wire x1="-4.7" y1="5.05" x2="4.7" y2="5.05" width="0.127" layer="21"/>
+<wire x1="4.7" y1="5.05" x2="4.7" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="4.7" y1="-5.05" x2="-4.7" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-4.7" y1="-5.05" x2="-4.7" y2="5.05" width="0.127" layer="21"/>
+<rectangle x1="-4.75" y1="-24.25" x2="4.75" y2="5.35" layer="39"/>
+<text x="0" y="5.85" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="1.85" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<pad name="3" x="-2.5" y="3.85" drill="1.2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SKB">
@@ -273,7 +296,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MC0,5/6-G-2,54P20THR44-1821287" prefix="J">
+<deviceset name="MC0,5/6" prefix="J">
 <gates>
 <gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
 <gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
@@ -285,7 +308,7 @@
 <gate name="-M2" symbol="PIN" x="0" y="-15.24" addlevel="request" swaplevel="2"/>
 </gates>
 <devices>
-<device name="" package="MC0,5/6-G-2,54P20THR44-1821287">
+<device name="-1821287" package="MC0,5/6-G-2,54P20THR44-1821287">
 <connects>
 <connect gate="-1" pin="1" pad="1"/>
 <connect gate="-2" pin="1" pad="2"/>
@@ -297,9 +320,54 @@
 <connect gate="-M2" pin="1" pad="M2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="Phoenix Contact"/>
+<technology name="-G,254">
+<attribute name="MATING" value="1821135"/>
+<attribute name="MF" value="Phoenix"/>
 <attribute name="MPN" value="1821287"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC0,5/2" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-1881448" package="MC0,5/2-G-2,5_1881448">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name="-G-2,5">
+<attribute name="MATING" value="1881325"/>
+<attribute name="MF" value="Phoenix"/>
+<attribute name="MPN" value="1881448"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC0,5/3" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-1881451" package="MC0,5/3-G-2,5_1881451">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+</connects>
+<technologies>
+<technology name="-G-2,5">
+<attribute name="MATING" value="1881338"/>
+<attribute name="MF" value="Phoenix"/>
+<attribute name="MPN" value="1881451"/>
 </technology>
 </technologies>
 </device>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="4" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -132,18 +132,19 @@
 <wire x1="5.08" y1="12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<text x="0" y="15.24" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-17.78" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="-3.81" y="13.97" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-3.81" y="-16.51" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
 <symbol name="I2C-IO">
-<pin name="SCK" x="-10.16" y="2.54" length="short" direction="oc" swaplevel="1"/>
+<pin name="SCL" x="-10.16" y="2.54" length="short" direction="oc" swaplevel="1"/>
 <pin name="SDA" x="-10.16" y="-2.54" length="short" direction="oc" swaplevel="1"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="10.16" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-10.16" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="-7.62" y="8.89" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-7.62" y="-8.89" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<text x="-6.985" y="0" size="1.27" layer="97" align="center-left">&gt;ADDRESS=</text>
 </symbol>
 <symbol name="SPI-IO">
 <pin name="SCK" x="-10.16" y="2.54" length="short" direction="in" swaplevel="1"/>
@@ -161,15 +162,15 @@
 <pin name="A0" x="10.16" y="2.54" length="short" direction="in" rot="R180"/>
 <pin name="A1" x="10.16" y="0" length="short" direction="in" rot="R180"/>
 <pin name="A2" x="10.16" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="RST" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="!RST" x="-10.16" y="0" length="short" direction="in"/>
 <pin name="VDD" x="0" y="10.16" length="short" direction="pwr" rot="R270"/>
 <pin name="GND" x="0" y="-10.16" length="short" direction="pwr" rot="R90"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="2.54" y="10.16" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="2.54" y="-10.16" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<text x="2.54" y="8.89" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-8.89" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -201,11 +202,11 @@
 <connect gate="B" pin="6" pad="3"/>
 <connect gate="B" pin="7" pad="4"/>
 <connect gate="B" pin="INT" pad="15"/>
+<connect gate="P" pin="!RST" pad="14"/>
 <connect gate="P" pin="A0" pad="11"/>
 <connect gate="P" pin="A1" pad="12"/>
 <connect gate="P" pin="A2" pad="13"/>
 <connect gate="P" pin="GND" pad="6 PAD"/>
-<connect gate="P" pin="RST" pad="14"/>
 <connect gate="P" pin="VDD" pad="5"/>
 <connect gate="S" pin="!CS" pad="7"/>
 <connect gate="S" pin="MISO" pad="10"/>
@@ -213,7 +214,59 @@
 <connect gate="S" pin="SCK" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MARK" value="23S17 E/ML"/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MPN" value="MCP23S17-E/ML"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP23017" prefix="IC">
+<gates>
+<gate name="A" symbol="GPIO" x="0" y="20.32" swaplevel="1"/>
+<gate name="B" symbol="GPIO" x="17.78" y="20.32" swaplevel="1"/>
+<gate name="P" symbol="PWR-RST-ADDR" x="0" y="-15.24" addlevel="must"/>
+<gate name="S" symbol="I2C-IO" x="25.4" y="-15.24" addlevel="must"/>
+</gates>
+<devices>
+<device name="-E/ML" package="QFN28-0.65">
+<connects>
+<connect gate="A" pin="0" pad="17"/>
+<connect gate="A" pin="1" pad="18"/>
+<connect gate="A" pin="2" pad="19"/>
+<connect gate="A" pin="3" pad="20"/>
+<connect gate="A" pin="4" pad="21"/>
+<connect gate="A" pin="5" pad="22"/>
+<connect gate="A" pin="6" pad="23"/>
+<connect gate="A" pin="7" pad="24"/>
+<connect gate="A" pin="INT" pad="16"/>
+<connect gate="B" pin="0" pad="25"/>
+<connect gate="B" pin="1" pad="26"/>
+<connect gate="B" pin="2" pad="27"/>
+<connect gate="B" pin="3" pad="28"/>
+<connect gate="B" pin="4" pad="1"/>
+<connect gate="B" pin="5" pad="2"/>
+<connect gate="B" pin="6" pad="3"/>
+<connect gate="B" pin="7" pad="4"/>
+<connect gate="B" pin="INT" pad="15"/>
+<connect gate="P" pin="!RST" pad="14"/>
+<connect gate="P" pin="A0" pad="11"/>
+<connect gate="P" pin="A1" pad="12"/>
+<connect gate="P" pin="A2" pad="13"/>
+<connect gate="P" pin="GND" pad="6 PAD"/>
+<connect gate="P" pin="VDD" pad="5"/>
+<connect gate="S" pin="SCL" pad="8"/>
+<connect gate="S" pin="SDA" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ADDRESS" value="0x20" constant="no"/>
+<attribute name="MARK" value="23017 E/ML"/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MPN" value="MCP23017-E/ML"/>
+</technology>
 </technologies>
 </device>
 </devices>

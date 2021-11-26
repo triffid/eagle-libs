@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -62,7 +62,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,61 +71,113 @@
 </layers>
 <library>
 <packages>
-<package name="TP-SMD-09">
-<smd name="1" x="0" y="0" dx="0.9" dy="0.9" layer="1" roundness="100"/>
-<text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<package name="6-WDFN+P">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="PAD" x="0" y="0" dx="1" dy="1" layer="1"/>
+<smd name="1" x="-1.5" y="0.95" dx="0.71" dy="0.46" layer="1"/>
+<smd name="2" x="-1.5" y="0" dx="0.71" dy="0.46" layer="1"/>
+<smd name="3" x="-1.5" y="-0.95" dx="0.71" dy="0.46" layer="1"/>
+<smd name="4" x="1.5" y="-0.95" dx="0.71" dy="0.46" layer="1" rot="R180"/>
+<smd name="5" x="1.5" y="0" dx="0.71" dy="0.46" layer="1" rot="R180"/>
+<smd name="6" x="1.5" y="0.95" dx="0.71" dy="0.46" layer="1" rot="R180"/>
+<polygon width="0.2" layer="1">
+<vertex x="-0.65" y="0.85"/>
+<vertex x="-0.45" y="1.05"/>
+<vertex x="0.65" y="1.05"/>
+<vertex x="0.65" y="-1.05"/>
+<vertex x="-0.65" y="-1.05"/>
+</polygon>
+<circle x="-0.9" y="0.9" radius="0.25495" width="0.2" layer="51"/>
+<wire x1="-2.125" y1="1" x2="-3" y2="1.375" width="0.2" layer="51"/>
+<wire x1="-3" y1="1.375" x2="-3" y2="0.625" width="0.2" layer="51"/>
+<wire x1="-3" y1="0.625" x2="-2.125" y2="1" width="0.2" layer="51"/>
+<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="TP-TH-06">
-<pad name="1" x="0" y="0" drill="0.6"/>
-<text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="FIDUCIAL-0.5X3.5MM">
-<circle x="0" y="0" radius="0.125" width="0.25" layer="1"/>
-<circle x="0" y="0" radius="0.375" width="0.75" layer="29"/>
-<circle x="0" y="0" radius="0.5" width="0.5" layer="41"/>
-</package>
-<package name="TP-TH-10">
-<pad name="1" x="0" y="0" drill="1"/>
-<text x="0" y="1.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<package name="8-MSOP">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.2" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.2" layer="21"/>
+<smd name="1" x="-2.15" y="0.975" dx="1.35" dy="0.4" layer="1"/>
+<smd name="2" x="-2.15" y="0.325" dx="1.35" dy="0.4" layer="1"/>
+<smd name="3" x="-2.15" y="-0.325" dx="1.35" dy="0.4" layer="1"/>
+<smd name="4" x="-2.15" y="-0.975" dx="1.35" dy="0.4" layer="1"/>
+<smd name="5" x="2.15" y="-0.975" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="6" x="2.15" y="-0.325" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="7" x="2.15" y="0.325" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="8" x="2.15" y="0.975" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<circle x="-0.85" y="0.85" radius="0.282840625" width="0.2" layer="51"/>
+<wire x1="-3" y1="1" x2="-4.125" y2="1.5" width="0.2" layer="51"/>
+<wire x1="-4.125" y1="1.5" x2="-4.125" y2="0.5" width="0.2" layer="51"/>
+<wire x1="-4.125" y1="0.5" x2="-3" y2="1" width="0.2" layer="51"/>
+<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="TP">
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<wire x1="0" y1="0" x2="-2.2225" y2="2.2225" width="0.254" layer="94"/>
-<wire x1="-2.2225" y1="2.2225" x2="1.905" y2="2.2225" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.2225" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="3.81" size="1.27" layer="95" align="center">&gt;VALUE</text>
+<symbol name="OPAMP">
+<wire x1="-2.54" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="OUT" x="10.16" y="0" visible="off" length="short" direction="out" rot="R180"/>
+<pin name="NINV" x="-5.08" y="2.54" visible="off" length="short" direction="in"/>
+<pin name="INV" x="-5.08" y="-2.54" visible="off" length="short" direction="in"/>
+<text x="-1.905" y="0.635" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.27" layer="96" align="center-left">&gt;VALUE</text>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PWR">
+<pin name="V+" x="0" y="5.08" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="V-" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="0" y="1.27" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="96" align="center">&gt;VALUE</text>
+<wire x1="-2.54" y1="3.175" x2="-1.27" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="3.81" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.175" x2="-1.27" y2="-3.175" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TESTPOINT" prefix="TP" uservalue="yes">
+<deviceset name="MAX9945" prefix="IC">
 <gates>
-<gate name="A" symbol="TP" x="0" y="0"/>
+<gate name="A" symbol="OPAMP" x="0" y="0" addlevel="always"/>
+<gate name="-PWR" symbol="PWR" x="2.54" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="SMD09" package="TP-SMD-09">
+<device name="ATT+" package="6-WDFN+P">
 <connects>
-<connect gate="A" pin="P$1" pad="1"/>
+<connect gate="-PWR" pin="V+" pad="6"/>
+<connect gate="-PWR" pin="V-" pad="2"/>
+<connect gate="A" pin="INV" pad="4"/>
+<connect gate="A" pin="NINV" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MARK" value="AUE"/>
+<attribute name="MF" value="Maxim Integrated"/>
+<attribute name="MPN" value="MAX9945ATT+"/>
+</technology>
 </technologies>
 </device>
-<device name="TH06" package="TP-TH-06">
+<device name="AUA+" package="8-MSOP">
 <connects>
-<connect gate="A" pin="P$1" pad="1"/>
+<connect gate="-PWR" pin="V+" pad="7"/>
+<connect gate="-PWR" pin="V-" pad="4"/>
+<connect gate="A" pin="INV" pad="2"/>
+<connect gate="A" pin="NINV" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TH10" package="TP-TH-10">
-<connects>
-<connect gate="A" pin="P$1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Maxim Integrated"/>
+<attribute name="MPN" value="MAX9945AUA+"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -2,10 +2,10 @@
 #-*- coding: utf8 -*-
 
 # low voltage turn-on threshold
-Vuvh = 32
+Vuvh = 44
 
 # low voltage turn-off threshold
-Vuvl = 29.5
+Vuvl = 41
 
 # high voltage turn-off threshold
 Vovh = 62
@@ -14,10 +14,10 @@ Vovh = 62
 Plim = 30
 
 # current limit, amps
-Imax = 10
+Imax = 2
 
 # capacitance downstream of the controller
-Cout = 2.2e-6 * 11
+Cout = 100e-6 * 3
 
 import sys
 from pprint import pprint, pformat

@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -71,61 +71,98 @@
 </layers>
 <library>
 <packages>
-<package name="TP-SMD-09">
-<smd name="1" x="0" y="0" dx="0.9" dy="0.9" layer="1" roundness="100"/>
-<text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="TP-TH-06">
-<pad name="1" x="0" y="0" drill="0.6"/>
-<text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</package>
-<package name="FIDUCIAL-0.5X3.5MM">
-<circle x="0" y="0" radius="0.125" width="0.25" layer="1"/>
-<circle x="0" y="0" radius="0.375" width="0.75" layer="29"/>
-<circle x="0" y="0" radius="0.5" width="0.5" layer="41"/>
-</package>
-<package name="TP-TH-10">
-<pad name="1" x="0" y="0" drill="1"/>
-<text x="0" y="1.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<package name="PDQE20">
+<pad name="1" x="-10.16" y="10.16" drill="1.5" shape="square" first="yes"/>
+<pad name="2" x="-10.16" y="2.54" drill="1.5"/>
+<pad name="3" x="-10.16" y="-2.54" drill="1.5"/>
+<pad name="4" x="10.16" y="-10.16" drill="1.5"/>
+<pad name="5" x="10.16" y="0" drill="1.5"/>
+<pad name="6" x="10.16" y="10.16" drill="1.5"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.127" layer="21"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.127" layer="21"/>
+<text x="0" y="14" size="1.5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.5" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-13" y1="-13" x2="13" y2="13" layer="39"/>
 </package>
 </packages>
 <symbols>
-<symbol name="TP">
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<wire x1="0" y1="0" x2="-2.2225" y2="2.2225" width="0.254" layer="94"/>
-<wire x1="-2.2225" y1="2.2225" x2="1.905" y2="2.2225" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.2225" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="3.81" size="1.27" layer="95" align="center">&gt;VALUE</text>
+<symbol name="PDQE20-DUAL">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="5.08" length="short"/>
+<pin name="CTRL" x="-12.7" y="0" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" length="short"/>
+<pin name="VOUT+" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="VOUT0" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VOUT-" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="0" y="11.43" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.778" layer="96" ratio="15" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TESTPOINT" prefix="TP" uservalue="yes">
+<deviceset name="PDQE20-Q?-D*-D" prefix="PM">
 <gates>
-<gate name="A" symbol="TP" x="0" y="0"/>
+<gate name="A" symbol="PDQE20-DUAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD09" package="TP-SMD-09">
+<device name="48" package="PDQE20">
 <connects>
-<connect gate="A" pin="P$1" pad="1"/>
+<connect gate="A" pin="CTRL" pad="1"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="VIN" pad="3"/>
+<connect gate="A" pin="VOUT+" pad="4"/>
+<connect gate="A" pin="VOUT-" pad="6"/>
+<connect gate="A" pin="VOUT0" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="12">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q48-D12-D"/>
+</technology>
+<technology name="15">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q48-D15-D"/>
+</technology>
+<technology name="24">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q48-D24-D"/>
+</technology>
+<technology name="5">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q48-D5-D"/>
+</technology>
 </technologies>
 </device>
-<device name="TH06" package="TP-TH-06">
+<device name="24" package="PDQE20">
 <connects>
-<connect gate="A" pin="P$1" pad="1"/>
+<connect gate="A" pin="CTRL" pad="1"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="VIN" pad="3"/>
+<connect gate="A" pin="VOUT+" pad="4"/>
+<connect gate="A" pin="VOUT-" pad="6"/>
+<connect gate="A" pin="VOUT0" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TH10" package="TP-TH-10">
-<connects>
-<connect gate="A" pin="P$1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="12">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q24-D12-D"/>
+</technology>
+<technology name="15">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q24-D15-D"/>
+</technology>
+<technology name="24">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q24-D24-D"/>
+</technology>
+<technology name="5">
+<attribute name="MF" value="Cui Inc"/>
+<attribute name="MPN" value="PDQE20-Q24-D5-D"/>
+</technology>
 </technologies>
 </device>
 </devices>

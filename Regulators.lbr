@@ -306,20 +306,25 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <device name="MF" package="SOT23-5">
 <connects>
 <connect gate="A" pin="EN" pad="3"/>
-<connect gate="A" pin="GND" pad="2 4"/>
+<connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="IN" pad="1"/>
 <connect gate="A" pin="OUT" pad="5"/>
 </connects>
 <technologies>
-<technology name="X-2.8/NOPB">
-<attribute name="MARK" value="LLYB" constant="no"/>
+<technology name="X-1.8/NOPB">
+<attribute name="MARK" value="LLUB"/>
 <attribute name="MF" value="TEXAS INSTRUMENTS"/>
-<attribute name="MPN" value="LP5907MFX-2.8/NOPB" constant="no"/>
+<attribute name="MPN" value="LP5907MFX-1.8/NOPB"/>
+</technology>
+<technology name="X-2.8/NOPB">
+<attribute name="MARK" value="LLYB"/>
+<attribute name="MF" value="TEXAS INSTRUMENTS"/>
+<attribute name="MPN" value="LP5907MFX-2.8/NOPB"/>
 </technology>
 <technology name="X-3.0/NOPB">
-<attribute name="MARK" value="LLZB" constant="no"/>
+<attribute name="MARK" value="LLZB"/>
 <attribute name="MF" value="TEXAS INSTRUMENTS"/>
-<attribute name="MPN" value="LP5907MFX-3.0/NOPB" constant="no"/>
+<attribute name="MPN" value="LP5907MFX-3.0/NOPB"/>
 </technology>
 <technology name="X-3.3/NOPB">
 <attribute name="MARK" value="LLVB"/>
@@ -520,6 +525,59 @@ LN6206P&lt;i&gt;332MR&lt;/i&gt; = 3.3v, 2%, SOT23-3, standard feed reel.</descri
 <attribute name="MARK" value="79633Q"/>
 <attribute name="MF" value="Texas Instruments"/>
 <attribute name="MPN" value="TPS79633-Q1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS796*" prefix="IC">
+<gates>
+<gate name="A" symbol="REG-5-EN-NR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCQ" package="SOT223-5">
+<connects>
+<connect gate="A" pin="EN" pad="1"/>
+<connect gate="A" pin="GND" pad="3 PAD"/>
+<connect gate="A" pin="IN" pad="2"/>
+<connect gate="A" pin="NR" pad="5"/>
+<connect gate="A" pin="OUT" pad="4"/>
+</connects>
+<technologies>
+<technology name="01">
+<attribute name="MARK" value="PS79601"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79601DCQ"/>
+</technology>
+<technology name="18">
+<attribute name="MARK" value="PS79618"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79618DCQ"/>
+</technology>
+<technology name="25">
+<attribute name="MARK" value="PS79625"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79625DCQ"/>
+</technology>
+<technology name="28">
+<attribute name="MARK" value="PS79628"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79628DCQ"/>
+</technology>
+<technology name="30">
+<attribute name="MARK" value="PS79630"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79630DCQ"/>
+</technology>
+<technology name="33">
+<attribute name="MARK" value="PS79633"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79633DCQ"/>
+</technology>
+<technology name="50">
+<attribute name="MARK" value="PS79650"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="TPS79650DCQ"/>
 </technology>
 </technologies>
 </device>

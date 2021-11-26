@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,7 +72,7 @@
 <library>
 <packages>
 <package name="QFN24-0.5-4X4">
-<smd name="PAD" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" stop="no" cream="no"/>
+<smd name="PAD" x="0" y="0" dx="2.7" dy="2.7" layer="1" roundness="10" stop="no" thermals="no" cream="no"/>
 <smd name="1" x="-1.9" y="1.25" dx="0.6" dy="0.24" layer="1" roundness="50" stop="no"/>
 <smd name="2" x="-1.9" y="0.7" dx="0.6" dy="0.24" layer="1" roundness="50" stop="no"/>
 <smd name="3" x="-1.9" y="0.25" dx="0.6" dy="0.24" layer="1" roundness="50" stop="no"/>
@@ -169,6 +169,7 @@
 <pin name="RESET" x="22.86" y="-15.24" length="short" direction="in" rot="R180"/>
 <text x="7.62" y="22.86" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
 <text x="7.62" y="-22.86" size="1.778" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
+<text x="0" y="-5.08" size="1.27" layer="97" align="center">&gt;ADDRESS=</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -205,6 +206,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="ADDRESS" value="0x28" constant="no"/>
 <attribute name="MARK" value="4500"/>
 <attribute name="MF" value="ST"/>
 <attribute name="MPN" value="STUSB4500QTR"/>

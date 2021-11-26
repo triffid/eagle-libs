@@ -196,7 +196,11 @@
 <connect gate="_PWR" pin="V-" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MARK" value="A40"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="OPA340NA"/>
+</technology>
 </technologies>
 </device>
 </devices>

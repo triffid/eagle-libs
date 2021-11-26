@@ -315,6 +315,9 @@
 <wire x1="-1.75" y1="6" x2="1.75" y2="6" width="0.127" layer="51"/>
 <wire x1="1.75" y1="6" x2="2" y2="6.25" width="0.127" layer="51" curve="90"/>
 <wire x1="2" y1="6.25" x2="2" y2="9.25" width="0.127" layer="51"/>
+<rectangle x1="-3.75" y1="9.5" x2="3.75" y2="12.25" layer="39"/>
+<rectangle x1="0.75" y1="12.25" x2="1.75" y2="14" layer="39"/>
+<rectangle x1="-1.75" y1="12.25" x2="-0.75" y2="14" layer="39"/>
 </package>
 </packages>
 <symbols>

@@ -121,6 +121,9 @@
 <wire x1="2" y1="-4.6" x2="-2" y2="-4.6" width="0.127" layer="21"/>
 <text x="-3" y="6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="2" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<rectangle x1="-3.625" y1="-4.875" x2="3.625" y2="5.625" layer="39"/>
+<rectangle x1="-1" y1="5.625" x2="1" y2="8.375" layer="39"/>
+<rectangle x1="-1.93" y1="-12.25" x2="1.93" y2="-4.875" layer="39"/>
 </package>
 <package name="MOLEX-43045-24_TH">
 <pad name="1" x="16.5" y="4.32" drill="1"/>
@@ -250,18 +253,22 @@
 </connects>
 <technologies>
 <technology name="00">
+<attribute name="MATING" value="43025-0200"/>
 <attribute name="MF" value="Molex"/>
 <attribute name="MPN" value="43045-0200"/>
 </technology>
 <technology name="01">
+<attribute name="MATING" value="43025-0200"/>
 <attribute name="MF" value="Molex"/>
 <attribute name="MPN" value="43045-0201"/>
 </technology>
 <technology name="02">
+<attribute name="MATING" value="43025-0200"/>
 <attribute name="MF" value="Molex"/>
 <attribute name="MPN" value="43045-0202"/>
 </technology>
 <technology name="03">
+<attribute name="MATING" value="43025-0200"/>
 <attribute name="MF" value="Molex"/>
 <attribute name="MPN" value="43045-0203"/>
 </technology>
