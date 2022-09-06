@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -130,6 +130,107 @@
 <wire x1="-0.4" y1="0.05" x2="-0.4" y2="0.4" width="0.127" layer="51"/>
 <wire x1="-0.4" y1="0.4" x2="-0.05" y2="0.4" width="0.127" layer="51"/>
 </package>
+<package name="X2SON">
+<smd name="5" x="0" y="0" dx="0.48" dy="0.48" layer="1" rot="R45" thermals="no"/>
+<smd name="1" x="-0.51" y="0.335" dx="0.1524" dy="0.1524" layer="1" stop="no"/>
+<polygon width="0.025" layer="1">
+<vertex x="-0.6" y="0.42"/>
+<vertex x="-0.26" y="0.42"/>
+<vertex x="-0.26" y="0.41"/>
+<vertex x="-0.44" y="0.23"/>
+<vertex x="-0.6" y="0.23"/>
+</polygon>
+<polygon width="0.025" layer="29">
+<vertex x="-0.65" y="0.47"/>
+<vertex x="-0.21" y="0.47"/>
+<vertex x="-0.21" y="0.39"/>
+<vertex x="-0.42" y="0.18"/>
+<vertex x="-0.65" y="0.18"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-0.6" y="0.41"/>
+<vertex x="-0.27" y="0.41"/>
+<vertex x="-0.44" y="0.24"/>
+<vertex x="-0.59" y="0.24"/>
+<vertex x="-0.6" y="0.24"/>
+</polygon>
+<smd name="3" x="0.51" y="-0.335" dx="0.1524" dy="0.1524" layer="1" rot="R180" stop="no"/>
+<polygon width="0.025" layer="1">
+<vertex x="0.6" y="-0.42"/>
+<vertex x="0.26" y="-0.42"/>
+<vertex x="0.26" y="-0.41"/>
+<vertex x="0.44" y="-0.23"/>
+<vertex x="0.6" y="-0.23"/>
+</polygon>
+<polygon width="0.025" layer="29">
+<vertex x="0.65" y="-0.47"/>
+<vertex x="0.21" y="-0.47"/>
+<vertex x="0.21" y="-0.39"/>
+<vertex x="0.42" y="-0.18"/>
+<vertex x="0.65" y="-0.18"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.6" y="-0.41"/>
+<vertex x="0.27" y="-0.41"/>
+<vertex x="0.44" y="-0.24"/>
+<vertex x="0.59" y="-0.24"/>
+<vertex x="0.6" y="-0.24"/>
+</polygon>
+<smd name="2" x="-0.51" y="-0.335" dx="0.1524" dy="0.1524" layer="1" stop="no"/>
+<polygon width="0.025" layer="1">
+<vertex x="-0.6" y="-0.42"/>
+<vertex x="-0.26" y="-0.42"/>
+<vertex x="-0.26" y="-0.41"/>
+<vertex x="-0.44" y="-0.23"/>
+<vertex x="-0.6" y="-0.23"/>
+</polygon>
+<polygon width="0.025" layer="29">
+<vertex x="-0.65" y="-0.47"/>
+<vertex x="-0.21" y="-0.47"/>
+<vertex x="-0.21" y="-0.39"/>
+<vertex x="-0.42" y="-0.18"/>
+<vertex x="-0.65" y="-0.18"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-0.6" y="-0.41"/>
+<vertex x="-0.27" y="-0.41"/>
+<vertex x="-0.44" y="-0.24"/>
+<vertex x="-0.59" y="-0.24"/>
+<vertex x="-0.6" y="-0.24"/>
+</polygon>
+<smd name="4" x="0.51" y="0.335" dx="0.1524" dy="0.1524" layer="1" rot="R180" stop="no"/>
+<polygon width="0.025" layer="1">
+<vertex x="0.6" y="0.42"/>
+<vertex x="0.26" y="0.42"/>
+<vertex x="0.26" y="0.41"/>
+<vertex x="0.44" y="0.23"/>
+<vertex x="0.6" y="0.23"/>
+</polygon>
+<polygon width="0.025" layer="29">
+<vertex x="0.65" y="0.47"/>
+<vertex x="0.21" y="0.47"/>
+<vertex x="0.21" y="0.39"/>
+<vertex x="0.42" y="0.18"/>
+<vertex x="0.65" y="0.18"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.6" y="0.41"/>
+<vertex x="0.27" y="0.41"/>
+<vertex x="0.44" y="0.24"/>
+<vertex x="0.59" y="0.24"/>
+<vertex x="0.6" y="0.24"/>
+</polygon>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.127" layer="21"/>
+<circle x="-0.25" y="0.25" radius="0.05" width="0.127" layer="51"/>
+<wire x1="-1.15" y1="0.65" x2="-0.75" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="0.4" x2="-1.15" y2="0.2" width="0.127" layer="51"/>
+<wire x1="-1.15" y1="0.2" x2="-1.15" y2="0.65" width="0.127" layer="51"/>
+<text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TPS736-FIXED">
@@ -208,6 +309,41 @@
 <attribute name="MARK" value="D"/>
 <attribute name="MF" value="Texas Instruments"/>
 <attribute name="MPN" value="LP5907UVE-3.3/NOPB"/>
+</technology>
+</technologies>
+</device>
+<device name="SNX" package="X2SON">
+<connects>
+<connect gate="A" pin="EN" pad="3"/>
+<connect gate="A" pin="GND" pad="2 5"/>
+<connect gate="A" pin="IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="-1.2">
+<attribute name="MARK" value="CF"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907SNX-1.2/NOPB"/>
+</technology>
+<technology name="-1.8">
+<attribute name="MARK" value="CG"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907SNX-1.8/NOPB"/>
+</technology>
+<technology name="-2.8">
+<attribute name="MARK" value="CI"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907SNX-2.8/NOPB"/>
+</technology>
+<technology name="-3.0">
+<attribute name="MARK" value="CK"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907SNX-3.0/NOPB"/>
+</technology>
+<technology name="-3.3">
+<attribute name="MARK" value="CN"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="LP5907SNX-3.3/NOPB"/>
 </technology>
 </technologies>
 </device>

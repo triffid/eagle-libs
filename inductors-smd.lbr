@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -320,10 +320,10 @@
 <description>SMD 2-pin 0.06"×0.03" / 1.6mm×0.8mm / IPC7351 density class B</description>
 <smd name="1" x="-1" y="0" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
 <smd name="2" x="1" y="0" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
-<wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.09" layer="39"/>
-<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.09" layer="39"/>
-<wire x1="1.5" y1="-0.7" x2="-1.5" y2="-0.7" width="0.09" layer="39"/>
-<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.09" layer="39"/>
+<wire x1="-1.455" y1="0.7" x2="1.455" y2="0.7" width="0.09" layer="39"/>
+<wire x1="1.455" y1="0.7" x2="1.455" y2="-0.7" width="0.09" layer="39"/>
+<wire x1="1.455" y1="-0.7" x2="-1.455" y2="-0.7" width="0.09" layer="39"/>
+<wire x1="-1.455" y1="-0.7" x2="-1.455" y2="0.7" width="0.09" layer="39"/>
 <text x="0" y="1" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
@@ -576,6 +576,64 @@
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-2.5" y1="-2.5" x2="2.5" y2="2.5" layer="39"/>
 </package>
+<package name="EIA0806-M2016-IPC7351_B">
+<description>SMD 2-pin 0.08"×0.05" / 2.0mm×1.2mm / IPC7351 density class B</description>
+<smd name="1" x="-1" y="0" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
+<smd name="2" x="1" y="0" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
+<text x="0" y="1.25" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-1.7" y1="1.075" x2="1.7" y2="1.075" width="0.09" layer="39"/>
+<wire x1="1.7" y1="1.075" x2="1.7" y2="-1.075" width="0.09" layer="39"/>
+<wire x1="1.7" y1="-1.075" x2="-1.7" y2="-1.075" width="0.09" layer="39"/>
+<wire x1="-1.7" y1="-1.075" x2="-1.7" y2="1.075" width="0.09" layer="39"/>
+<rectangle x1="-0.25" y1="-0.5" x2="0.25" y2="0.5" layer="35"/>
+<polygon width="0.2" layer="1">
+<vertex x="-1.375" y="0.825"/>
+<vertex x="-0.55" y="0.825"/>
+<vertex x="-0.55" y="-0.825"/>
+<vertex x="-1.375" y="-0.825"/>
+</polygon>
+<rectangle x1="-1.475" y1="-0.9" x2="-0.45" y2="0.9" layer="29"/>
+<rectangle x1="-1.45" y1="-0.9" x2="-0.45" y2="0.9" layer="31"/>
+<polygon width="0.2" layer="1">
+<vertex x="1.375" y="-0.825"/>
+<vertex x="0.55" y="-0.825"/>
+<vertex x="0.55" y="0.825"/>
+<vertex x="1.375" y="0.825"/>
+</polygon>
+<rectangle x1="0.45" y1="-0.9" x2="1.45" y2="0.9" layer="31" rot="R180"/>
+<wire x1="-1" y1="0.8" x2="1" y2="0.8" width="0.1" layer="21"/>
+<wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="1" y1="-0.8" x2="-1" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="-1" y1="-0.8" x2="-1" y2="0.8" width="0.1" layer="21"/>
+<rectangle x1="0.45" y1="-0.9" x2="1.475" y2="0.9" layer="29" rot="R180"/>
+</package>
+<package name="DRQ74">
+<smd name="1" x="-3.085" y="0.7" dx="1.73" dy="1" layer="1"/>
+<smd name="2" x="-3.085" y="-0.7" dx="1.73" dy="1" layer="1"/>
+<smd name="3" x="3.085" y="-0.7" dx="1.73" dy="1" layer="1" rot="R180"/>
+<smd name="4" x="3.085" y="0.7" dx="1.73" dy="1" layer="1" rot="R180"/>
+<wire x1="-3.8" y1="3.8" x2="3.8" y2="3.8" width="0.127" layer="21"/>
+<wire x1="3.8" y1="3.8" x2="3.8" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="3.8" y1="-3.8" x2="-3.8" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-3.8" x2="-3.8" y2="3.8" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.75" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="1.5" x2="-2.75" y2="2" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="2" x2="-2" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-2" y1="2.75" x2="-1.5" y2="2.25" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-2.25" x2="-2" y2="-2.75" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2.75" x2="-2.75" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="-2" x2="-2.25" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="2.25" y1="-1.5" x2="2.75" y2="-2" width="0.127" layer="51"/>
+<wire x1="2.75" y1="-2" x2="2" y2="-2.75" width="0.127" layer="51"/>
+<wire x1="2" y1="-2.75" x2="1.5" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="2.25" x2="2" y2="2.75" width="0.127" layer="51"/>
+<wire x1="2" y1="2.75" x2="2.75" y2="2" width="0.127" layer="51"/>
+<wire x1="2.75" y1="2" x2="2.25" y2="1.5" width="0.127" layer="51"/>
+<rectangle x1="-4" y1="-4" x2="4" y2="4" layer="39"/>
+<text x="0" y="4.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L-US">
@@ -605,6 +663,21 @@
 <wire x1="-1.27" y1="0" x2="0" y2="1.905" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="L-US-DOT">
+<wire x1="-5.08" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="-2.54" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="90"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="2" x="7.62" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<circle x="-3.81" y="0" radius="0.254" width="0.762" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -942,6 +1015,15 @@
 </technology>
 </technologies>
 </device>
+<device name="L0806" package="EIA0806-M2016-IPC7351_B">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="FERRITE_BEAD" prefix="FB" uservalue="yes">
@@ -993,6 +1075,116 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="COUPLED-?*" prefix="L">
+<gates>
+<gate name="A" symbol="L-US-DOT" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="L-US-DOT" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="DRQ74" package="DRQ74">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="3"/>
+<connect gate="B" pin="1" pad="2"/>
+<connect gate="B" pin="2" pad="4"/>
+</connects>
+<technologies>
+<technology name="-100-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-100-R"/>
+</technology>
+<technology name="-101-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-101-R"/>
+</technology>
+<technology name="-102-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-102-R"/>
+</technology>
+<technology name="-150-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-150-R"/>
+</technology>
+<technology name="-151-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-151-R"/>
+</technology>
+<technology name="-1R0-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-1R0-R"/>
+</technology>
+<technology name="-1R5-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-1R5-R"/>
+</technology>
+<technology name="-220-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-220-R"/>
+</technology>
+<technology name="-221-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-221-R"/>
+</technology>
+<technology name="-2R2-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-2R2-R"/>
+</technology>
+<technology name="-330-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-330-R"/>
+</technology>
+<technology name="-331-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-331-R"/>
+</technology>
+<technology name="-3R3-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-3R3-R"/>
+</technology>
+<technology name="-470-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-470-R"/>
+</technology>
+<technology name="-471-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-471-R"/>
+</technology>
+<technology name="-4R7-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-4R7-R"/>
+</technology>
+<technology name="-680-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-680-R"/>
+</technology>
+<technology name="-681-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-681-R"/>
+</technology>
+<technology name="-6R8-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-6R8-R"/>
+</technology>
+<technology name="-820-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-820-R"/>
+</technology>
+<technology name="-821-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-821-R"/>
+</technology>
+<technology name="-8R2-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-8R2-R"/>
+</technology>
+<technology name="-R33-R">
+<attribute name="MF" value="Eaton"/>
+<attribute name="MPN" value="DRQ74-R33-R"/>
+</technology>
 </technologies>
 </device>
 </devices>

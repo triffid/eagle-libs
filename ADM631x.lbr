@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<wire x1="-0.781" y1="-1.422" x2="-0.781" y2="1.423" width="0.1524" layer="51"/>
+<wire x1="-0.781" y1="1.423" x2="0.781" y2="1.423" width="0.1524" layer="21"/>
+<wire x1="0.781" y1="1.423" x2="0.781" y2="-1.422" width="0.1524" layer="51"/>
+<wire x1="0.781" y1="-1.422" x2="-0.781" y2="-1.422" width="0.1524" layer="21"/>
+<circle x="-0.5" y="1.15" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-1.15" y="0.95" dx="0.6" dy="0.9" layer="1" rot="R270"/>
+<smd name="2" x="-1.15" y="0" dx="0.6" dy="0.9" layer="1" rot="R270"/>
+<smd name="3" x="-1.15" y="-0.95" dx="0.6" dy="0.9" layer="1" rot="R270"/>
+<smd name="4" x="1.15" y="-0.95" dx="0.6" dy="0.9" layer="1" rot="R270"/>
+<smd name="5" x="1.15" y="0.95" dx="0.6" dy="0.9" layer="1" rot="R270"/>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R270" align="center">&gt;VALUE</text>
+<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-1.35" y1="0.65" x2="-0.85" y2="1.25" layer="51" rot="R270"/>
+<rectangle x1="-1.35" y1="-0.3" x2="-0.85" y2="0.3" layer="51" rot="R270"/>
+<rectangle x1="-1.35" y1="-1.25" x2="-0.85" y2="-0.65" layer="51" rot="R270"/>
+<rectangle x1="0.85" y1="-1.25" x2="1.35" y2="-0.65" layer="51" rot="R270"/>
+<rectangle x1="0.85" y1="0.65" x2="1.35" y2="1.25" layer="51" rot="R270"/>
+<wire x1="-1.75" y1="1.25" x2="-2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2" y1="2.5" x2="-2.75" y2="2" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="2" x2="-1.75" y2="1.25" width="0.127" layer="51"/>
+<rectangle x1="-1" y1="-1.75" x2="1" y2="1.75" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ADM631X">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="12.7" length="short" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-12.7" length="short" direction="pwr" rot="R90"/>
+<pin name="!MR" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="WDI" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="!RESET" x="12.7" y="0" length="short" direction="out" rot="R180"/>
+<text x="2.54" y="11.43" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-11.43" size="1.778" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADM6316" prefix="IC">
+<description>&lt;h1&gt;ADM6316 watchdog and power supply supervisor&lt;/h1&gt;
+
+&lt;h2&gt;Technologies:&lt;/h2&gt;
+
+&lt;h3&gt;Reset Timeout&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;A&lt;/b&gt;: 1ms&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;B&lt;/b&gt;: 20ms&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;C&lt;/b&gt;: 140ms&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;D&lt;/b&gt;: 1120ms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Watchdog Timeout&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;W&lt;/b&gt;: 6.3ms&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;X&lt;/b&gt;: 102ms&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Y&lt;/b&gt;: 1,600ms&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Z&lt;/b&gt;: 25,600ms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Reset Threshold&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;50 → 5v&lt;br/&gt;…&lt;/li&gt;
+&lt;li&gt;35 → 3.5v&lt;br/&gt;…&lt;/li&gt;
+&lt;li&gt;25 → 2.5v&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADM631X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="!MR" pad="3"/>
+<connect gate="G$1" pin="!RESET" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="WDI" pad="4"/>
+</connects>
+<technologies>
+<technology name="AW25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW25ARJZ-R7"/>
+</technology>
+<technology name="AW26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW26ARJZ-R7"/>
+</technology>
+<technology name="AW27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW27ARJZ-R7"/>
+</technology>
+<technology name="AW28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW28ARJZ-R7"/>
+</technology>
+<technology name="AW29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW29ARJZ-R7"/>
+</technology>
+<technology name="AW30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW30ARJZ-R7"/>
+</technology>
+<technology name="AW31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW31ARJZ-R7"/>
+</technology>
+<technology name="AW32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW32ARJZ-R7"/>
+</technology>
+<technology name="AW33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW33ARJZ-R7"/>
+</technology>
+<technology name="AW34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW34ARJZ-R7"/>
+</technology>
+<technology name="AW35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW35ARJZ-R7"/>
+</technology>
+<technology name="AW36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW36ARJZ-R7"/>
+</technology>
+<technology name="AW37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW37ARJZ-R7"/>
+</technology>
+<technology name="AW38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW38ARJZ-R7"/>
+</technology>
+<technology name="AW39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW39ARJZ-R7"/>
+</technology>
+<technology name="AW40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW40ARJZ-R7"/>
+</technology>
+<technology name="AW41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW41ARJZ-R7"/>
+</technology>
+<technology name="AW42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW42ARJZ-R7"/>
+</technology>
+<technology name="AW43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW43ARJZ-R7"/>
+</technology>
+<technology name="AW44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW44ARJZ-R7"/>
+</technology>
+<technology name="AW45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW45ARJZ-R7"/>
+</technology>
+<technology name="AW46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW46ARJZ-R7"/>
+</technology>
+<technology name="AW47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW47ARJZ-R7"/>
+</technology>
+<technology name="AW48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW48ARJZ-R7"/>
+</technology>
+<technology name="AW49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW49ARJZ-R7"/>
+</technology>
+<technology name="AW50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AW50ARJZ-R7"/>
+</technology>
+<technology name="AX25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX25ARJZ-R7"/>
+</technology>
+<technology name="AX26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX26ARJZ-R7"/>
+</technology>
+<technology name="AX27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX27ARJZ-R7"/>
+</technology>
+<technology name="AX28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX28ARJZ-R7"/>
+</technology>
+<technology name="AX29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX29ARJZ-R7"/>
+</technology>
+<technology name="AX30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX30ARJZ-R7"/>
+</technology>
+<technology name="AX31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX31ARJZ-R7"/>
+</technology>
+<technology name="AX32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX32ARJZ-R7"/>
+</technology>
+<technology name="AX33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX33ARJZ-R7"/>
+</technology>
+<technology name="AX34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX34ARJZ-R7"/>
+</technology>
+<technology name="AX35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX35ARJZ-R7"/>
+</technology>
+<technology name="AX36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX36ARJZ-R7"/>
+</technology>
+<technology name="AX37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX37ARJZ-R7"/>
+</technology>
+<technology name="AX38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX38ARJZ-R7"/>
+</technology>
+<technology name="AX39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX39ARJZ-R7"/>
+</technology>
+<technology name="AX40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX40ARJZ-R7"/>
+</technology>
+<technology name="AX41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX41ARJZ-R7"/>
+</technology>
+<technology name="AX42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX42ARJZ-R7"/>
+</technology>
+<technology name="AX43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX43ARJZ-R7"/>
+</technology>
+<technology name="AX44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX44ARJZ-R7"/>
+</technology>
+<technology name="AX45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX45ARJZ-R7"/>
+</technology>
+<technology name="AX46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX46ARJZ-R7"/>
+</technology>
+<technology name="AX47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX47ARJZ-R7"/>
+</technology>
+<technology name="AX48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX48ARJZ-R7"/>
+</technology>
+<technology name="AX49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX49ARJZ-R7"/>
+</technology>
+<technology name="AX50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AX50ARJZ-R7"/>
+</technology>
+<technology name="AY25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY25ARJZ-R7"/>
+</technology>
+<technology name="AY26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY26ARJZ-R7"/>
+</technology>
+<technology name="AY27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY27ARJZ-R7"/>
+</technology>
+<technology name="AY28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY28ARJZ-R7"/>
+</technology>
+<technology name="AY29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY29ARJZ-R7"/>
+</technology>
+<technology name="AY30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY30ARJZ-R7"/>
+</technology>
+<technology name="AY31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY31ARJZ-R7"/>
+</technology>
+<technology name="AY32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY32ARJZ-R7"/>
+</technology>
+<technology name="AY33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY33ARJZ-R7"/>
+</technology>
+<technology name="AY34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY34ARJZ-R7"/>
+</technology>
+<technology name="AY35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY35ARJZ-R7"/>
+</technology>
+<technology name="AY36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY36ARJZ-R7"/>
+</technology>
+<technology name="AY37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY37ARJZ-R7"/>
+</technology>
+<technology name="AY38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY38ARJZ-R7"/>
+</technology>
+<technology name="AY39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY39ARJZ-R7"/>
+</technology>
+<technology name="AY40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY40ARJZ-R7"/>
+</technology>
+<technology name="AY41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY41ARJZ-R7"/>
+</technology>
+<technology name="AY42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY42ARJZ-R7"/>
+</technology>
+<technology name="AY43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY43ARJZ-R7"/>
+</technology>
+<technology name="AY44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY44ARJZ-R7"/>
+</technology>
+<technology name="AY45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY45ARJZ-R7"/>
+</technology>
+<technology name="AY46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY46ARJZ-R7"/>
+</technology>
+<technology name="AY47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY47ARJZ-R7"/>
+</technology>
+<technology name="AY48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY48ARJZ-R7"/>
+</technology>
+<technology name="AY49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY49ARJZ-R7"/>
+</technology>
+<technology name="AY50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AY50ARJZ-R7"/>
+</technology>
+<technology name="AZ25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ25ARJZ-R7"/>
+</technology>
+<technology name="AZ26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ26ARJZ-R7"/>
+</technology>
+<technology name="AZ27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ27ARJZ-R7"/>
+</technology>
+<technology name="AZ28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ28ARJZ-R7"/>
+</technology>
+<technology name="AZ29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ29ARJZ-R7"/>
+</technology>
+<technology name="AZ30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ30ARJZ-R7"/>
+</technology>
+<technology name="AZ31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ31ARJZ-R7"/>
+</technology>
+<technology name="AZ32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ32ARJZ-R7"/>
+</technology>
+<technology name="AZ33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ33ARJZ-R7"/>
+</technology>
+<technology name="AZ34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ34ARJZ-R7"/>
+</technology>
+<technology name="AZ35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ35ARJZ-R7"/>
+</technology>
+<technology name="AZ36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ36ARJZ-R7"/>
+</technology>
+<technology name="AZ37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ37ARJZ-R7"/>
+</technology>
+<technology name="AZ38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ38ARJZ-R7"/>
+</technology>
+<technology name="AZ39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ39ARJZ-R7"/>
+</technology>
+<technology name="AZ40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ40ARJZ-R7"/>
+</technology>
+<technology name="AZ41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ41ARJZ-R7"/>
+</technology>
+<technology name="AZ42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ42ARJZ-R7"/>
+</technology>
+<technology name="AZ43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ43ARJZ-R7"/>
+</technology>
+<technology name="AZ44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ44ARJZ-R7"/>
+</technology>
+<technology name="AZ45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ45ARJZ-R7"/>
+</technology>
+<technology name="AZ46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ46ARJZ-R7"/>
+</technology>
+<technology name="AZ47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ47ARJZ-R7"/>
+</technology>
+<technology name="AZ48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ48ARJZ-R7"/>
+</technology>
+<technology name="AZ49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ49ARJZ-R7"/>
+</technology>
+<technology name="AZ50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316AZ50ARJZ-R7"/>
+</technology>
+<technology name="BW25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW25ARJZ-R7"/>
+</technology>
+<technology name="BW26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW26ARJZ-R7"/>
+</technology>
+<technology name="BW27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW27ARJZ-R7"/>
+</technology>
+<technology name="BW28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW28ARJZ-R7"/>
+</technology>
+<technology name="BW29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW29ARJZ-R7"/>
+</technology>
+<technology name="BW30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW30ARJZ-R7"/>
+</technology>
+<technology name="BW31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW31ARJZ-R7"/>
+</technology>
+<technology name="BW32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW32ARJZ-R7"/>
+</technology>
+<technology name="BW33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW33ARJZ-R7"/>
+</technology>
+<technology name="BW34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW34ARJZ-R7"/>
+</technology>
+<technology name="BW35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW35ARJZ-R7"/>
+</technology>
+<technology name="BW36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW36ARJZ-R7"/>
+</technology>
+<technology name="BW37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW37ARJZ-R7"/>
+</technology>
+<technology name="BW38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW38ARJZ-R7"/>
+</technology>
+<technology name="BW39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW39ARJZ-R7"/>
+</technology>
+<technology name="BW40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW40ARJZ-R7"/>
+</technology>
+<technology name="BW41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW41ARJZ-R7"/>
+</technology>
+<technology name="BW42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW42ARJZ-R7"/>
+</technology>
+<technology name="BW43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW43ARJZ-R7"/>
+</technology>
+<technology name="BW44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW44ARJZ-R7"/>
+</technology>
+<technology name="BW45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW45ARJZ-R7"/>
+</technology>
+<technology name="BW46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW46ARJZ-R7"/>
+</technology>
+<technology name="BW47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW47ARJZ-R7"/>
+</technology>
+<technology name="BW48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW48ARJZ-R7"/>
+</technology>
+<technology name="BW49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW49ARJZ-R7"/>
+</technology>
+<technology name="BW50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BW50ARJZ-R7"/>
+</technology>
+<technology name="BX25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX25ARJZ-R7"/>
+</technology>
+<technology name="BX26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX26ARJZ-R7"/>
+</technology>
+<technology name="BX27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX27ARJZ-R7"/>
+</technology>
+<technology name="BX28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX28ARJZ-R7"/>
+</technology>
+<technology name="BX29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX29ARJZ-R7"/>
+</technology>
+<technology name="BX30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX30ARJZ-R7"/>
+</technology>
+<technology name="BX31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX31ARJZ-R7"/>
+</technology>
+<technology name="BX32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX32ARJZ-R7"/>
+</technology>
+<technology name="BX33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX33ARJZ-R7"/>
+</technology>
+<technology name="BX34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX34ARJZ-R7"/>
+</technology>
+<technology name="BX35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX35ARJZ-R7"/>
+</technology>
+<technology name="BX36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX36ARJZ-R7"/>
+</technology>
+<technology name="BX37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX37ARJZ-R7"/>
+</technology>
+<technology name="BX38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX38ARJZ-R7"/>
+</technology>
+<technology name="BX39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX39ARJZ-R7"/>
+</technology>
+<technology name="BX40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX40ARJZ-R7"/>
+</technology>
+<technology name="BX41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX41ARJZ-R7"/>
+</technology>
+<technology name="BX42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX42ARJZ-R7"/>
+</technology>
+<technology name="BX43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX43ARJZ-R7"/>
+</technology>
+<technology name="BX44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX44ARJZ-R7"/>
+</technology>
+<technology name="BX45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX45ARJZ-R7"/>
+</technology>
+<technology name="BX46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX46ARJZ-R7"/>
+</technology>
+<technology name="BX47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX47ARJZ-R7"/>
+</technology>
+<technology name="BX48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX48ARJZ-R7"/>
+</technology>
+<technology name="BX49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX49ARJZ-R7"/>
+</technology>
+<technology name="BX50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BX50ARJZ-R7"/>
+</technology>
+<technology name="BY25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY25ARJZ-R7"/>
+</technology>
+<technology name="BY26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY26ARJZ-R7"/>
+</technology>
+<technology name="BY27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY27ARJZ-R7"/>
+</technology>
+<technology name="BY28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY28ARJZ-R7"/>
+</technology>
+<technology name="BY29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY29ARJZ-R7"/>
+</technology>
+<technology name="BY30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY30ARJZ-R7"/>
+</technology>
+<technology name="BY31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY31ARJZ-R7"/>
+</technology>
+<technology name="BY32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY32ARJZ-R7"/>
+</technology>
+<technology name="BY33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY33ARJZ-R7"/>
+</technology>
+<technology name="BY34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY34ARJZ-R7"/>
+</technology>
+<technology name="BY35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY35ARJZ-R7"/>
+</technology>
+<technology name="BY36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY36ARJZ-R7"/>
+</technology>
+<technology name="BY37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY37ARJZ-R7"/>
+</technology>
+<technology name="BY38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY38ARJZ-R7"/>
+</technology>
+<technology name="BY39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY39ARJZ-R7"/>
+</technology>
+<technology name="BY40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY40ARJZ-R7"/>
+</technology>
+<technology name="BY41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY41ARJZ-R7"/>
+</technology>
+<technology name="BY42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY42ARJZ-R7"/>
+</technology>
+<technology name="BY43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY43ARJZ-R7"/>
+</technology>
+<technology name="BY44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY44ARJZ-R7"/>
+</technology>
+<technology name="BY45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY45ARJZ-R7"/>
+</technology>
+<technology name="BY46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY46ARJZ-R7"/>
+</technology>
+<technology name="BY47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY47ARJZ-R7"/>
+</technology>
+<technology name="BY48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY48ARJZ-R7"/>
+</technology>
+<technology name="BY49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY49ARJZ-R7"/>
+</technology>
+<technology name="BY50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BY50ARJZ-R7"/>
+</technology>
+<technology name="BZ25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ25ARJZ-R7"/>
+</technology>
+<technology name="BZ26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ26ARJZ-R7"/>
+</technology>
+<technology name="BZ27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ27ARJZ-R7"/>
+</technology>
+<technology name="BZ28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ28ARJZ-R7"/>
+</technology>
+<technology name="BZ29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ29ARJZ-R7"/>
+</technology>
+<technology name="BZ30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ30ARJZ-R7"/>
+</technology>
+<technology name="BZ31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ31ARJZ-R7"/>
+</technology>
+<technology name="BZ32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ32ARJZ-R7"/>
+</technology>
+<technology name="BZ33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ33ARJZ-R7"/>
+</technology>
+<technology name="BZ34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ34ARJZ-R7"/>
+</technology>
+<technology name="BZ35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ35ARJZ-R7"/>
+</technology>
+<technology name="BZ36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ36ARJZ-R7"/>
+</technology>
+<technology name="BZ37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ37ARJZ-R7"/>
+</technology>
+<technology name="BZ38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ38ARJZ-R7"/>
+</technology>
+<technology name="BZ39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ39ARJZ-R7"/>
+</technology>
+<technology name="BZ40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ40ARJZ-R7"/>
+</technology>
+<technology name="BZ41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ41ARJZ-R7"/>
+</technology>
+<technology name="BZ42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ42ARJZ-R7"/>
+</technology>
+<technology name="BZ43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ43ARJZ-R7"/>
+</technology>
+<technology name="BZ44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ44ARJZ-R7"/>
+</technology>
+<technology name="BZ45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ45ARJZ-R7"/>
+</technology>
+<technology name="BZ46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ46ARJZ-R7"/>
+</technology>
+<technology name="BZ47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ47ARJZ-R7"/>
+</technology>
+<technology name="BZ48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ48ARJZ-R7"/>
+</technology>
+<technology name="BZ49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ49ARJZ-R7"/>
+</technology>
+<technology name="BZ50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316BZ50ARJZ-R7"/>
+</technology>
+<technology name="CW25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW25ARJZ-R7"/>
+</technology>
+<technology name="CW26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW26ARJZ-R7"/>
+</technology>
+<technology name="CW27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW27ARJZ-R7"/>
+</technology>
+<technology name="CW28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW28ARJZ-R7"/>
+</technology>
+<technology name="CW29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW29ARJZ-R7"/>
+</technology>
+<technology name="CW30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW30ARJZ-R7"/>
+</technology>
+<technology name="CW31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW31ARJZ-R7"/>
+</technology>
+<technology name="CW32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW32ARJZ-R7"/>
+</technology>
+<technology name="CW33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW33ARJZ-R7"/>
+</technology>
+<technology name="CW34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW34ARJZ-R7"/>
+</technology>
+<technology name="CW35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW35ARJZ-R7"/>
+</technology>
+<technology name="CW36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW36ARJZ-R7"/>
+</technology>
+<technology name="CW37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW37ARJZ-R7"/>
+</technology>
+<technology name="CW38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW38ARJZ-R7"/>
+</technology>
+<technology name="CW39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW39ARJZ-R7"/>
+</technology>
+<technology name="CW40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW40ARJZ-R7"/>
+</technology>
+<technology name="CW41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW41ARJZ-R7"/>
+</technology>
+<technology name="CW42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW42ARJZ-R7"/>
+</technology>
+<technology name="CW43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW43ARJZ-R7"/>
+</technology>
+<technology name="CW44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW44ARJZ-R7"/>
+</technology>
+<technology name="CW45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW45ARJZ-R7"/>
+</technology>
+<technology name="CW46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW46ARJZ-R7"/>
+</technology>
+<technology name="CW47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW47ARJZ-R7"/>
+</technology>
+<technology name="CW48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW48ARJZ-R7"/>
+</technology>
+<technology name="CW49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW49ARJZ-R7"/>
+</technology>
+<technology name="CW50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CW50ARJZ-R7"/>
+</technology>
+<technology name="CX25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX25ARJZ-R7"/>
+</technology>
+<technology name="CX26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX26ARJZ-R7"/>
+</technology>
+<technology name="CX27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX27ARJZ-R7"/>
+</technology>
+<technology name="CX28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX28ARJZ-R7"/>
+</technology>
+<technology name="CX29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX29ARJZ-R7"/>
+</technology>
+<technology name="CX30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX30ARJZ-R7"/>
+</technology>
+<technology name="CX31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX31ARJZ-R7"/>
+</technology>
+<technology name="CX32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX32ARJZ-R7"/>
+</technology>
+<technology name="CX33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX33ARJZ-R7"/>
+</technology>
+<technology name="CX34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX34ARJZ-R7"/>
+</technology>
+<technology name="CX35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX35ARJZ-R7"/>
+</technology>
+<technology name="CX36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX36ARJZ-R7"/>
+</technology>
+<technology name="CX37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX37ARJZ-R7"/>
+</technology>
+<technology name="CX38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX38ARJZ-R7"/>
+</technology>
+<technology name="CX39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX39ARJZ-R7"/>
+</technology>
+<technology name="CX40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX40ARJZ-R7"/>
+</technology>
+<technology name="CX41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX41ARJZ-R7"/>
+</technology>
+<technology name="CX42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX42ARJZ-R7"/>
+</technology>
+<technology name="CX43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX43ARJZ-R7"/>
+</technology>
+<technology name="CX44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX44ARJZ-R7"/>
+</technology>
+<technology name="CX45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX45ARJZ-R7"/>
+</technology>
+<technology name="CX46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX46ARJZ-R7"/>
+</technology>
+<technology name="CX47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX47ARJZ-R7"/>
+</technology>
+<technology name="CX48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX48ARJZ-R7"/>
+</technology>
+<technology name="CX49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX49ARJZ-R7"/>
+</technology>
+<technology name="CX50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CX50ARJZ-R7"/>
+</technology>
+<technology name="CY25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY25ARJZ-R7"/>
+</technology>
+<technology name="CY26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY26ARJZ-R7"/>
+</technology>
+<technology name="CY27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY27ARJZ-R7"/>
+</technology>
+<technology name="CY28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY28ARJZ-R7"/>
+</technology>
+<technology name="CY29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY29ARJZ-R7"/>
+</technology>
+<technology name="CY30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY30ARJZ-R7"/>
+</technology>
+<technology name="CY31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY31ARJZ-R7"/>
+</technology>
+<technology name="CY32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY32ARJZ-R7"/>
+</technology>
+<technology name="CY33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY33ARJZ-R7"/>
+</technology>
+<technology name="CY34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY34ARJZ-R7"/>
+</technology>
+<technology name="CY35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY35ARJZ-R7"/>
+</technology>
+<technology name="CY36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY36ARJZ-R7"/>
+</technology>
+<technology name="CY37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY37ARJZ-R7"/>
+</technology>
+<technology name="CY38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY38ARJZ-R7"/>
+</technology>
+<technology name="CY39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY39ARJZ-R7"/>
+</technology>
+<technology name="CY40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY40ARJZ-R7"/>
+</technology>
+<technology name="CY41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY41ARJZ-R7"/>
+</technology>
+<technology name="CY42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY42ARJZ-R7"/>
+</technology>
+<technology name="CY43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY43ARJZ-R7"/>
+</technology>
+<technology name="CY44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY44ARJZ-R7"/>
+</technology>
+<technology name="CY45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY45ARJZ-R7"/>
+</technology>
+<technology name="CY46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY46ARJZ-R7"/>
+</technology>
+<technology name="CY47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY47ARJZ-R7"/>
+</technology>
+<technology name="CY48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY48ARJZ-R7"/>
+</technology>
+<technology name="CY49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY49ARJZ-R7"/>
+</technology>
+<technology name="CY50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CY50ARJZ-R7"/>
+</technology>
+<technology name="CZ25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ25ARJZ-R7"/>
+</technology>
+<technology name="CZ26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ26ARJZ-R7"/>
+</technology>
+<technology name="CZ27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ27ARJZ-R7"/>
+</technology>
+<technology name="CZ28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ28ARJZ-R7"/>
+</technology>
+<technology name="CZ29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ29ARJZ-R7"/>
+</technology>
+<technology name="CZ30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ30ARJZ-R7"/>
+</technology>
+<technology name="CZ31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ31ARJZ-R7"/>
+</technology>
+<technology name="CZ32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ32ARJZ-R7"/>
+</technology>
+<technology name="CZ33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ33ARJZ-R7"/>
+</technology>
+<technology name="CZ34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ34ARJZ-R7"/>
+</technology>
+<technology name="CZ35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ35ARJZ-R7"/>
+</technology>
+<technology name="CZ36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ36ARJZ-R7"/>
+</technology>
+<technology name="CZ37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ37ARJZ-R7"/>
+</technology>
+<technology name="CZ38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ38ARJZ-R7"/>
+</technology>
+<technology name="CZ39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ39ARJZ-R7"/>
+</technology>
+<technology name="CZ40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ40ARJZ-R7"/>
+</technology>
+<technology name="CZ41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ41ARJZ-R7"/>
+</technology>
+<technology name="CZ42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ42ARJZ-R7"/>
+</technology>
+<technology name="CZ43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ43ARJZ-R7"/>
+</technology>
+<technology name="CZ44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ44ARJZ-R7"/>
+</technology>
+<technology name="CZ45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ45ARJZ-R7"/>
+</technology>
+<technology name="CZ46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ46ARJZ-R7"/>
+</technology>
+<technology name="CZ47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ47ARJZ-R7"/>
+</technology>
+<technology name="CZ48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ48ARJZ-R7"/>
+</technology>
+<technology name="CZ49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ49ARJZ-R7"/>
+</technology>
+<technology name="CZ50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316CZ50ARJZ-R7"/>
+</technology>
+<technology name="DW25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW25ARJZ-R7"/>
+</technology>
+<technology name="DW26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW26ARJZ-R7"/>
+</technology>
+<technology name="DW27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW27ARJZ-R7"/>
+</technology>
+<technology name="DW28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW28ARJZ-R7"/>
+</technology>
+<technology name="DW29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW29ARJZ-R7"/>
+</technology>
+<technology name="DW30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW30ARJZ-R7"/>
+</technology>
+<technology name="DW31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW31ARJZ-R7"/>
+</technology>
+<technology name="DW32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW32ARJZ-R7"/>
+</technology>
+<technology name="DW33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW33ARJZ-R7"/>
+</technology>
+<technology name="DW34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW34ARJZ-R7"/>
+</technology>
+<technology name="DW35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW35ARJZ-R7"/>
+</technology>
+<technology name="DW36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW36ARJZ-R7"/>
+</technology>
+<technology name="DW37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW37ARJZ-R7"/>
+</technology>
+<technology name="DW38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW38ARJZ-R7"/>
+</technology>
+<technology name="DW39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW39ARJZ-R7"/>
+</technology>
+<technology name="DW40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW40ARJZ-R7"/>
+</technology>
+<technology name="DW41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW41ARJZ-R7"/>
+</technology>
+<technology name="DW42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW42ARJZ-R7"/>
+</technology>
+<technology name="DW43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW43ARJZ-R7"/>
+</technology>
+<technology name="DW44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW44ARJZ-R7"/>
+</technology>
+<technology name="DW45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW45ARJZ-R7"/>
+</technology>
+<technology name="DW46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW46ARJZ-R7"/>
+</technology>
+<technology name="DW47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW47ARJZ-R7"/>
+</technology>
+<technology name="DW48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW48ARJZ-R7"/>
+</technology>
+<technology name="DW49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW49ARJZ-R7"/>
+</technology>
+<technology name="DW50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DW50ARJZ-R7"/>
+</technology>
+<technology name="DX25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX25ARJZ-R7"/>
+</technology>
+<technology name="DX26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX26ARJZ-R7"/>
+</technology>
+<technology name="DX27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX27ARJZ-R7"/>
+</technology>
+<technology name="DX28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX28ARJZ-R7"/>
+</technology>
+<technology name="DX29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX29ARJZ-R7"/>
+</technology>
+<technology name="DX30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX30ARJZ-R7"/>
+</technology>
+<technology name="DX31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX31ARJZ-R7"/>
+</technology>
+<technology name="DX32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX32ARJZ-R7"/>
+</technology>
+<technology name="DX33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX33ARJZ-R7"/>
+</technology>
+<technology name="DX34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX34ARJZ-R7"/>
+</technology>
+<technology name="DX35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX35ARJZ-R7"/>
+</technology>
+<technology name="DX36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX36ARJZ-R7"/>
+</technology>
+<technology name="DX37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX37ARJZ-R7"/>
+</technology>
+<technology name="DX38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX38ARJZ-R7"/>
+</technology>
+<technology name="DX39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX39ARJZ-R7"/>
+</technology>
+<technology name="DX40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX40ARJZ-R7"/>
+</technology>
+<technology name="DX41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX41ARJZ-R7"/>
+</technology>
+<technology name="DX42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX42ARJZ-R7"/>
+</technology>
+<technology name="DX43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX43ARJZ-R7"/>
+</technology>
+<technology name="DX44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX44ARJZ-R7"/>
+</technology>
+<technology name="DX45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX45ARJZ-R7"/>
+</technology>
+<technology name="DX46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX46ARJZ-R7"/>
+</technology>
+<technology name="DX47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX47ARJZ-R7"/>
+</technology>
+<technology name="DX48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX48ARJZ-R7"/>
+</technology>
+<technology name="DX49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX49ARJZ-R7"/>
+</technology>
+<technology name="DX50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DX50ARJZ-R7"/>
+</technology>
+<technology name="DY25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY25ARJZ-R7"/>
+</technology>
+<technology name="DY26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY26ARJZ-R7"/>
+</technology>
+<technology name="DY27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY27ARJZ-R7"/>
+</technology>
+<technology name="DY28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY28ARJZ-R7"/>
+</technology>
+<technology name="DY29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY29ARJZ-R7"/>
+</technology>
+<technology name="DY30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY30ARJZ-R7"/>
+</technology>
+<technology name="DY31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY31ARJZ-R7"/>
+</technology>
+<technology name="DY32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY32ARJZ-R7"/>
+</technology>
+<technology name="DY33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY33ARJZ-R7"/>
+</technology>
+<technology name="DY34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY34ARJZ-R7"/>
+</technology>
+<technology name="DY35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY35ARJZ-R7"/>
+</technology>
+<technology name="DY36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY36ARJZ-R7"/>
+</technology>
+<technology name="DY37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY37ARJZ-R7"/>
+</technology>
+<technology name="DY38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY38ARJZ-R7"/>
+</technology>
+<technology name="DY39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY39ARJZ-R7"/>
+</technology>
+<technology name="DY40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY40ARJZ-R7"/>
+</technology>
+<technology name="DY41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY41ARJZ-R7"/>
+</technology>
+<technology name="DY42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY42ARJZ-R7"/>
+</technology>
+<technology name="DY43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY43ARJZ-R7"/>
+</technology>
+<technology name="DY44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY44ARJZ-R7"/>
+</technology>
+<technology name="DY45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY45ARJZ-R7"/>
+</technology>
+<technology name="DY46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY46ARJZ-R7"/>
+</technology>
+<technology name="DY47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY47ARJZ-R7"/>
+</technology>
+<technology name="DY48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY48ARJZ-R7"/>
+</technology>
+<technology name="DY49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY49ARJZ-R7"/>
+</technology>
+<technology name="DY50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DY50ARJZ-R7"/>
+</technology>
+<technology name="DZ25">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ25ARJZ-R7"/>
+</technology>
+<technology name="DZ26">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ26ARJZ-R7"/>
+</technology>
+<technology name="DZ27">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ27ARJZ-R7"/>
+</technology>
+<technology name="DZ28">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ28ARJZ-R7"/>
+</technology>
+<technology name="DZ29">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ29ARJZ-R7"/>
+</technology>
+<technology name="DZ30">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ30ARJZ-R7"/>
+</technology>
+<technology name="DZ31">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ31ARJZ-R7"/>
+</technology>
+<technology name="DZ32">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ32ARJZ-R7"/>
+</technology>
+<technology name="DZ33">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ33ARJZ-R7"/>
+</technology>
+<technology name="DZ34">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ34ARJZ-R7"/>
+</technology>
+<technology name="DZ35">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ35ARJZ-R7"/>
+</technology>
+<technology name="DZ36">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ36ARJZ-R7"/>
+</technology>
+<technology name="DZ37">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ37ARJZ-R7"/>
+</technology>
+<technology name="DZ38">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ38ARJZ-R7"/>
+</technology>
+<technology name="DZ39">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ39ARJZ-R7"/>
+</technology>
+<technology name="DZ40">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ40ARJZ-R7"/>
+</technology>
+<technology name="DZ41">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ41ARJZ-R7"/>
+</technology>
+<technology name="DZ42">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ42ARJZ-R7"/>
+</technology>
+<technology name="DZ43">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ43ARJZ-R7"/>
+</technology>
+<technology name="DZ44">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ44ARJZ-R7"/>
+</technology>
+<technology name="DZ45">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ45ARJZ-R7"/>
+</technology>
+<technology name="DZ46">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ46ARJZ-R7"/>
+</technology>
+<technology name="DZ47">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ47ARJZ-R7"/>
+</technology>
+<technology name="DZ48">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ48ARJZ-R7"/>
+</technology>
+<technology name="DZ49">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ49ARJZ-R7"/>
+</technology>
+<technology name="DZ50">
+<attribute name="MF" value="Analog"/>
+<attribute name="MPN" value="ADM6316DZ50ARJZ-R7"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

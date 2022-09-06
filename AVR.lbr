@@ -822,6 +822,10 @@ Struck pins not available in Arduino libraries</text>
 <attribute name="MF" value="MICROCHIP"/>
 <attribute name="MPN" value="ATMEGA328P-MU"/>
 </technology>
+<technology name="PB">
+<attribute name="MF" value="MICROCHIP"/>
+<attribute name="MPN" value="ATMEGA328PB-MU"/>
+</technology>
 </technologies>
 </device>
 <device name="-AU" package="LQFP32-7X7">
@@ -865,6 +869,10 @@ Struck pins not available in Arduino libraries</text>
 <technology name="P">
 <attribute name="MF" value="MICROCHIP"/>
 <attribute name="MPN" value="ATMEGA328P-AU"/>
+</technology>
+<technology name="PB">
+<attribute name="MF" value="MICROCHIP"/>
+<attribute name="MPN" value="ATMEGA328PB-AU"/>
 </technology>
 </technologies>
 </device>

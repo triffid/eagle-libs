@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -71,12 +71,93 @@
 </layers>
 <library>
 <packages>
-<package name="TSSOP-14">
+<package name="SOIC8E">
+<smd name="PAD" x="0" y="0" dx="2.62" dy="3.51" layer="1" thermals="no" cream="no"/>
+<smd name="1" x="-2.7" y="1.905" dx="1.6" dy="0.6" layer="1"/>
+<smd name="2" x="-2.7" y="0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="3" x="-2.7" y="-0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="4" x="-2.7" y="-1.905" dx="1.6" dy="0.6" layer="1"/>
+<smd name="5" x="2.7" y="-1.905" dx="1.6" dy="0.6" layer="1"/>
+<smd name="6" x="2.7" y="-0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="7" x="2.7" y="0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="8" x="2.7" y="1.905" dx="1.6" dy="0.6" layer="1"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.127" layer="21"/>
+<circle x="-1.25" y="1.75" radius="0.25" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="2" x2="-5.5" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="2.75" x2="-5.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1.25" x2="-3.75" y2="2" width="0.127" layer="51"/>
+<text x="0" y="3" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="-1.75" y1="2.5" x2="-1.75" y2="-2.5" width="0.127" layer="51"/>
+<rectangle x1="-1.25" y1="0.25" x2="-0.25" y2="1.5" layer="31"/>
+<rectangle x1="-1.25" y1="-1.5" x2="-0.25" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="-1.5" x2="1.25" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="0.25" x2="1.25" y2="1.5" layer="31"/>
+</package>
+<package name="SOIC8">
+<smd name="1" x="-2.7" y="1.905" dx="1.6" dy="0.6" layer="1"/>
+<smd name="2" x="-2.7" y="0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="3" x="-2.7" y="-0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="4" x="-2.7" y="-1.905" dx="1.6" dy="0.6" layer="1"/>
+<smd name="5" x="2.7" y="-1.905" dx="1.6" dy="0.6" layer="1"/>
+<smd name="6" x="2.7" y="-0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="7" x="2.7" y="0.635" dx="1.6" dy="0.6" layer="1"/>
+<smd name="8" x="2.7" y="1.905" dx="1.6" dy="0.6" layer="1"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.127" layer="21"/>
+<circle x="-1.25" y="1.75" radius="0.25" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="2" x2="-5.5" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="2.75" x2="-5.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1.25" x2="-3.75" y2="2" width="0.127" layer="51"/>
+<text x="0" y="3" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="-1.75" y1="2.5" x2="-1.75" y2="-2.5" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
+<symbol name="MT3608">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="SW" x="10.16" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="EN" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="GND" x="0" y="-10.16" length="short" direction="in" rot="R90"/>
+<pin name="FB" x="10.16" y="0" length="short" direction="in" rot="R180"/>
+<text x="0" y="10.16" size="1.778" layer="95" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="2.54" y="-10.16" size="1.778" layer="96" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="XL6007" prefix="IC">
+<gates>
+<gate name="A" symbol="MT3608" x="0" y="0"/>
+</gates>
+<devices>
+<device name="E1" package="SOIC8">
+<connects>
+<connect gate="A" pin="EN" pad="1"/>
+<connect gate="A" pin="FB" pad="3"/>
+<connect gate="A" pin="GND" pad="7 8"/>
+<connect gate="A" pin="SW" pad="5 6"/>
+<connect gate="A" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MARK" value="XL6007E1"/>
+<attribute name="MF" value="XLSemi"/>
+<attribute name="MPN" value="XL6007E1"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

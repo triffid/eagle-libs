@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -679,6 +679,25 @@ Metric Code Size 1005</description>
 <text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
+<package name="551-XX03F">
+<pad name="2" x="-1.27" y="1.27" drill="1.09"/>
+<pad name="1" x="1.27" y="1.27" drill="1.09" first="yes"/>
+<hole x="-1.27" y="-1.27" drill="1.19"/>
+<hole x="1.27" y="-1.27" drill="1.19"/>
+<wire x1="-2.286" y1="2.286" x2="2.286" y2="2.286" width="0.127" layer="21"/>
+<wire x1="2.286" y1="2.286" x2="2.286" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-2.286" x2="1.5" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.286" x2="-1.5" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.286" x2="-2.286" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-2.286" x2="-2.286" y2="2.286" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-4.346" x2="1.5" y2="-4.346" width="0.127" layer="21" curve="180"/>
+<wire x1="-1.5" y1="-4.318" x2="-1.5" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-4.318" x2="1.5" y2="-2.286" width="0.127" layer="21"/>
+<text x="0" y="3" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.5" y1="-2.5" x2="2.5" y2="2.5" layer="39"/>
+<rectangle x1="-1.75" y1="-6" x2="1.75" y2="-2.5" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -1270,6 +1289,15 @@ Metric Code Size 1005</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOD-123" package="SOD-123FL">
+<connects>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RB081LAM" prefix="D">
@@ -1322,6 +1350,15 @@ Metric Code Size 1005</description>
 <connects>
 <connect gate="A" pin="A" pad="A"/>
 <connect gate="A" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMA" package="DO-214AC">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="K" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2466,6 +2503,17 @@ Metric Code Size 1005</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="551-XX03F" package="551-XX03F">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="K" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Dialight"/>
+</technology>
 </technologies>
 </device>
 </devices>

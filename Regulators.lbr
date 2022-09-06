@@ -583,6 +583,37 @@ LN6206P&lt;i&gt;332MR&lt;/i&gt; = 3.3v, 2%, SOT23-3, standard feed reel.</descri
 </device>
 </devices>
 </deviceset>
+<deviceset name="78L05*?" prefix="IC">
+<gates>
+<gate name="G$1" symbol="REG-3" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="PK" package="SOT89">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 2@1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="MARK" value="F5"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="UA78L05ACPK"/>
+</technology>
+<technology name="AI">
+<attribute name="MARK" value="J5"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="UA78L05AIPK"/>
+</technology>
+<technology name="C">
+<attribute name="MARK" value="B5"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="UA78L05CPK"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

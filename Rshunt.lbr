@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -71,7 +71,7 @@
 </layers>
 <library>
 <packages>
-<package name="R2512">
+<package name="EIA2512-M6332">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
 <wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
@@ -91,7 +91,7 @@
 <smd name="2P2" x="2.8" y="-0.95" dx="1.8" dy="1.3" layer="1" thermals="no"/>
 <smd name="2" x="2.8" y="0" dx="1.8" dy="0.2" layer="1"/>
 </package>
-<package name="R2010">
+<package name="EIA2010-M5025">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-1.662" y1="1.245" x2="1.662" y2="1.245" width="0.1524" layer="51"/>
 <wire x1="-1.637" y1="-1.245" x2="1.687" y2="-1.245" width="0.1524" layer="51"/>
@@ -110,7 +110,7 @@
 <smd name="B1" x="2.2" y="0.8" dx="1.8" dy="1.1" layer="1" thermals="no"/>
 <smd name="B2" x="2.2" y="-0.8" dx="1.8" dy="1.1" layer="1" thermals="no"/>
 </package>
-<package name="R1210">
+<package name="EIA1210-M3225">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.762" y1="1.245" x2="0.762" y2="1.245" width="0.1524" layer="51"/>
 <wire x1="-0.737" y1="-1.245" x2="0.787" y2="-1.245" width="0.1524" layer="51"/>
@@ -129,7 +129,7 @@
 <smd name="B1" x="1.55" y="0.8" dx="1.8" dy="1.05" layer="1" thermals="no"/>
 <smd name="B2" x="1.55" y="-0.8" dx="1.8" dy="1.05" layer="1" thermals="no"/>
 </package>
-<package name="R3920">
+<package name="EIA3920-M10352">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-4" y1="2.5" x2="4" y2="2.5" width="0.2" layer="51"/>
 <wire x1="-4" y1="-2.5" x2="4" y2="-2.5" width="0.2" layer="51"/>
@@ -177,7 +177,7 @@
 <gate name="G$1" symbol="R-EU" x="0" y="0"/>
 </gates>
 <devices>
-<device name="2512" package="R2512">
+<device name="2512" package="EIA2512-M6332">
 <connects>
 <connect gate="G$1" pin="1" pad="1P1 1P2"/>
 <connect gate="G$1" pin="1S" pad="1"/>
@@ -188,7 +188,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="2010" package="R2010">
+<device name="2010" package="EIA2010-M5025">
 <connects>
 <connect gate="G$1" pin="1" pad="A1 A2"/>
 <connect gate="G$1" pin="1S" pad="ASENSE"/>
@@ -199,7 +199,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="R1210" package="R1210">
+<device name="R1210" package="EIA1210-M3225">
 <connects>
 <connect gate="G$1" pin="1" pad="A1 A2"/>
 <connect gate="G$1" pin="1S" pad="ASENSE"/>
@@ -210,7 +210,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="R3920" package="R3920">
+<device name="R3920" package="EIA3920-M10352">
 <connects>
 <connect gate="G$1" pin="1" pad="1P1 1P2"/>
 <connect gate="G$1" pin="1S" pad="1"/>
