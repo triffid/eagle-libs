@@ -1,5 +1,8 @@
 #usage "Select module parts, wires, and polygons to be copied to other instances of the same module, then run this script"
 
+string Pours[] = {"solid","hatch","cutout"};
+string OnOff[] = {"off","on"};
+
 string strrep(string result, string toreplace, string replacement) {
 	int i = 0;
 	if (strlen(toreplace) <= 0)
@@ -14,16 +17,16 @@ string strrep(string result, string toreplace, string replacement) {
 	return result;
 }
 
-output("test.txt") {
+output(filesetext(argv[0], ".log")) {
 	if (schematic) {
 		if (argc >= 2) {
 			real spacing = 100.0;
-			dlgDialog("Enter module spacing") {
-				dlgHBoxLayout {
-					dlgLabel("Module spacing distance (mm)");
-					dlgRealEdit(spacing, 1, 500);
-				}
-			};
+// 			dlgDialog("Enter module spacing") {
+// 				dlgHBoxLayout {
+// 					dlgLabel("Module spacing distance (mm)");
+// 					dlgRealEdit(spacing, 1, 500);
+// 				}
+// 			};
 			string parts[] = { "Name;Instance" };
 			int nparts = 1;
 			string moduleoffsets[] = { "Module;Offset" };
@@ -81,21 +84,21 @@ output("test.txt") {
 											x -= (900 * int(x / 900));
 										}
 										string mirr = "=R";
-										if (lookup(locs, str, 4, ';') == "1")
+										if (strtol(lookup(locs, str, 4, ';')) == 1)
 											mirr = "=MR";
 										output(filesetext(SCH.name, ".scr"), "atD")
-											printf("MARK (%gmm %gmm); MOVE %s (CR %smm %smm); ROTATE %s '%s';\n",
-												x, y,
-												P.name, lookup(locs, str, 1, ';'), lookup(locs, str, 2, ';'),
-												mirr + lookup(locs, str, 4, ';'), P.name
-											);
+										printf("MARK (%gmm %gmm); MOVE %s (CR %smm %smm); ROTATE %s '%s';\n",
+											x, y,
+											P.name, lookup(locs, str, 1, ';'), lookup(locs, str, 2, ';'),
+											mirr + lookup(locs, str, 4, ';'), P.name
+										);
 									}
 								}
 							}
 						}
 					}
 					output(filesetext(SCH.name, ".scr"), "atD")
-						printf("MARK;\n");
+						printf("MARK; SET WIRE_BEND 2;\n");
 
 					string repscr[];
 					int nrepscr = fileread(repscr, filesetext(SCH.name, ".repscr"));
@@ -119,7 +122,7 @@ output("test.txt") {
 											sr = strrep(sr, modulename + ":", M.name + ":");
 										}
 										output(filesetext(SCH.name, ".scr"), "atD")
-										printf("MARK (%gmm %gmm); %s\n", x, y, sr);
+											printf("MARK (%gmm %gmm); %s\n", x, y, sr);
 									}
 								}
 							}
@@ -157,7 +160,10 @@ output("test.txt") {
 			}
 			output(filesetext(B.name, ".repscr"), "wtD") {
 				B.signals(S) {
-	// 				printf("Signal %s\n", S.name);
+					S.vias(V) {
+						if (ingroup(V))
+							printf("Via '%s' %gmm %s (R %g %g);\n", S.name, u2mm(V.drill), VIA_SHAPES[V.shape[LAYER_VIAS]], u2mm(V.x), u2mm(V.y));
+					}
 					S.wires(W) {
 						if (ingroup(W))
 							if (W.layer <= 16)
@@ -169,16 +175,12 @@ output("test.txt") {
 										printf("Layer %d; Wire '%s' %gmm (R %g %g) (R %g %g);\n", W.layer, S.name, u2mm(W.width), u2mm(W.x1), u2mm(W.y1), u2mm(W.x2), u2mm(W.y2));
 									}
 					}
-					S.vias(V) {
-						if (ingroup(V))
-							printf("Via '%s' %gmm %s (R %g %g);\n", S.name, u2mm(V.drill), VIA_SHAPES[V.shape[LAYER_VIAS]], u2mm(V.x), u2mm(V.y));
-					}
 					S.polygons(P) {
 						if (ingroup(P)) {
 							if (P.layer <= 16) {
 								if (P.width > 0) {
 									int first = 0;
-									printf("Layer %d; Polygon '%s' %gmm ", P.layer, S.name, u2mm(P.width));
+									printf("Layer %d; change rank %d; change pour %s; change thermals %s; Polygon '%s' %gmm ", P.layer, P.rank, Pours[P.pour], OnOff[P.thermals], S.name, u2mm(P.width));
 									P.wires(W) {
 										if (first == 0) {
 											printf("(R %g %g) ", u2mm(W.x1), u2mm(W.y1));
@@ -194,7 +196,7 @@ output("test.txt") {
 				}
 			}
 			if (en) {
-				exit("edit .sch; run test.ulp" + en);
+				exit("edit .sch; run " + argv[0] + en);
 			}
 		}
 
