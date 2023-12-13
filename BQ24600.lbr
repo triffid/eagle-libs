@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -71,66 +71,96 @@
 </layers>
 <library>
 <packages>
-<package name="P-MSOP-8">
-<smd name="PAD" x="0" y="0" dx="1.7" dy="2" layer="1" thermals="no" cream="no"/>
-<smd name="1" x="-1.975" y="0.975" dx="1.35" dy="0.45" layer="1"/>
-<smd name="2" x="-1.975" y="0.325" dx="1.35" dy="0.45" layer="1"/>
-<smd name="3" x="-1.975" y="-0.325" dx="1.35" dy="0.45" layer="1"/>
-<smd name="4" x="-1.975" y="-0.975" dx="1.35" dy="0.45" layer="1"/>
-<smd name="5" x="1.975" y="-0.975" dx="1.35" dy="0.45" layer="1"/>
-<smd name="6" x="1.975" y="-0.325" dx="1.35" dy="0.45" layer="1"/>
-<smd name="7" x="1.975" y="0.325" dx="1.35" dy="0.45" layer="1"/>
-<smd name="8" x="1.975" y="0.975" dx="1.35" dy="0.45" layer="1"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.15" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.15" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.15" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.15" layer="21"/>
-<circle x="-1.025" y="0.975" radius="0.22360625" width="0.15" layer="21"/>
-<text x="0" y="2" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<rectangle x1="-0.75" y1="0.125" x2="-0.125" y2="0.875" layer="31"/>
-<rectangle x1="0.125" y1="0.125" x2="0.75" y2="0.875" layer="31"/>
-<rectangle x1="-0.75" y1="-0.875" x2="-0.125" y2="-0.125" layer="31"/>
-<rectangle x1="0.125" y1="-0.875" x2="0.75" y2="-0.125" layer="31"/>
-<wire x1="-2.875" y1="1" x2="-3.75" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="1.5" x2="-3.75" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="0.5" x2="-2.875" y2="1" width="0.127" layer="51"/>
+<package name="QFN16-0.5-3.5X3.5">
+<smd name="1" x="-1.75" y="0.75" dx="0.8" dy="0.28" layer="1"/>
+<smd name="2" x="-1.75" y="0.25" dx="0.8" dy="0.28" layer="1"/>
+<smd name="3" x="-1.75" y="-0.25" dx="0.8" dy="0.28" layer="1"/>
+<smd name="4" x="-1.75" y="-0.75" dx="0.8" dy="0.28" layer="1"/>
+<smd name="5" x="-0.75" y="-1.75" dx="0.8" dy="0.28" layer="1" rot="R90"/>
+<smd name="6" x="-0.25" y="-1.75" dx="0.8" dy="0.28" layer="1" rot="R90"/>
+<smd name="7" x="0.25" y="-1.75" dx="0.8" dy="0.28" layer="1" rot="R90"/>
+<smd name="8" x="0.75" y="-1.75" dx="0.8" dy="0.28" layer="1" rot="R90"/>
+<smd name="9" x="1.75" y="-0.75" dx="0.8" dy="0.28" layer="1" rot="R180"/>
+<smd name="10" x="1.75" y="-0.25" dx="0.8" dy="0.28" layer="1" rot="R180"/>
+<smd name="11" x="1.75" y="0.25" dx="0.8" dy="0.28" layer="1" rot="R180"/>
+<smd name="12" x="1.75" y="0.75" dx="0.8" dy="0.28" layer="1" rot="R180"/>
+<smd name="13" x="0.75" y="1.75" dx="0.8" dy="0.28" layer="1" rot="R270"/>
+<smd name="14" x="0.25" y="1.75" dx="0.8" dy="0.28" layer="1" rot="R270"/>
+<smd name="15" x="-0.25" y="1.75" dx="0.8" dy="0.28" layer="1" rot="R270"/>
+<smd name="16" x="-0.75" y="1.75" dx="0.8" dy="0.28" layer="1" rot="R270"/>
+<smd name="PAD" x="0" y="0" dx="2.14" dy="2.14" layer="1" thermals="no" cream="no"/>
+<rectangle x1="-1" y1="0.15" x2="-0.15" y2="1" layer="31"/>
+<rectangle x1="0.15" y1="0.15" x2="1" y2="1" layer="31"/>
+<rectangle x1="-1" y1="-1" x2="-0.15" y2="-0.15" layer="31"/>
+<rectangle x1="0.15" y1="-1" x2="1" y2="-0.15" layer="31"/>
+<wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.75" x2="1.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.75" x2="-1.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="0.75" x2="-3" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-3" y1="1.25" x2="-3" y2="0.25" width="0.127" layer="51"/>
+<wire x1="-3" y1="0.25" x2="-2.25" y2="0.75" width="0.127" layer="51"/>
+<circle x="-1" y="1" radius="0.25" width="0.127" layer="51"/>
+<rectangle x1="-2" y1="-2" x2="2" y2="2" layer="39"/>
+<text x="0" y="2.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="AL8860Q">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="VIN" x="-5.08" y="10.16" length="short" direction="in" rot="R270"/>
-<pin name="SET" x="5.08" y="10.16" length="short" direction="in" rot="R270"/>
-<pin name="SW" x="10.16" y="0" length="short" direction="oc" rot="R180"/>
-<pin name="CTRL" x="-10.16" y="0" length="short" direction="in"/>
-<pin name="GND" x="0" y="-10.16" length="short" direction="pwr" rot="R90"/>
-<text x="7.62" y="8.89" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
-<text x="7.62" y="-8.89" size="1.778" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
+<symbol name="BQ24600">
+<wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<pin name="HIDRV" x="15.24" y="20.32" length="short" direction="out" rot="R180"/>
+<pin name="PH" x="15.24" y="15.24" length="short" direction="in" rot="R180"/>
+<pin name="BTST" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="LODRV" x="15.24" y="0" length="short" direction="out" rot="R180"/>
+<pin name="SRP" x="15.24" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="SRN" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="VFB" x="15.24" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="0" y="-27.94" length="short" direction="pwr" rot="R90"/>
+<pin name="TS" x="-15.24" y="-20.32" length="short" direction="in"/>
+<pin name="!PG" x="-15.24" y="-12.7" length="short" direction="oc"/>
+<pin name="STAT" x="-15.24" y="-7.62" length="short" direction="oc"/>
+<pin name="CE" x="-15.24" y="0" length="short"/>
+<pin name="VREF" x="-15.24" y="5.08" length="short"/>
+<pin name="ISET" x="-15.24" y="12.7" length="short" direction="in"/>
+<pin name="VCC" x="0" y="27.94" length="short" direction="pwr" rot="R270"/>
+<text x="2.54" y="26.67" size="1.778" layer="95" ratio="15" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-26.67" size="1.27" layer="96" ratio="15" align="center-left">&gt;VALUE</text>
+<pin name="REGN" x="15.24" y="-20.32" length="short" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AL8860Q?*" prefix="IC">
+<deviceset name="BQ24600" prefix="IC">
 <gates>
-<gate name="A" symbol="AL8860Q" x="0" y="0"/>
+<gate name="A" symbol="BQ24600" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MP" package="P-MSOP-8">
+<device name="RVA" package="QFN16-0.5-3.5X3.5">
 <connects>
-<connect gate="A" pin="CTRL" pad="4"/>
-<connect gate="A" pin="GND" pad="2 3 PAD"/>
-<connect gate="A" pin="SET" pad="1"/>
-<connect gate="A" pin="SW" pad="5 6"/>
-<connect gate="A" pin="VIN" pad="8"/>
+<connect gate="A" pin="!PG" pad="5"/>
+<connect gate="A" pin="BTST" pad="16"/>
+<connect gate="A" pin="CE" pad="2"/>
+<connect gate="A" pin="GND" pad="11 PAD"/>
+<connect gate="A" pin="HIDRV" pad="15"/>
+<connect gate="A" pin="ISET" pad="7"/>
+<connect gate="A" pin="LODRV" pad="13"/>
+<connect gate="A" pin="PH" pad="14"/>
+<connect gate="A" pin="REGN" pad="12"/>
+<connect gate="A" pin="SRN" pad="9"/>
+<connect gate="A" pin="SRP" pad="10"/>
+<connect gate="A" pin="STAT" pad="3"/>
+<connect gate="A" pin="TS" pad="4"/>
+<connect gate="A" pin="VCC" pad="1"/>
+<connect gate="A" pin="VFB" pad="8"/>
+<connect gate="A" pin="VREF" pad="6"/>
 </connects>
 <technologies>
-<technology name="-13">
-<attribute name="MARK" value="AL8860Q"/>
-<attribute name="MF" value="Diodes Inc"/>
-<attribute name="MPN" value="AL8860QMP-13"/>
+<technology name="">
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MPN" value="BQ24600RVA"/>
 </technology>
 </technologies>
 </device>

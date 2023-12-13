@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="DBT50G-9.5-3P">
+<pad name="1" x="-9.5" y="0" drill="2.1"/>
+<pad name="2" x="0" y="0" drill="2.1"/>
+<pad name="3" x="9.5" y="0" drill="2.1"/>
+<wire x1="-14.95" y1="4.1" x2="14.95" y2="4.1" width="0.127" layer="21"/>
+<wire x1="14.95" y1="4.1" x2="14.95" y2="-11.9" width="0.127" layer="21"/>
+<wire x1="14.95" y1="-11.9" x2="-14.95" y2="-11.9" width="0.127" layer="21"/>
+<wire x1="-14.95" y1="-11.9" x2="-14.95" y2="4.1" width="0.127" layer="21"/>
+<circle x="0" y="-6" radius="3.5" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-2.5" x2="-0.5" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-5.5" x2="-1.5" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-5.5" x2="-1.5" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-6.5" x2="-0.5" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-6.5" x2="-0.5" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-2.5" x2="0.5" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-5.5" x2="1.5" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-5.5" x2="1.5" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-6.5" x2="0.5" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-6.5" x2="0.5" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2" x2="-4" y2="-4" width="0.127" layer="51"/>
+<wire x1="-4" y1="-4" x2="-4" y2="-8" width="0.127" layer="51"/>
+<wire x1="-4" y1="-8" x2="-2" y2="-10" width="0.127" layer="51"/>
+<wire x1="-2" y1="-10" x2="2" y2="-10" width="0.127" layer="51"/>
+<wire x1="2" y1="-10" x2="4" y2="-8" width="0.127" layer="51"/>
+<wire x1="4" y1="-8" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="4" y1="-4" x2="2" y2="-2" width="0.127" layer="51"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-4" x2="-4" y2="-2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-2" x2="-4" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="-1.75" x2="-4" y2="1" width="0.127" layer="51"/>
+<wire x1="-4" y1="1" x2="4" y2="1" width="0.127" layer="51"/>
+<wire x1="4" y1="1" x2="4" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="4" y1="-1.75" x2="4" y2="-2" width="0.127" layer="51"/>
+<wire x1="4" y1="-2" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="-2" y1="-10" x2="-4" y2="-10" width="0.127" layer="51"/>
+<wire x1="-4" y1="-10" x2="-4" y2="-8" width="0.127" layer="51"/>
+<wire x1="2" y1="-10" x2="4" y2="-10" width="0.127" layer="51"/>
+<wire x1="4" y1="-10" x2="4" y2="-8" width="0.127" layer="51"/>
+<wire x1="4" y1="-2" x2="2" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2" x2="-4" y2="-2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-10" x2="-4" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="-4" y1="-10.25" x2="-1" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="-1" y1="-10.25" x2="-1" y2="-10.75" width="0.127" layer="51"/>
+<wire x1="-1" y1="-10.75" x2="1" y2="-10.75" width="0.127" layer="51"/>
+<wire x1="1" y1="-10.75" x2="1" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="1" y1="-10.25" x2="4" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="4" y1="-10.25" x2="4" y2="-10" width="0.127" layer="51"/>
+<wire x1="-4" y1="-1.75" x2="-1" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1.75" x2="-1" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1.25" x2="1" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.25" x2="1" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.75" x2="4" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="-10.25" x2="-4" y2="-11.9" width="0.127" layer="51"/>
+<wire x1="4" y1="-10.25" x2="4" y2="-11.9" width="0.127" layer="51"/>
+<circle x="-9.5" y="-6" radius="3.5" width="0.127" layer="51"/>
+<wire x1="-10" y1="-2.5" x2="-10" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-10" y1="-5.5" x2="-11" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-11" y1="-5.5" x2="-11" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-11" y1="-6.5" x2="-10" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-10" y1="-6.5" x2="-10" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="-9" y1="-2.5" x2="-9" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-9" y1="-5.5" x2="-8" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-8" y1="-5.5" x2="-8" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-8" y1="-6.5" x2="-9" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-9" y1="-6.5" x2="-9" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="-2" x2="-13.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-4" x2="-13.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-8" x2="-11.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="-10" x2="-7.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-10" x2="-5.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-8" x2="-5.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-4" x2="-7.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-2" x2="-11.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-4" x2="-13.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-2" x2="-13.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-1.75" x2="-13.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="1" x2="-5.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1" x2="-5.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-1.75" x2="-5.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-2" x2="-5.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="-10" x2="-13.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-10" x2="-13.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-10" x2="-5.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-10" x2="-5.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-2" x2="-7.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="-2" x2="-13.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-10" x2="-13.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-10.25" x2="-10.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-10.25" x2="-10.5" y2="-10.75" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-10.75" x2="-8.5" y2="-10.75" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="-10.75" x2="-8.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="-10.25" x2="-5.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-10.25" x2="-5.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-1.75" x2="-10.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-1.75" x2="-10.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-1.25" x2="-8.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="-1.25" x2="-8.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="-1.75" x2="-5.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="-10.25" x2="-13.5" y2="-11.9" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-10.25" x2="-5.5" y2="-11.9" width="0.127" layer="51"/>
+<circle x="9.5" y="-6" radius="3.5" width="0.127" layer="51"/>
+<wire x1="9" y1="-2.5" x2="9" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="9" y1="-5.5" x2="8" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="8" y1="-5.5" x2="8" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="8" y1="-6.5" x2="9" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="9" y1="-6.5" x2="9" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="10" y1="-2.5" x2="10" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="10" y1="-5.5" x2="11" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="11" y1="-5.5" x2="11" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="11" y1="-6.5" x2="10" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="10" y1="-6.5" x2="10" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-2" x2="5.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-4" x2="5.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-8" x2="7.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-10" x2="11.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="11.5" y1="-10" x2="13.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-8" x2="13.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-4" x2="11.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="11.5" y1="-2" x2="7.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-4" x2="5.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-2" x2="5.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-1.75" x2="5.5" y2="1" width="0.127" layer="51"/>
+<wire x1="5.5" y1="1" x2="13.5" y2="1" width="0.127" layer="51"/>
+<wire x1="13.5" y1="1" x2="13.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-1.75" x2="13.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-2" x2="13.5" y2="-4" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-10" x2="5.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-10" x2="5.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="11.5" y1="-10" x2="13.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-10" x2="13.5" y2="-8" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-2" x2="11.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-2" x2="5.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-10" x2="5.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-10.25" x2="8.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="8.5" y1="-10.25" x2="8.5" y2="-10.75" width="0.127" layer="51"/>
+<wire x1="8.5" y1="-10.75" x2="10.5" y2="-10.75" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-10.75" x2="10.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-10.25" x2="13.5" y2="-10.25" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-10.25" x2="13.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-1.75" x2="8.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="8.5" y1="-1.75" x2="8.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="8.5" y1="-1.25" x2="10.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-1.25" x2="10.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="10.5" y1="-1.75" x2="13.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-10.25" x2="5.5" y2="-11.9" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-10.25" x2="13.5" y2="-11.9" width="0.127" layer="51"/>
+<rectangle x1="-15.25" y1="-12.25" x2="15.25" y2="4.5" layer="39"/>
+<rectangle x1="-3.5" y1="-29" x2="3.5" y2="-12.25" layer="39"/>
+<rectangle x1="-13" y1="-29" x2="-6" y2="-12.25" layer="39"/>
+<rectangle x1="6" y1="-29" x2="13" y2="-12.25" layer="39"/>
+<text x="0" y="6" size="2" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="3" size="1.5" layer="27" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-13.5" y1="1" x2="-13.5" y2="4" width="0.127" layer="51"/>
+<wire x1="13.5" y1="1" x2="13.5" y2="4" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SKB">
+<wire x1="2.032" y1="0.762" x2="0.508" y2="-0.762" width="0.254" layer="94"/>
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="3.175" y="0" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DBT50G-9.5.-3P-1*-00A?" prefix="J">
+<description>&lt;h1&gt;Screw Terminal Header&lt;/h1&gt;
+
+Color:
+&lt;ul&gt;
+&lt;li&gt;1: Grey&lt;/li&gt;
+&lt;li&gt;2: Blue&lt;/li&gt;
+&lt;li&gt;3: Black&lt;/li&gt;
+&lt;li&gt;4: Green&lt;/li&gt;
+&lt;li&gt;5: Orange&lt;/li&gt;
+&lt;li&gt;6: Red&lt;/li&gt;
+&lt;li&gt;7: Transparent&lt;/li&gt;
+&lt;li&gt;8: Yellow&lt;/li&gt;
+&lt;li&gt;9: White&lt;/li&gt;
+&lt;/ul&gt;
+
+Suffix:
+&lt;ul&gt;&lt;li&gt;«none»: Standard&lt;/li&gt;
+&lt;li&gt;H: ROHS&lt;/li&gt;&lt;/ul&gt;
+
+Datasheet: https://www.nbdibo.com/wp-content/uploads/2021/02/1DBT50G-9.5-3.8.pdf</description>
+<gates>
+<gate name="-1" symbol="SKB" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="SKB" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="SKB" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="DBT50G-9.5-3P">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+</connects>
+<technologies>
+<technology name="1">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-11-00A"/>
+</technology>
+<technology name="2">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-12-00A"/>
+</technology>
+<technology name="3">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-13-00A"/>
+</technology>
+<technology name="4">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-14-00A"/>
+</technology>
+<technology name="5">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-15-00A"/>
+</technology>
+<technology name="6">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-16-00A"/>
+</technology>
+<technology name="7">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-17-00A"/>
+</technology>
+<technology name="8">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-18-00A"/>
+</technology>
+<technology name="9">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-19-00A"/>
+</technology>
+</technologies>
+</device>
+<device name="H" package="DBT50G-9.5-3P">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+</connects>
+<technologies>
+<technology name="1">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-11-00AH"/>
+</technology>
+<technology name="2">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-12-00AH"/>
+</technology>
+<technology name="3">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-13-00AH"/>
+</technology>
+<technology name="4">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-14-00AH"/>
+</technology>
+<technology name="5">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-15-00AH"/>
+</technology>
+<technology name="6">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-16-00AH"/>
+</technology>
+<technology name="7">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-17-00AH"/>
+</technology>
+<technology name="8">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-18-00AH"/>
+</technology>
+<technology name="9">
+<attribute name="MF" value="Ningbo Dorabo Electric Co Ltd"/>
+<attribute name="MPN" value="DBT50G-9.5-3P-19-00AH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

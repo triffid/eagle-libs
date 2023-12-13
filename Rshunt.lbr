@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="20" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -148,9 +148,20 @@
 <smd name="2P2" x="4.15" y="-1.7" dx="2.7" dy="2.8" layer="1" thermals="no"/>
 <smd name="2" x="3.9" y="0" dx="2.2" dy="0.2" layer="1"/>
 </package>
+<package name="EIA0612-M1632">
+<wire x1="-0.8" y1="1.6" x2="0.8" y2="1.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="1.6" x2="0.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-1.6" x2="-0.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.6" x2="-0.8" y2="1.6" width="0.127" layer="21"/>
+<smd name="1" x="-0.85" y="0" dx="0.9" dy="3.5" layer="1" thermals="no"/>
+<smd name="2" x="0.85" y="0" dx="0.9" dy="3.5" layer="1" thermals="no"/>
+<text x="-2" y="0" size="0.6" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="27" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+<rectangle x1="-1.5" y1="-2" x2="1.5" y2="2" layer="39"/>
+</package>
 </packages>
 <symbols>
-<symbol name="R-EU">
+<symbol name="RSHUNT_SENSE">
 <wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-0.889" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -170,11 +181,21 @@
 <wire x1="1.905" y1="-1.905" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
 <wire x1="1.905" y1="-0.635" x2="2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
+<symbol name="R">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RSHUNT" prefix="R" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+<gate name="G$1" symbol="RSHUNT_SENSE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="2512" package="EIA2512-M6332">
@@ -216,6 +237,22 @@
 <connect gate="G$1" pin="1S" pad="1"/>
 <connect gate="G$1" pin="2" pad="2P1 2P2"/>
 <connect gate="G$1" pin="2S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="EIA0612-M1632" package="EIA0612-M1632">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -68,6 +68,7 @@
 <wire x1="2.95" y1="-1.7" x2="0.5" y2="-1.7" width="0.127" layer="21"/>
 <text x="0" y="4" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="2" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-3.25" y1="-2" x2="3.25" y2="3" layer="39"/>
 </package>
 <package name="B3B-PH-K-S">
 <description>JST-PH (2mm) 3-pin through-hole Wire-Board connector</description>
@@ -91,9 +92,10 @@
 <wire x1="-4.95" y1="2.8" x2="4.95" y2="2.8" width="0.127" layer="21"/>
 <wire x1="4.95" y1="2.8" x2="4.95" y2="-1.7" width="0.127" layer="21"/>
 <wire x1="4.95" y1="-1.7" x2="2.5" y2="-1.7" width="0.127" layer="21"/>
-<text x="-3" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="3.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="3" x="-1" y="0" drill="0.7"/>
 <pad name="4" x="-3" y="0" drill="0.7"/>
+<rectangle x1="-5.25" y1="-2" x2="5.25" y2="3" layer="39"/>
 </package>
 <package name="B5B-PH-K-S">
 <description>JST-PH (2mm) 5-pin through-hole Wire-Board connector</description>
@@ -403,6 +405,11 @@
 <wire x1="-0.25" y1="1.605" x2="-0.125" y2="1.73" width="0.0625" layer="51"/>
 <wire x1="-0.125" y1="1.73" x2="0.125" y2="1.73" width="0.0625" layer="51"/>
 <wire x1="0.125" y1="1.73" x2="0.25" y2="1.605" width="0.0625" layer="51"/>
+<text x="0" y="-5.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2" size="0.6" layer="27" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-4.125" y1="-5.25" x2="4.125" y2="2.75" layer="39"/>
+<rectangle x1="-4.125" y1="2.75" x2="4.125" y2="5" layer="39"/>
+<rectangle x1="-2.875" y1="5" x2="2.875" y2="15" layer="39"/>
 </package>
 <package name="S2B-PH-KL">
 <description>JST-PH (2mm) 3-pin though-hole right-angle Wire-Board connector</description>
@@ -435,6 +442,42 @@
 <wire x1="0.125" y1="1.73" x2="0.25" y2="1.605" width="0.0625" layer="51"/>
 <text x="0" y="-6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-3" y1="-5.25" x2="3" y2="10" layer="39"/>
+</package>
+<package name="S4B-PH-KL">
+<description>JST-PH (2mm) 3-pin though-hole right-angle Wire-Board connector</description>
+<wire x1="-4.9" y1="2.53" x2="4.9" y2="2.53" width="0.127" layer="21"/>
+<wire x1="4.9" y1="2.53" x2="4.9" y2="-5.07" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-5.07" x2="4" y2="-5.07" width="0.127" layer="21"/>
+<wire x1="4" y1="-5.07" x2="4" y2="-3.47" width="0.127" layer="21"/>
+<wire x1="-4" y1="-3.47" x2="-4" y2="-5.07" width="0.127" layer="21"/>
+<wire x1="-4" y1="-5.07" x2="-4.9" y2="-5.07" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-5.07" x2="-4.9" y2="2.53" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="2.48" x2="-4.5" y2="2.73" width="0.05" layer="51" style="dashdot"/>
+<wire x1="-4.5" y1="2.73" x2="-5" y2="3.23" width="0.05" layer="51" style="dashdot"/>
+<wire x1="-5" y1="3.23" x2="-5" y2="4.48" width="0.05" layer="51" style="dashdot"/>
+<wire x1="-5" y1="4.48" x2="5" y2="4.48" width="0.05" layer="51" style="dashdot"/>
+<wire x1="5" y1="4.48" x2="5" y2="3.23" width="0.05" layer="51" style="dashdot"/>
+<wire x1="5" y1="3.23" x2="4.5" y2="2.73" width="0.05" layer="51" style="dashdot"/>
+<wire x1="4.5" y1="2.73" x2="4.5" y2="2.48" width="0.05" layer="51" style="dashdot"/>
+<pad name="1" x="3" y="-3.72" drill="0.7" shape="square"/>
+<pad name="2" x="1" y="-3.72" drill="0.7"/>
+<pad name="3" x="-1" y="-3.72" drill="0.7"/>
+<wire x1="-4" y1="-3.47" x2="4" y2="-3.47" width="0.127" layer="51"/>
+<wire x1="-1" y1="2.48" x2="-1" y2="-1.27" width="0.0625" layer="51"/>
+<wire x1="-1" y1="-1.27" x2="-0.25" y2="-1.27" width="0.0625" layer="51"/>
+<wire x1="-0.25" y1="-1.27" x2="0.25" y2="-1.27" width="0.0625" layer="51"/>
+<wire x1="0.25" y1="-1.27" x2="1" y2="-1.27" width="0.0625" layer="51"/>
+<wire x1="1" y1="-1.27" x2="1" y2="2.48" width="0.0625" layer="51"/>
+<wire x1="-0.25" y1="-1.27" x2="-0.25" y2="1.605" width="0.0625" layer="51"/>
+<wire x1="0.25" y1="1.605" x2="0.25" y2="-1.27" width="0.0625" layer="51"/>
+<wire x1="-0.25" y1="1.605" x2="-0.125" y2="1.73" width="0.0625" layer="51"/>
+<wire x1="-0.125" y1="1.73" x2="0.125" y2="1.73" width="0.0625" layer="51"/>
+<wire x1="0.125" y1="1.73" x2="0.25" y2="1.605" width="0.0625" layer="51"/>
+<pad name="4" x="-3" y="-3.72" drill="0.7"/>
+<rectangle x1="-5" y1="-5.25" x2="5" y2="8" layer="39"/>
+<text x="0" y="-5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2" size="0.6" layer="27" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -716,6 +759,112 @@
 <technology name="">
 <attribute name="MF" value="JST"/>
 <attribute name="MPN" value="S2B-PH-KL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-PH-4" prefix="J">
+<gates>
+<gate name="-1" symbol="PM-N" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PM-N" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PM-N" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PM-N" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="_TH-V" package="B4B-PH-K-S">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B4B-PH-K-S"/>
+</technology>
+</technologies>
+</device>
+<device name="_TH-RA" package="S4B-PH-KL">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="S4B-PH-KL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-PH-2" prefix="J">
+<description>JST-PH 2-way vertical TH</description>
+<gates>
+<gate name="-1" symbol="PM-N" x="0" y="2.54" addlevel="always"/>
+<gate name="-2" symbol="PM-N" x="0" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="_TH_V" package="B2B-PH-K-S">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B2B-PH-K-S"/>
+</technology>
+</technologies>
+</device>
+<device name="_TH_RA" package="S2B-PH-KL">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="S2B-PH-KL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-PH-3" prefix="J">
+<gates>
+<gate name="-1" symbol="PM-N" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PM-N" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PM-N" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="_TH_V" package="B3B-PH-K-S">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B3B-PH-K-L"/>
+</technology>
+</technologies>
+</device>
+<device name="_TH_RA" package="S3B-PH-KL">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="S3B-PH-KL"/>
 </technology>
 </technologies>
 </device>

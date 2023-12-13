@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -199,25 +199,25 @@
 <rectangle x1="-7.5" y1="-7" x2="-5.5" y2="7" layer="35"/>
 </package>
 <package name="750314782">
-<smd name="1" x="-8.43" y="-4.75" dx="1.88" dy="1.17" layer="1"/>
-<smd name="2" x="-8.43" y="-2.25" dx="1.88" dy="1.17" layer="1"/>
-<smd name="3" x="-8.43" y="0.25" dx="1.88" dy="1.17" layer="1"/>
-<smd name="4" x="-8.43" y="2.75" dx="1.88" dy="1.17" layer="1"/>
-<smd name="5" x="-8.43" y="5.25" dx="1.88" dy="1.17" layer="1"/>
-<smd name="6" x="7.93" y="5.25" dx="1.88" dy="1.17" layer="1" rot="R180"/>
-<smd name="7" x="7.93" y="2.75" dx="1.88" dy="1.17" layer="1" rot="R180"/>
-<smd name="8" x="7.93" y="0.25" dx="1.88" dy="1.17" layer="1" rot="R180"/>
-<smd name="9" x="7.93" y="-2.25" dx="1.88" dy="1.17" layer="1" rot="R180"/>
-<smd name="10" x="7.93" y="-4.75" dx="1.88" dy="1.17" layer="1" rot="R180"/>
-<wire x1="-7.75" y1="-6.5" x2="7.25" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="7.25" y1="-6.5" x2="7.25" y2="7" width="0.127" layer="21"/>
-<wire x1="7.25" y1="7" x2="-7.75" y2="7" width="0.127" layer="21"/>
-<wire x1="-7.75" y1="7" x2="-7.75" y2="-6.5" width="0.127" layer="21"/>
-<circle x="-5.5" y="-4.5" radius="0.79056875" width="0.127" layer="51"/>
-<wire x1="-9.25" y1="-4.75" x2="-11" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="-11" y1="-3.75" x2="-11" y2="-5.75" width="0.127" layer="51"/>
-<wire x1="-11" y1="-5.75" x2="-9.25" y2="-4.75" width="0.127" layer="51"/>
-<text x="0" y="8" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="1" x="-8.18" y="-5" dx="1.88" dy="1.17" layer="1"/>
+<smd name="2" x="-8.18" y="-2.5" dx="1.88" dy="1.17" layer="1"/>
+<smd name="3" x="-8.18" y="0" dx="1.88" dy="1.17" layer="1"/>
+<smd name="4" x="-8.18" y="2.5" dx="1.88" dy="1.17" layer="1"/>
+<smd name="5" x="-8.18" y="5" dx="1.88" dy="1.17" layer="1"/>
+<smd name="6" x="8.18" y="5" dx="1.88" dy="1.17" layer="1" rot="R180"/>
+<smd name="7" x="8.18" y="2.5" dx="1.88" dy="1.17" layer="1" rot="R180"/>
+<smd name="8" x="8.18" y="0" dx="1.88" dy="1.17" layer="1" rot="R180"/>
+<smd name="9" x="8.18" y="-2.5" dx="1.88" dy="1.17" layer="1" rot="R180"/>
+<smd name="10" x="8.18" y="-5" dx="1.88" dy="1.17" layer="1" rot="R180"/>
+<wire x1="-7.5" y1="-6.75" x2="7.5" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-6.75" x2="7.5" y2="6.75" width="0.127" layer="21"/>
+<wire x1="7.5" y1="6.75" x2="-7.5" y2="6.75" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="6.75" x2="-7.5" y2="-6.75" width="0.127" layer="21"/>
+<circle x="-5.25" y="-4.75" radius="0.79056875" width="0.127" layer="51"/>
+<wire x1="-9" y1="-5" x2="-10.75" y2="-4" width="0.127" layer="51"/>
+<wire x1="-10.75" y1="-4" x2="-10.75" y2="-6" width="0.127" layer="51"/>
+<wire x1="-10.75" y1="-6" x2="-9" y2="-5" width="0.127" layer="51"/>
+<text x="0.25" y="7.75" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="749022011">
@@ -281,6 +281,38 @@
 <wire x1="-10.25" y1="5.75" x2="-8.75" y2="6.5" width="0.127" layer="51"/>
 <text x="0" y="9" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.6" layer="27" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+</package>
+<package name="750311797">
+<smd name="1" x="-13.26" y="7.5" dx="3.05" dy="1.27" layer="1"/>
+<smd name="2" x="-13.26" y="4.5" dx="3.05" dy="1.27" layer="1"/>
+<smd name="3" x="-13.26" y="1.5" dx="3.05" dy="1.27" layer="1"/>
+<smd name="4" x="-13.26" y="-1.5" dx="3.05" dy="1.27" layer="1"/>
+<smd name="5" x="-13.26" y="-4.5" dx="3.05" dy="1.27" layer="1"/>
+<smd name="6" x="-13.26" y="-7.5" dx="3.05" dy="1.27" layer="1"/>
+<smd name="7" x="13.26" y="-7.5" dx="3.05" dy="1.27" layer="1" rot="R180"/>
+<smd name="8" x="13.26" y="-4.5" dx="3.05" dy="1.27" layer="1" rot="R180"/>
+<smd name="9" x="13.26" y="-1.5" dx="3.05" dy="1.27" layer="1" rot="R180"/>
+<smd name="10" x="13.26" y="1.5" dx="3.05" dy="1.27" layer="1" rot="R180"/>
+<smd name="11" x="13.26" y="4.5" dx="3.05" dy="1.27" layer="1" rot="R180"/>
+<smd name="12" x="13.26" y="7.5" dx="3.05" dy="1.27" layer="1" rot="R180"/>
+<wire x1="-12" y1="11.555" x2="12" y2="11.555" width="0.127" layer="21"/>
+<wire x1="12" y1="11.555" x2="12" y2="-11.555" width="0.127" layer="21"/>
+<wire x1="12" y1="-11.555" x2="-12" y2="-11.555" width="0.127" layer="21"/>
+<wire x1="-12" y1="-11.555" x2="-12" y2="11.555" width="0.127" layer="21"/>
+<wire x1="-9" y1="10" x2="-10" y2="9" width="0.127" layer="51" curve="90"/>
+<wire x1="-10" y1="9" x2="-10" y2="-9" width="0.127" layer="51"/>
+<wire x1="-10" y1="-9" x2="-9" y2="-10" width="0.127" layer="51" curve="90"/>
+<wire x1="-9" y1="-10" x2="9" y2="-10" width="0.127" layer="51"/>
+<wire x1="9" y1="-10" x2="10" y2="-9" width="0.127" layer="51" curve="90"/>
+<wire x1="10" y1="-9" x2="10" y2="9" width="0.127" layer="51"/>
+<wire x1="10" y1="9" x2="9" y2="10" width="0.127" layer="51" curve="90"/>
+<wire x1="9" y1="10" x2="-9" y2="10" width="0.127" layer="51"/>
+<circle x="-8" y="8" radius="0.5" width="0.127" layer="51"/>
+<text x="0" y="12.5" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1" layer="27" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-12.5" y1="-12" x2="12.5" y2="12" layer="39"/>
+<rectangle x1="12.5" y1="-9" x2="15" y2="9" layer="39"/>
+<rectangle x1="-15" y1="-9" x2="-12.5" y2="9" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -795,8 +827,8 @@ Ipk=3A</text>
 <text x="2.54" y="-12.7" size="1.27" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
 <symbol name="WINDING-SINGLE-LEFT">
-<pin name="1" x="-7.62" y="5.08" visible="pad" length="short"/>
-<pin name="2" x="-7.62" y="-5.08" visible="pad" length="short"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" swaplevel="1"/>
+<pin name="2" x="-7.62" y="-5.08" visible="pad" length="short" swaplevel="1"/>
 <wire x1="-7.62" y1="5.08" x2="-3.175" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-3.175" y1="5.08" x2="-3.175" y2="2.54" width="0.254" layer="94" curve="-180"/>
 <wire x1="-3.175" y1="2.54" x2="-3.175" y2="0" width="0.254" layer="94" curve="-180"/>
@@ -809,8 +841,8 @@ Ipk=3A</text>
 <text x="-5.08" y="-1.27" size="1.27" layer="96" rot="R180" align="center-left">&gt;VALUE</text>
 </symbol>
 <symbol name="WINDING-SINGLE-RIGHT">
-<pin name="1" x="7.62" y="5.08" visible="pad" length="short" rot="R180"/>
-<pin name="2" x="7.62" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="1" x="7.62" y="5.08" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="-5.08" visible="pad" length="short" swaplevel="1" rot="R180"/>
 <wire x1="7.62" y1="5.08" x2="3.175" y2="5.08" width="0.254" layer="94"/>
 <wire x1="3.175" y1="5.08" x2="3.175" y2="2.54" width="0.254" layer="94" curve="180"/>
 <wire x1="3.175" y1="2.54" x2="3.175" y2="0" width="0.254" layer="94" curve="180"/>
@@ -876,21 +908,24 @@ Ipk=3A</text>
 </deviceset>
 <deviceset name="750311692" prefix="T">
 <gates>
-<gate name="G$1" symbol="750311692" x="0" y="0"/>
+<gate name="-PRI" symbol="WINDING-SINGLE-LEFT" x="0" y="0" addlevel="always"/>
+<gate name="-SEC1" symbol="WINDING-SINGLE-RIGHT" x="0" y="5.08" addlevel="always"/>
+<gate name="-SEC2" symbol="WINDING-SINGLE-RIGHT" x="0" y="-7.62" addlevel="always"/>
 </gates>
 <devices>
 <device name="" package="750311692">
 <connects>
-<connect gate="G$1" pin="PRI-1" pad="3"/>
-<connect gate="G$1" pin="PRI-2" pad="4"/>
-<connect gate="G$1" pin="SEC1-1" pad="8"/>
-<connect gate="G$1" pin="SEC1-2" pad="6"/>
-<connect gate="G$1" pin="SEC2-1" pad="7"/>
-<connect gate="G$1" pin="SEC2-2" pad="5"/>
+<connect gate="-PRI" pin="1" pad="3"/>
+<connect gate="-PRI" pin="2" pad="4"/>
+<connect gate="-SEC1" pin="1" pad="8"/>
+<connect gate="-SEC1" pin="2" pad="6"/>
+<connect gate="-SEC2" pin="1" pad="7"/>
+<connect gate="-SEC2" pin="2" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="WURTH"/>
+<attribute name="MARK" value="311692"/>
+<attribute name="MF" value="Würth Elektronik"/>
 <attribute name="MPN" value="750311692"/>
 </technology>
 </technologies>
@@ -1024,6 +1059,73 @@ Ipk=3A</text>
 <technology name="">
 <attribute name="MF" value="Würth Elektronik"/>
 <attribute name="MPN" value="749196221"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="750311797" prefix="T">
+<description>&lt;h1&gt;Würth 750311797&lt;/h1&gt;
+
+Pri Inductance: 14µH&lt;br/&gt;
+Leak Inductance: 210nH&lt;br/&gt;
+Turns: Pri:Sec:Fb - 2.5:1:1&lt;br/&gt;
+Isat(Pri): 11.5A&lt;br/&gt;
+DCR:&lt;br/&gt;
+Pri: 55mΩ&lt;br/&gt;
+Sec: 12mΩ&lt;/br&gt;
+Fb: 70mΩ&lt;br/&gt;
+Insulation: 4kV</description>
+<gates>
+<gate name="_PRI" symbol="WINDING-SINGLE-LEFT" x="0" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="_SEC" symbol="WINDING-SINGLE-RIGHT" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="_FB" symbol="WINDING-SINGLE-LEFT" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="750311797">
+<connects>
+<connect gate="_FB" pin="1" pad="5"/>
+<connect gate="_FB" pin="2" pad="6"/>
+<connect gate="_PRI" pin="1" pad="1 2"/>
+<connect gate="_PRI" pin="2" pad="3 4"/>
+<connect gate="_SEC" pin="1" pad="10 11 12"/>
+<connect gate="_SEC" pin="2" pad="7 8 9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Würth Elektronik"/>
+<attribute name="MPN" value="750311797"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="750315126" prefix="T">
+<description>&lt;h1&gt;Würth Elektronik 705315126&lt;/h1&gt;
+
+Lpri = 40µH&lt;br/&gt;
+Isat = 3.8A&lt;br/&gt;
+Turn Ratio = 2:1:1</description>
+<gates>
+<gate name="-PRI" symbol="WINDING-SINGLE-LEFT" x="0" y="0" addlevel="always"/>
+<gate name="-SEC1" symbol="WINDING-SINGLE-RIGHT" x="0" y="5.08" addlevel="always"/>
+<gate name="-SEC2" symbol="WINDING-SINGLE-RIGHT" x="0" y="-7.62" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="750314782">
+<connects>
+<connect gate="-PRI" pin="1" pad="3"/>
+<connect gate="-PRI" pin="2" pad="5"/>
+<connect gate="-SEC1" pin="1" pad="6"/>
+<connect gate="-SEC1" pin="2" pad="10"/>
+<connect gate="-SEC2" pin="1" pad="7"/>
+<connect gate="-SEC2" pin="2" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MARK" value="750315126"/>
+<attribute name="MF" value="Würth Elektronik"/>
+<attribute name="MPN" value="750315126"/>
 </technology>
 </technologies>
 </device>
