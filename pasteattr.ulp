@@ -1,0 +1,38 @@
+#usage "Select a component to be pasted, then run this script"
+
+string strrep(string result, string toreplace, string replacement) {
+	int i = 0;
+	if (strlen(toreplace) <= 0)
+		return result;
+	while (strstr(result, toreplace, i) >= 0) {
+		int j = strstr(result, toreplace, i);
+		result = strsub(result, 0, j) + replacement + strsub(result, j + strlen(toreplace));
+		i = j + strlen(replacement);
+		if (i >= strlen(result))
+			return result;
+	}
+	return result;
+}
+
+if (schematic) {
+	schematic(SCH) {
+		int found = 0;
+		output(filesetext(SCH.name, "_attrcop.scr"), "wtD") {
+			SCH.parts(PAR) PAR.instances (P) {
+				if (ingroup(P)) {
+					found = 1;
+					string r;
+					sprintf(r, "Found %s (%d)", P.name, ingroup(P));
+					status(r);
+					string filecontent;
+					fileread(filecontent, filesetext(SCH.name, ".attrcop"));
+					string script = strrep(filecontent, "{PN}", P.name);
+					printf("%s", script);
+				}
+			}
+		}
+		if (found == 1) {
+			exit("script " + filesetext(SCH.name, "_attrcop.scr") + ";");
+		}
+	}
+}

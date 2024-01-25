@@ -1,0 +1,22 @@
+#usage "Select a component to be copied to other instances, then run this script"
+
+if (schematic) {
+	schematic(SCH) {
+		SCH.parts(PAR) PAR.instances (P) {
+			if (ingroup(P)) {
+				string r;
+				sprintf(r, "Found %s (%d)", P.name, ingroup(P));
+				status(r);
+				output(filesetext(SCH.name, ".attrcop"), "wtD") {
+					printf("value {PN} '%s';\n", P.value);
+					printf("change display off;\n");
+					P.attributes(A) {
+						if ((A.name != "NAME") && (A.name != "VALUE"))
+							printf("attribute {PN} %s '%s';\n", A.name, A.value);
+					}
+				}
+				exit(0);
+			}
+		}
+	}
+}
