@@ -137,6 +137,142 @@
 <wire x1="3.75" y1="4" x2="4" y2="3.75" width="0.127" layer="51"/>
 <wire x1="4" y1="3.75" x2="4" y2="1" width="0.127" layer="51"/>
 </package>
+<package name="S8B-EH">
+<pad name="1" x="-8.75" y="-1.5" drill="0.9" shape="square"/>
+<pad name="2" x="-6.25" y="-1.5" drill="0.9"/>
+<wire x1="-11.25" y1="-3" x2="-11.25" y2="5.2" width="0.127" layer="21"/>
+<wire x1="-11.25" y1="5.2" x2="11.25" y2="5.2" width="0.127" layer="21"/>
+<wire x1="11.25" y1="5.2" x2="11.25" y2="-3" width="0.127" layer="21"/>
+<wire x1="11.25" y1="-3" x2="10" y2="-3" width="0.127" layer="21"/>
+<wire x1="10" y1="-3" x2="10" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="10" y1="-0.75" x2="-10" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-10" y1="-0.75" x2="-10" y2="-3" width="0.127" layer="21"/>
+<wire x1="-10" y1="-3" x2="-11.25" y2="-3" width="0.127" layer="21"/>
+<wire x1="-10" y1="5.2" x2="-10" y2="1" width="0.127" layer="51"/>
+<wire x1="-10" y1="1" x2="-9" y2="1" width="0.127" layer="51"/>
+<wire x1="-9" y1="1" x2="-8.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="1" x2="10" y2="1" width="0.127" layer="51"/>
+<wire x1="10" y1="1" x2="10" y2="5.2" width="0.127" layer="51"/>
+<wire x1="-9" y1="1" x2="-9" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-9" y1="3.75" x2="-8.75" y2="4" width="0.127" layer="51"/>
+<wire x1="-8.75" y1="4" x2="-8.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="3.75" x2="-8.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="1" x2="-6.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="3.75" x2="-6.25" y2="4" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="4" x2="-6" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-6" y1="3.75" x2="-6" y2="1" width="0.127" layer="51"/>
+<rectangle x1="-11.5" y1="-3.25" x2="11.5" y2="14.75" layer="39"/>
+<text x="0" y="-3.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="25" ratio="15" align="center">&gt;VALUE</text>
+<pad name="3" x="-3.75" y="-1.5" drill="0.9"/>
+<pad name="4" x="-1.25" y="-1.5" drill="0.9"/>
+<wire x1="-4" y1="1" x2="-4" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="3.75" x2="-3.75" y2="4" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="4" x2="-3.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3.75" x2="-3.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1" x2="-1.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="3.75" x2="-1.25" y2="4" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="4" x2="-1" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-1" y1="3.75" x2="-1" y2="1" width="0.127" layer="51"/>
+<pad name="5" x="1.25" y="-1.5" drill="0.9"/>
+<pad name="6" x="3.75" y="-1.5" drill="0.9"/>
+<pad name="7" x="6.25" y="-1.5" drill="0.9"/>
+<pad name="8" x="8.75" y="-1.5" drill="0.9"/>
+<wire x1="1" y1="1" x2="1" y2="3.75" width="0.127" layer="51"/>
+<wire x1="1" y1="3.75" x2="1.25" y2="4" width="0.127" layer="51"/>
+<wire x1="1.25" y1="4" x2="1.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="3.75" x2="1.5" y2="1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1" x2="3.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.75" x2="3.75" y2="4" width="0.127" layer="51"/>
+<wire x1="3.75" y1="4" x2="4" y2="3.75" width="0.127" layer="51"/>
+<wire x1="4" y1="3.75" x2="4" y2="1" width="0.127" layer="51"/>
+<wire x1="6" y1="1" x2="6" y2="3.75" width="0.127" layer="51"/>
+<wire x1="6" y1="3.75" x2="6.25" y2="4" width="0.127" layer="51"/>
+<wire x1="6.25" y1="4" x2="6.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="6.5" y1="3.75" x2="6.5" y2="1" width="0.127" layer="51"/>
+<wire x1="8.5" y1="1" x2="8.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="8.5" y1="3.75" x2="8.75" y2="4" width="0.127" layer="51"/>
+<wire x1="8.75" y1="4" x2="9" y2="3.75" width="0.127" layer="51"/>
+<wire x1="9" y1="3.75" x2="9" y2="1" width="0.127" layer="51"/>
+</package>
+<package name="S12B-EH">
+<pad name="1" x="-13.75" y="-1.5" drill="0.9" shape="square"/>
+<pad name="2" x="-11.25" y="-1.5" drill="0.9"/>
+<wire x1="-16.25" y1="-3" x2="-16.25" y2="5.2" width="0.127" layer="21"/>
+<wire x1="-16.25" y1="5.2" x2="16.25" y2="5.2" width="0.127" layer="21"/>
+<wire x1="16.25" y1="5.2" x2="16.25" y2="-3" width="0.127" layer="21"/>
+<wire x1="16.25" y1="-3" x2="15" y2="-3" width="0.127" layer="21"/>
+<wire x1="15" y1="-3" x2="15" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="15" y1="-0.75" x2="-15" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-15" y1="-0.75" x2="-15" y2="-3" width="0.127" layer="21"/>
+<wire x1="-15" y1="-3" x2="-16.25" y2="-3" width="0.127" layer="21"/>
+<wire x1="-15" y1="5.2" x2="-15" y2="1" width="0.127" layer="51"/>
+<wire x1="-15" y1="1" x2="-14" y2="1" width="0.127" layer="51"/>
+<wire x1="-14" y1="1" x2="-13.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="1" x2="15" y2="1" width="0.127" layer="51"/>
+<wire x1="15" y1="1" x2="15" y2="5.2" width="0.127" layer="51"/>
+<wire x1="-14" y1="1" x2="-14" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-14" y1="3.75" x2="-13.75" y2="4" width="0.127" layer="51"/>
+<wire x1="-13.75" y1="4" x2="-13.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-13.5" y1="3.75" x2="-13.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="1" x2="-11.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="3.75" x2="-11.25" y2="4" width="0.127" layer="51"/>
+<wire x1="-11.25" y1="4" x2="-11" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-11" y1="3.75" x2="-11" y2="1" width="0.127" layer="51"/>
+<rectangle x1="-16.5" y1="-3.25" x2="16.5" y2="14.75" layer="39"/>
+<text x="0" y="-3.5" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6" layer="25" ratio="15" align="center">&gt;VALUE</text>
+<pad name="3" x="-8.75" y="-1.5" drill="0.9"/>
+<pad name="4" x="-6.25" y="-1.5" drill="0.9"/>
+<wire x1="-9" y1="1" x2="-9" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-9" y1="3.75" x2="-8.75" y2="4" width="0.127" layer="51"/>
+<wire x1="-8.75" y1="4" x2="-8.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="3.75" x2="-8.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="1" x2="-6.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="3.75" x2="-6.25" y2="4" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="4" x2="-6" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-6" y1="3.75" x2="-6" y2="1" width="0.127" layer="51"/>
+<pad name="5" x="-3.75" y="-1.5" drill="0.9"/>
+<pad name="6" x="-1.25" y="-1.5" drill="0.9"/>
+<pad name="7" x="1.25" y="-1.5" drill="0.9"/>
+<pad name="8" x="3.75" y="-1.5" drill="0.9"/>
+<wire x1="-4" y1="1" x2="-4" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="3.75" x2="-3.75" y2="4" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="4" x2="-3.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3.75" x2="-3.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1" x2="-1.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="3.75" x2="-1.25" y2="4" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="4" x2="-1" y2="3.75" width="0.127" layer="51"/>
+<wire x1="-1" y1="3.75" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="3.75" width="0.127" layer="51"/>
+<wire x1="1" y1="3.75" x2="1.25" y2="4" width="0.127" layer="51"/>
+<wire x1="1.25" y1="4" x2="1.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="3.75" x2="1.5" y2="1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1" x2="3.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.75" x2="3.75" y2="4" width="0.127" layer="51"/>
+<wire x1="3.75" y1="4" x2="4" y2="3.75" width="0.127" layer="51"/>
+<wire x1="4" y1="3.75" x2="4" y2="1" width="0.127" layer="51"/>
+<wire x1="6" y1="1" x2="6" y2="3.75" width="0.127" layer="51"/>
+<wire x1="6" y1="3.75" x2="6.25" y2="4" width="0.127" layer="51"/>
+<wire x1="6.25" y1="4" x2="6.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="6.5" y1="3.75" x2="6.5" y2="1" width="0.127" layer="51"/>
+<wire x1="8.5" y1="1" x2="8.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="8.5" y1="3.75" x2="8.75" y2="4" width="0.127" layer="51"/>
+<wire x1="8.75" y1="4" x2="9" y2="3.75" width="0.127" layer="51"/>
+<wire x1="9" y1="3.75" x2="9" y2="1" width="0.127" layer="51"/>
+<wire x1="11" y1="1" x2="11" y2="3.75" width="0.127" layer="51"/>
+<wire x1="11" y1="3.75" x2="11.25" y2="4" width="0.127" layer="51"/>
+<wire x1="11.25" y1="4" x2="11.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="11.5" y1="3.75" x2="11.5" y2="1" width="0.127" layer="51"/>
+<wire x1="13.5" y1="1" x2="13.5" y2="3.75" width="0.127" layer="51"/>
+<wire x1="13.5" y1="3.75" x2="13.75" y2="4" width="0.127" layer="51"/>
+<wire x1="13.75" y1="4" x2="14" y2="3.75" width="0.127" layer="51"/>
+<wire x1="14" y1="3.75" x2="14" y2="1" width="0.127" layer="51"/>
+<pad name="9" x="6.25" y="-1.5" drill="0.9"/>
+<pad name="10" x="8.75" y="-1.5" drill="0.9"/>
+<pad name="11" x="11.25" y="-1.5" drill="0.9"/>
+<pad name="12" x="13.75" y="-1.5" drill="0.9"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
@@ -185,6 +321,78 @@
 <technology name="">
 <attribute name="MF" value="JST"/>
 <attribute name="MPN" value="S4B-EH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-EH-8" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-8" symbol="PIN" x="0" y="-12.7" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-THRA" package="S8B-EH">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-2" pin="P" pad="2"/>
+<connect gate="-3" pin="P" pad="3"/>
+<connect gate="-4" pin="P" pad="4"/>
+<connect gate="-5" pin="P" pad="5"/>
+<connect gate="-6" pin="P" pad="6"/>
+<connect gate="-7" pin="P" pad="7"/>
+<connect gate="-8" pin="P" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="S8B-EH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-EH-12" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-8" symbol="PIN" x="0" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="-9" symbol="PIN" x="0" y="-15.24" addlevel="always" swaplevel="1"/>
+<gate name="-10" symbol="PIN" x="0" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="-11" symbol="PIN" x="0" y="-20.32" addlevel="always" swaplevel="1"/>
+<gate name="-12" symbol="PIN" x="0" y="-22.86" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-THRA" package="S12B-EH">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-10" pin="P" pad="10"/>
+<connect gate="-11" pin="P" pad="11"/>
+<connect gate="-12" pin="P" pad="12"/>
+<connect gate="-2" pin="P" pad="2"/>
+<connect gate="-3" pin="P" pad="3"/>
+<connect gate="-4" pin="P" pad="4"/>
+<connect gate="-5" pin="P" pad="5"/>
+<connect gate="-6" pin="P" pad="6"/>
+<connect gate="-7" pin="P" pad="7"/>
+<connect gate="-8" pin="P" pad="8"/>
+<connect gate="-9" pin="P" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="S12B-EH"/>
 </technology>
 </technologies>
 </device>

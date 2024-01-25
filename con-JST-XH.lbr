@@ -407,8 +407,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MFN" value="S2B-XH-A"/>
-<attribute name="MP" value="JST"/>
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="S2B-XH-A"/>
 </technology>
 </technologies>
 </device>

@@ -180,7 +180,6 @@
 <technology name="">
 <attribute name="ALTERNATE" value="DC-044K-D025" constant="no"/>
 <attribute name="CURRENT" value="5A"/>
-<attribute name="MATING" value="5.5x2.5mm DC JACK"/>
 <attribute name="MF" value="CUI Devices"/>
 <attribute name="MPN" value="PJ-051BH"/>
 </technology>

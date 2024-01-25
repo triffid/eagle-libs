@@ -175,18 +175,15 @@
 </package>
 <package name="SOT-23">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.4224" y1="-0.381" x2="-1.4732" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4732" y1="-0.381" x2="-1.4732" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4732" y1="0.381" x2="1.4224" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.4224" y1="0.381" x2="1.4224" y2="-0.381" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9906" y="-1.016" dx="0.7874" dy="0.889" layer="1" rot="R180"/>
-<smd name="2" x="0.9398" y="-1.016" dx="0.7874" dy="0.889" layer="1" rot="R180"/>
-<smd name="3" x="-0.0254" y="1.016" dx="0.7874" dy="0.889" layer="1" rot="R180"/>
+<wire x1="1.45" y1="-0.65" x2="-1.45" y2="-0.65" width="0.1524" layer="21"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.1524" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="1.45" y2="0.65" width="0.1524" layer="21"/>
+<wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1" roundness="20" rot="R180"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1" roundness="20" rot="R180"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1" roundness="20" rot="R180"/>
 <text x="0" y="0" size="0.6" layer="27" font="vector" ratio="15" rot="R180" align="center">&gt;VALUE</text>
-<text x="0" y="-2" size="0.6" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
-<rectangle x1="-1.1684" y1="-0.9398" x2="-0.7874" y2="-0.4318" layer="51" rot="R180"/>
-<rectangle x1="0.762" y1="-0.9398" x2="1.143" y2="-0.4318" layer="51" rot="R180"/>
-<rectangle x1="-0.2032" y1="0.4318" x2="0.1778" y2="0.9398" layer="51" rot="R180"/>
+<text x="0.5" y="1.5" size="0.6" layer="25" font="vector" ratio="15" align="center-left">&gt;NAME</text>
 <rectangle x1="-1.75" y1="-1" x2="1.75" y2="1" layer="39" rot="R180"/>
 </package>
 <package name="LED5050">
@@ -1544,7 +1541,7 @@ Metric Code Size 1005</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ZENER" prefix="D" uservalue="yes">
+<deviceset name="ZENER" prefix="ZD" uservalue="yes">
 <gates>
 <gate name="A" symbol="DIODE-ZENER" x="0" y="0"/>
 </gates>
